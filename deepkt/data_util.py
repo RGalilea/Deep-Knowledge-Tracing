@@ -11,6 +11,8 @@ def load_dataset(fn, batch_size=32, shuffle=True):
 
     if "skill_id" not in df.columns:
         raise KeyError(f"The column 'skill_id' was not found on {fn}")
+    #if "problem_id" not in df.columns:
+    #   raise KeyError(f"The column 'problem_id' was not found on {fn}")
     if "correct" not in df.columns:
         raise KeyError(f"The column 'correct' was not found on {fn}")
     if "user_id" not in df.columns:
@@ -22,19 +24,21 @@ def load_dataset(fn, batch_size=32, shuffle=True):
     # Step 1.1 - Remove questions without skill
     df.dropna(subset=['skill_id'], inplace=True)
 
+
     # Step 1.2 - Remove users with a single answer
     df = df.groupby('user_id').filter(lambda q: len(q) > 1).copy()
-
+    #print(df)
     # Step 2 - Enumerate skill id
-    df['skill'], _ = pd.factorize(df['skill_id'], sort=True)
-
+    df['skill'], key = pd.factorize(df['skill_id'], sort=True)
+    #df['problem'], key = pd.factorize(df['problem_id'], sort=True)
+    #print('The key that relates the Ids is size:',key.size)
+    #print(df)
     # Step 3 - Cross skill id with answer to form a synthetic feature
-    df['skill_with_answer'] = df['skill'] * 2 + df['correct']
+    #df['skill_with_answer'] = df['skill'] * 2 + df['correct'] #I've found this kinda weird
 
     # Step 4 - Convert to a sequence per user id and shift features 1 timestep
     seq = df.groupby('user_id').apply(
-        lambda r: (
-            r['skill_with_answer'].values[:-1],
+        lambda r: (            #r['skill_with_answer'].values[:-1],
             r['skill'].values[1:],
             r['correct'].values[1:],
         )
@@ -44,40 +48,45 @@ def load_dataset(fn, batch_size=32, shuffle=True):
     # Step 5 - Get Tensorflow Dataset
     dataset = tf.data.Dataset.from_generator(
         generator=lambda: seq,
-        output_types=(tf.int32, tf.int32, tf.float32)
+        output_types=( tf.int32, tf.float32)#tf.int32,
     )
+
+    #for value in dataset.take(3):
+    #print('debug 0:')
 
     if shuffle:
         dataset = dataset.shuffle(buffer_size=nb_users)
 
     # Step 6 - Encode categorical features and merge skills with labels to compute target loss.
     # More info: https://github.com/tensorflow/tensorflow/issues/32142
-    features_depth = df['skill_with_answer'].max() + 1
+    #features_depth = df['skill_with_answer'].max() + 1
     skill_depth = df['skill'].max() + 1
+    #problem_depth = df['problem'].max() + 1
 
-    dataset = dataset.map(
-        lambda feat, skill, label: (
-            tf.one_hot(feat, depth=features_depth),
-            tf.concat(
-                values=[
-                    tf.one_hot(skill, depth=skill_depth),
-                    tf.expand_dims(label, -1)
-                ],
-                axis=-1
-            )
+    dataset = dataset.map( #(  #feat, #tf.one_hot(feat, depth=features_depth),
+        lambda skill, label: (
+            tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
+                              tf.expand_dims(label, -1)],
+                              axis=-1
+            ),
+            tf.expand_dims(label, -1)
         )
     )
-
+    #for value in dataset.take(1):
+    #   print('debug 0:',value)
     # Step 7 - Pad sequences per batch
     dataset = dataset.padded_batch(
         batch_size=batch_size,
         padding_values=(MASK_VALUE, MASK_VALUE),
-        padded_shapes=([None, None], [None, None]),
+        padded_shapes=([None, None],[None, None]),
         drop_remainder=True
-    )
+    ) #I probably have to change this
+    #print('debug 2')
+    for value3 in dataset.take(3):
+        print('debug 3:',value3)
 
     length = nb_users // batch_size
-    return dataset, length, features_depth, skill_depth
+    return dataset, length, skill_depth
 
 
 def split_dataset(dataset, total_size, test_fraction, val_fraction=None):

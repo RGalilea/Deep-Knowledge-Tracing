@@ -16,8 +16,8 @@ class DKTModel(tf.keras.Model):
             and what the model expects.
     """
 
-    def __init__(self, nb_features, nb_skills, hidden_units=100, dropout_rate=0.2):
-        inputs = tf.keras.Input(shape=(None, nb_features), name='inputs')
+    def __init__(self, nb_features, hidden_units=100, dropout_rate=0.2):
+        inputs = tf.keras.Input(shape=(None, nb_features+1), name='inputs')
 
         x = tf.keras.layers.Masking(mask_value=data_util.MASK_VALUE)(inputs)
 
@@ -25,7 +25,7 @@ class DKTModel(tf.keras.Model):
                                  return_sequences=True,
                                  dropout=dropout_rate)(x)
 
-        dense = tf.keras.layers.Dense(nb_skills, activation='sigmoid')
+        dense = tf.keras.layers.Dense(1, activation='sigmoid')
         outputs = tf.keras.layers.TimeDistributed(dense, name='outputs')(x)
 
         super(DKTModel, self).__init__(inputs=inputs,
@@ -130,7 +130,7 @@ class DKTModel(tf.keras.Model):
                 and what the model expects.
         """
         return super(DKTModel, self).fit(x=dataset,
-                                         epochs=epochs,
+										 epochs=epochs,
                                          verbose=verbose,
                                          callbacks=callbacks,
                                          validation_data=validation_data,
@@ -138,7 +138,7 @@ class DKTModel(tf.keras.Model):
                                          initial_epoch=initial_epoch,
                                          steps_per_epoch=steps_per_epoch,
                                          validation_steps=validation_steps,
-                                         validation_freq=validation_freq)
+                                         validation_freq=validation_freq)#
 
     def evaluate(self,
                  dataset,
