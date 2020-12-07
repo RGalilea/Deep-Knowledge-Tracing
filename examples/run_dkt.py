@@ -48,6 +48,7 @@ def run(args):
     model.load_weights(args.w)
     model.evaluate(dataset=test_set, verbose=args.v)
     print("\n[--- TESTING DONE  ---]")
+    model.save('trained_model')
 
 
 def parse_args():
