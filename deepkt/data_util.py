@@ -31,7 +31,7 @@ def load_dataset(fn, batch_size=32, shuffle=True):
     # Step 2 - Enumerate skill id
     df['skill'], key = pd.factorize(df['skill_id'], sort=True)
     #df['problem'], key = pd.factorize(df['problem_id'], sort=True)
-    print('The key that relates the Ids is size:',key.size)
+    #print('The key that relates the Ids is size:',key.size)
     #print(df)
     # Step 3 - Cross skill id with answer to form a synthetic feature
     #df['skill_with_answer'] = df['skill'] * 2 + df['correct'] #I've found this kinda weird
@@ -52,7 +52,7 @@ def load_dataset(fn, batch_size=32, shuffle=True):
     )
 
     #for value in dataset.take(3):
-    print('debug 0:')
+    #print('debug 0:')
 
     if shuffle:
         dataset = dataset.shuffle(buffer_size=nb_users)
@@ -65,14 +65,15 @@ def load_dataset(fn, batch_size=32, shuffle=True):
 
     dataset = dataset.map( #(  #feat, #tf.one_hot(feat, depth=features_depth),
         lambda skill, label: (
-            tf.one_hot(skill, depth=skill_depth ),
-            tf.concat( values=[tf.one_hot(skill, depth=skill_depth ),
-             tf.expand_dims(label, -1)],
-             axis=-1
-            )
+            tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
+                              tf.expand_dims(label, -1)],
+                              axis=-1
+            ),
+            tf.expand_dims(label, -1)
         )
     )
-
+    #for value in dataset.take(1):
+    #   print('debug 0:',value)
     # Step 7 - Pad sequences per batch
     dataset = dataset.padded_batch(
         batch_size=batch_size,
@@ -80,9 +81,9 @@ def load_dataset(fn, batch_size=32, shuffle=True):
         padded_shapes=([None, None],[None, None]),
         drop_remainder=True
     ) #I probably have to change this
-    print('debug 2')
-    #for value3 in dataset.take(3):
-    #    print('debug 3:',value3)
+    #print('debug 2')
+    for value3 in dataset.take(3):
+        print('debug 3:',value3)
 
     length = nb_users // batch_size
     return dataset, length, skill_depth
