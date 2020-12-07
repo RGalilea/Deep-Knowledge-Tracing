@@ -1,23 +1,20 @@
 import argparse
-
 import tensorflow as tf
-
 from deepkt import deepkt, data_util, metrics
 
-
 def run(args):
-    dataset, length, nb_features, nb_skills = data_util.load_dataset(fn=args.f,
-                                                                     batch_size=args.batch_size,
-                                                                     shuffle=True)
-
+    print("[----- LOADING DATASET  ------]")
+    dataset, length, nb_features = data_util.load_dataset(fn=args.f,
+                                                          batch_size=args.batch_size,
+                                                          shuffle=True)
+    print("[----- DIVIDING DATASET  ------]")
     train_set, test_set, val_set = data_util.split_dataset(dataset=dataset,
                                                            total_size=length,
                                                            test_fraction=args.test_split,
                                                            val_fraction=args.val_split)
 
     print("[----- COMPILING  ------]")
-    model = deepkt.DKTModel(nb_features=nb_features,
-                            nb_skills=nb_skills,
+    model = deepkt.DKTModel(nb_problems=nb_features,
                             hidden_units=args.hidden_units,
                             dropout_rate=args.dropout_rate)
     model.compile(
@@ -90,7 +87,7 @@ def parse_args():
     train_group = parser.add_argument_group(title="Training arguments.")
     train_group.add_argument("--batch_size",
                              type=int,
-                             default=32,
+                             default=64,
                              help="number of elements to combine in a single batch.")
 
     train_group.add_argument("--epochs",
