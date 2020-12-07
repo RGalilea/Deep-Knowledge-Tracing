@@ -14,7 +14,7 @@ def run(args):
                                                            val_fraction=args.val_split)
 
     print("[----- COMPILING  ------]")
-    model = deepkt.DKTModel(nb_problems=nb_features,
+    model = deepkt.DKTModel(nb_features=nb_features,
                             hidden_units=args.hidden_units,
                             dropout_rate=args.dropout_rate)
     model.compile(
