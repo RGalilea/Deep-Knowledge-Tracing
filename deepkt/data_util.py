@@ -11,8 +11,6 @@ def load_dataset(fn, batch_size=32, shuffle=True):
 
     if "skill_id" not in df.columns:
         raise KeyError(f"The column 'skill_id' was not found on {fn}")
-    #if "problem_id" not in df.columns:
-    #   raise KeyError(f"The column 'problem_id' was not found on {fn}")
     if "correct" not in df.columns:
         raise KeyError(f"The column 'correct' was not found on {fn}")
     if "user_id" not in df.columns:
@@ -35,6 +33,7 @@ def load_dataset(fn, batch_size=32, shuffle=True):
     #print(df)
     # Step 3 - Cross skill id with answer to form a synthetic feature
     #df['skill_with_answer'] = df['skill'] * 2 + df['correct'] #I've found this kinda weird
+    #df['correct_answer'] = df['skill_id']/df['skill_id'] * df['correct']
 
     # Step 4 - Convert to a sequence per user id and shift features 1 timestep
     seq = df.groupby('user_id').apply(
@@ -62,18 +61,20 @@ def load_dataset(fn, batch_size=32, shuffle=True):
     #features_depth = df['skill_with_answer'].max() + 1
     skill_depth = df['skill'].max() + 1
     #problem_depth = df['problem'].max() + 1
-
+    for value in dataset.take(3):
+        print('debug 0:')
     dataset = dataset.map( #(  #feat, #tf.one_hot(feat, depth=features_depth),
         lambda skill, label: (
             tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
-                              tf.expand_dims(label, -1)],
-                              axis=-1
-            ),
-            tf.expand_dims(label, -1)
+                              tf.tensordot(a=tf.tensordot(a=tf.expand_dims(label,axis=1),b=tf.ones((1,tf.shape(label)[0])),axes=1),
+                                           b=tf.one_hot(skill,skill_depth),axes=1)],
+                              axis=-1),
+            tf.tensordot(a=tf.tensordot(a=tf.expand_dims(label, axis=1),b=tf.ones((1, tf.shape(label)[0])), axes=1),
+                         b=tf.one_hot(skill, skill_depth), axes=1)
         )
     )
-    #for value in dataset.take(1):
-    #   print('debug 0:',value)
+    for value in dataset.take(1):
+       print('debug 1:',value)
     # Step 7 - Pad sequences per batch
     dataset = dataset.padded_batch(
         batch_size=batch_size,
@@ -120,12 +121,13 @@ def split_dataset(dataset, total_size, test_fraction, val_fraction=None):
 
 def get_target(y_true, y_pred):
     # Get skills and labels from y_true
+    '''
     mask = 1. - tf.cast(tf.equal(y_true, MASK_VALUE), y_true.dtype)
     y_true = y_true * mask
 
     skills, y_true = tf.split(y_true, num_or_size_splits=[-1, 1], axis=-1)
 
     # Get predictions for each skill
-    y_pred = tf.reduce_sum(y_pred * skills, axis=-1, keepdims=True)
+    y_pred = tf.reduce_sum(y_pred * skills, axis=-1, keepdims=True)'''
 
     return y_true, y_pred
