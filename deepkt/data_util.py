@@ -60,17 +60,16 @@ def load_dataset(fn, batch_size=32, shuffle=True):
     # More info: https://github.com/tensorflow/tensorflow/issues/32142
     #features_depth = df['skill_with_answer'].max() + 1
     skill_depth = df['skill'].max() + 1
+    lower_triangle_gen = lambda size: tf.linalg.LinearOperatorLowerTriangular((tf.ones(shape=(size, size)))).to_dense()#[[float(int(j >= i)) for j in range(size)] for i in range(size)]
     #problem_depth = df['problem'].max() + 1
     for value in dataset.take(3):
         print('debug 0:')
     dataset = dataset.map( #(  #feat, #tf.one_hot(feat, depth=features_depth),
         lambda skill, label: (
             tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
-                              tf.tensordot(a=tf.tensordot(a=tf.expand_dims(label,axis=1),b=tf.ones((1,tf.shape(label)[0])),axes=1),
-                                           b=tf.one_hot(skill,skill_depth),axes=1)],
+                              tf.math.multiply(tf.one_hot(skill, skill_depth),tf.tensordot(a=tf.expand_dims(label,1),b=tf.ones((1,skill_depth)), axes=1))],
                               axis=-1),
-            tf.tensordot(a=tf.tensordot(a=tf.expand_dims(label, axis=1),b=tf.ones((1, tf.shape(label)[0])), axes=1),
-                         b=tf.one_hot(skill, skill_depth), axes=1)
+            tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),tf.tensordot(a=tf.expand_dims(label,1),b=tf.ones((1,skill_depth)), axes=1))),lower_triangle_gen(tf.shape(label)[0]),axes=1)),0,1)
         )
     )
     for value in dataset.take(1):
