@@ -88,7 +88,7 @@ def parse_args():
     train_group = parser.add_argument_group(title="Training arguments.")
     train_group.add_argument("--batch_size",
                              type=int,
-                             default=64,
+                             default=1,
                              help="number of elements to combine in a single batch.")
 
     train_group.add_argument("--epochs",
