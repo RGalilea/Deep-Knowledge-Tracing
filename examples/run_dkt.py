@@ -7,7 +7,7 @@ def run(args):
     #dataset, length, nb_features, label_key = data_util.load_dataset(fn=args.f,
     #                                                      batch_size=args.batch_size,
     #                                                      shuffle=True)
-    dataset, length, nb_features = data_util.load_dataset_criolla(fn='data/[demo_dkt] Respuestas.csv',
+    dataset, length, nb_features = data_util.load_dataset_criolla(fn=args.f,
                                                           batch_size=args.batch_size,
                                                           shuffle=True)
     print("[----- DIVIDING DATASET  ------]")
