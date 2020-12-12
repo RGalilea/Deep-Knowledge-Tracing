@@ -4,7 +4,10 @@ from deepkt import deepkt, data_util, metrics
 
 def run(args):
     print("[----- LOADING DATASET  ------]")
-    dataset, length, nb_features = data_util.load_dataset(fn=args.f,
+    #dataset, length, nb_features, label_key = data_util.load_dataset(fn=args.f,
+    #                                                      batch_size=args.batch_size,
+    #                                                      shuffle=True)
+    dataset, length, nb_features = data_util.load_dataset_criolla(fn='data/[demo_dkt] Respuestas.csv',
                                                           batch_size=args.batch_size,
                                                           shuffle=True)
     print("[----- DIVIDING DATASET  ------]")
@@ -48,7 +51,7 @@ def run(args):
     model.load_weights(args.w)
     model.evaluate(dataset=test_set, verbose=args.v)
     print("\n[--- TESTING DONE  ---]")
-    model.save('trained_model')
+    #model.save('trained_model')
 
 
 def parse_args():
