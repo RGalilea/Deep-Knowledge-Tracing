@@ -5,7 +5,7 @@ import numpy as np
 
 MASK_VALUE = -1.  # The masking value cannot be zero.
 
-def load_dataset_criolla(fn, batch_size=32, shuffle=True):
+def load_dataset_criolla(fn, batch_size=32, shuffle=True, labels=False):
     df = pd.read_csv(fn)
     if "pregunta_id" not in df.columns:
         raise KeyError(f"The column 'skill_id' was not found on {fn}")
@@ -21,15 +21,13 @@ def load_dataset_criolla(fn, batch_size=32, shuffle=True):
     df = df.groupby('usuario_id').filter(lambda q: len(q) > 1).copy()
 
     # Step 2 - Enumerate skill id
-    df['pregunta'], _ = pd.factorize(df['pregunta_id'], sort=True)
+    df['pregunta'], label_key = pd.factorize(df['pregunta_id'], sort=True)
     #key = df.groupby('pregunta').apply(lambda r: r['skill_name'].values[0:1]) # there are no labels in this dataset
 
     # Step 4 - Convert to a sequence per user id and shift features 1 timestep
     seq = df.groupby('usuario_id').apply(
-        lambda r: (  # r['skill_with_answer'].values[:-1],
-            r['pregunta'].values[1:],
-            r['correcta'].values[1:]
-        )
+        lambda r: ( r['pregunta'].values[1:],
+                    r['correcta'].values[1:] )
     )
     nb_users = len(seq)
 
@@ -72,8 +70,115 @@ def load_dataset_criolla(fn, batch_size=32, shuffle=True):
     )
 
     length = nb_users // batch_size
-    return dataset, length, skill_depth
+    if labels:
+        df2 = pd.read_csv("data/[demo_dkt] Clasificaciones.csv")
+        dixy = df2.groupby('pregunta_id').apply(
+            lambda r:  (r['clasificacion_tipo'].values[1:],
+                        r['clasificacion'].values[1:])
+        )
+        #aux_key=[]
+        desired_field="nivel 2 prueba de transición"
 
+        key=pd.DataFrame()
+        for i in range(skill_depth):
+            aux_row=pd.DataFrame( dixy.iloc[i][1][dixy.iloc[i][0] == desired_field] )
+            key=pd.concat([key,aux_row], ignore_index=True)
+
+    return dataset, length, skill_depth, key
+
+
+def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel 1 prueba de transición'):
+    df = pd.read_csv(fn)
+    df2 = pd.read_csv(fn[:-14]+'Clasificaciones.csv')
+
+    if "pregunta_id" not in df.columns:
+        raise KeyError(f"The column 'pregunta_id' was not found on {fn}")
+    if "correcta" not in df.columns:
+        raise KeyError(f"The column 'correct' was not found on {fn}")
+    if "usuario_id" not in df.columns:
+        raise KeyError(f"The column 'user_id' was not found on {fn}")
+    if "pregunta_id" not in df2.columns:
+        raise KeyError(f"The column 'pregunta_id' was not found on {fn[:-14]+'Clasificaciones.csv'}")
+    if "pregunta_id" not in df2.columns:
+        raise KeyError(f"The column 'clasificacion_tipo' was not found on {fn[:-14]+'Clasificaciones.csv'}")
+    if "pregunta_id" not in df2.columns:
+        raise KeyError(f"The column 'clasificacion' was not found on {fn[:-14]+'Clasificaciones.csv'}")
+
+    if not (df['correcta'].isin([0, 1])).all():
+        raise KeyError(f"The values of the column 'correcta' must be 0 or 1.")
+
+
+    n1_dict = {}
+    n2_dict = {}
+    n3_dict = {}
+
+    for i in range( len( df2['pregunta_id'] )  ):
+        if df2['clasificacion_tipo'][i]=='nivel 1 prueba de transición' :
+            n1_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
+        elif df2['clasificacion_tipo'][i]=='nivel 2 prueba de transición' :
+            n2_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
+        elif df2['clasificacion_tipo'][i]=='nivel 3 prueba de transición' :
+            n3_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
+
+    df['nivel 1 prueba de transición']=df['pregunta_id'].map(n1_dict)
+    df['nivel 2 prueba de transición'] = df['pregunta_id'].map(n2_dict)
+    df['nivel 3 prueba de transición'] = df['pregunta_id'].map(n3_dict)
+
+    # Step 1 - Remove users with a single answer
+    df = df.groupby('usuario_id').filter(lambda q: len(q) > 1).copy()
+
+    # Step 2 - Enumerate skill id
+    df['pregunta'], label_key = pd.factorize(df[level], sort=True)
+    # key = df.groupby('pregunta').apply(lambda r: r['skill_name'].values[0:1]) # there are no labels in this dataset
+
+    # Step 4 - Convert to a sequence per user id and shift features 1 timestep
+    seq = df.groupby('usuario_id').apply(
+        lambda r: (r['pregunta'].values[1:],
+                   r['correcta'].values[1:])
+    )
+    nb_users = len(seq)
+
+    # Step 5 - Get Tensorflow Dataset
+    dataset = tf.data.Dataset.from_generator(
+        generator=lambda: seq,
+        output_types=(tf.int32, tf.float32)  # tf.int32,
+    )
+
+    # for value in dataset.take(3):
+    # print('debug 0:')
+
+    if shuffle:
+        dataset = dataset.shuffle(buffer_size=nb_users)
+
+    skill_depth = df['pregunta'].max() + 1
+    lower_triangle_gen = lambda size: tf.linalg.LinearOperatorLowerTriangular((tf.ones(shape=(size, size)))).to_dense()
+
+    dataset = dataset.map(  # (  #feat, #tf.one_hot(feat, depth=features_depth),
+        lambda skill, label: (
+            tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
+                              tf.math.multiply(tf.one_hot(skill, skill_depth),
+                                               tf.tensordot(a=tf.expand_dims(label, 1), b=tf.ones((1, skill_depth)),
+                                                            axes=1))],
+                      axis=-1),
+            tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),
+                                                                                     tf.tensordot(
+                                                                                         a=tf.expand_dims(label, 1),
+                                                                                         b=tf.ones((1, skill_depth)),
+                                                                                         axes=1))),
+                                                       lower_triangle_gen(tf.shape(label)[0]), axes=1)), 0, 1)
+        )
+    )
+    # Step 7 - Pad sequences per batch
+    dataset = dataset.padded_batch(
+        batch_size=batch_size,
+        padding_values=(MASK_VALUE, MASK_VALUE),
+        padded_shapes=([None, None], [None, None]),
+        drop_remainder=True
+    )
+
+    length = nb_users // batch_size
+
+    return dataset, length, skill_depth, label_key
 
 def load_dataset(fn, batch_size=32, shuffle=True):
     df = pd.read_csv(fn)
@@ -90,7 +195,6 @@ def load_dataset(fn, batch_size=32, shuffle=True):
 
     # Step 1.1 - Remove questions without skill
     df.dropna(subset=['skill_id'], inplace=True)
-
 
     # Step 1.2 - Remove users with a single answer
     df = df.groupby('user_id').filter(lambda q: len(q) > 1).copy()
