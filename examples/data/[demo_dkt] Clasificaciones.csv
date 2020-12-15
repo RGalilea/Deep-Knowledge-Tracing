@@ -1,0 +1,2007 @@
+,pregunta_id,clasificacion_tipo,clasificacion
+0,172,aprendizaje esperado,AE 09
+1,172,actitud LGE,OA A
+2,172,indicador LOCE,<p>Utilizan modelos dados de función cuadrática para resolver problemas relativos a situaciones de cambio cuadrático.</p>
+3,172,unidad LOCE,Álgebra
+4,172,eje temático,Álgebra
+5,172,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+6,172,suficiencia,no suficiencia
+7,172,curso PSU,Tercero Medio
+8,172,eje temático LGE,Álgebra y funciones
+9,172,unidad LGE,Unidad 2
+10,172,objetivo de aprendizaje,OA 4 
+11,172,indicador LGE,"Resuelven algebraicamente las ecuaciones cuadráticas mediante varios métodos, como factorizar, completar al cuadrado y aplicar la fórmula."
+12,172,habilidad cognitiva LGE,Resolver problemas
+13,172,objetivo de aprendizaje,OA A 
+14,172,dificultad,Difícil
+15,172,curso,Segundo Medio
+16,172,nivel 1 prueba de transición,Álgebra y funciones
+17,172,nivel 2 prueba de transición,Ecuaciones de segundo grado
+18,172,nivel 3 prueba de transición,Resolución de ecuaciones de segundo grado.
+19,172,habilidad prueba de transición,Aplicar
+20,172,dificultad,Media
+21,172,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+22,172,Temas_mx,Multiplicación y división
+23,172,Bloque_mx,"Número, álgebra y variación"
+24,172,Curso MX,Segundo de secundaria
+25,172,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+26,172,Temas_mx,Multiplicación y división
+27,172,Bloque_mx,"Número, álgebra y variación"
+28,172,Curso MX,Segundo de secundaria
+29,172,Evidencias de aprendizaje_CO,Establece conjeturas apoyándose en las propiedades y relaciones de los números reales al resolver una situación problema.
+30,172,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+31,172,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+32,172,eje tematico colombia,Números y operaciones   
+33,172,Evidencias de aprendizaje_CO,"Reconoce en expresiones algebraicas las variables, opera con ellas y sobre ellas"
+34,172,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+35,172,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+36,172,eje tematico colombia,Patrones y Álgebra   
+37,172,Evidencias de aprendizaje_CO,Propone conjeturas sobre configuraciones geométricas o numéricas y las expresa verbal o simbólicamente.
+38,172,Derechos básicos de aprendizaje_CO,"Problemas numéricos, geométricos y métricos"
+39,174,suficiencia,no suficiencia
+40,174,dificultad,Media
+41,174,nivel 1 prueba de transición,Álgebra y funciones
+42,174,nivel 2 prueba de transición,Expresiones algebraicas
+43,174,nivel 3 prueba de transición,Productos notables.
+44,174,habilidad prueba de transición,Aplicar
+45,174,Subtemas_mx,Resuelve problemas de multiplicación y división con fracciones y decimales positivos.
+46,174,Temas_mx,Multiplicación y división
+47,174,Bloque_mx,"Número, álgebra y variación"
+48,174,Curso MX,Segundo de secundaria
+49,174,curso,Primero Medio
+50,174,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+51,174,Derechos básicos de aprendizaje_CO,Números reales
+52,174,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+53,174,eje tematico colombia,Números y operaciones   
+54,174,eje temático LGE,Álgebra y funciones
+55,174,unidad LGE,Unidad 2
+56,174,habilidad cognitiva LGE,Resolver problemas
+57,174,objetivo de aprendizaje,OA 3 
+58,174,objetivo de aprendizaje,OA B 
+59,174,indicador LGE,Aplican los productos notables en el desarrollo de expresiones algebraicas.
+60,441,aprendizaje esperado,AE 02
+61,441,componente,Componente numérico-variacional (9)
+62,441,nivel colombia,Noveno
+63,441,unidad LOCE,Números
+64,441,eje temático,Números
+65,441,habilidad cognitiva,Aplicación
+66,441,suficiencia,no suficiencia
+67,441,curso PSU,Primero Medio
+68,441,eje temático LGE,Números
+69,441,unidad LGE,Unidad 1
+70,441,objetivo de aprendizaje,OA 2 
+71,441,indicador LGE,Reconocen que la potencia de potencia es una multiplicación iterativa.
+72,441,habilidad cognitiva LGE,Resolver problemas
+73,441,objetivo de aprendizaje,OA A 
+74,441,dificultad,Fácil
+75,441,curso,Primero Medio
+76,441,nivel 1 prueba de transición,Números
+77,441,nivel 2 prueba de transición,"Potencias, raíces enésimas y logaritmos"
+78,441,nivel 3 prueba de transición,Propiedades de las potencias de base racional y exponente racional.
+79,441,habilidad prueba de transición,Aplicar
+80,441,Subtemas_mx,"Resuelve problemas de suma y resta con números enteros, fracciones y decimales positivos y negativos."
+81,441,Temas_mx,Adición y sustracción
+82,441,Bloque_mx,"Número, álgebra y variación"
+83,441,Curso MX,Primero de secundaria
+84,441,Subtemas_mx,"Resuelve problemas de suma y resta con números enteros, fracciones y decimales positivos y negativos."
+85,441,Temas_mx,Adición y sustracción
+86,441,Bloque_mx,"Número, álgebra y variación"
+87,441,Curso MX,Primero de secundaria
+88,441,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+89,441,Derechos básicos de aprendizaje_CO,Números reales
+90,441,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+91,441,eje tematico colombia,Números y operaciones   
+92,508,dificultad,Media
+93,508,suficiencia,no suficiencia
+94,508,mención,Común
+95,508,curso,Segundo Medio
+96,508,habilidad cognitiva,Aplicación
+97,508,objetivo de aprendizaje,OA 4 
+98,508,eje temático LGE,Álgebra y funciones
+99,508,actitud LGE,OA A
+100,508,objetivo de aprendizaje,OA 5 
+101,508,sub eje tematico,Ecuaciones de segundo grado
+102,508,eje temático,Álgebra
+103,508,curso PSU,Segundo Medio
+104,508,nivel 2 prueba de transición,Ecuaciones de segundo grado
+105,508,nivel 1 prueba de transición,Álgebra y funciones
+106,508,nivel 3 prueba de transición,Resolución de ecuaciones de segundo grado.
+107,508,habilidad prueba de transición,Aplicar
+108,508,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+109,508,Temas_mx,Multiplicación y división
+110,508,Bloque_mx,"Número, álgebra y variación"
+111,508,Curso MX,Segundo de secundaria
+112,508,Subtemas_mx,Resuelve problemas de proporcionalidad directa e inversa y de reparto proporcional.
+113,508,Temas_mx,Proporcionalidad
+114,508,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+115,508,Temas_mx,Multiplicación y división
+116,508,Bloque_mx,"Número, álgebra y variación"
+117,508,Curso MX,Segundo de secundaria
+118,508,Subtemas_mx,Resuelve problemas de proporcionalidad directa e inversa y de reparto proporcional.
+119,508,Temas_mx,Proporcionalidad
+120,508,Bloque_mx,"Número, álgebra y variación"
+121,508,Curso MX,Segundo de secundaria
+122,524,actitud LGE,OA A
+123,524,eje temático,Álgebra
+124,524,habilidad cognitiva,Aplicación
+125,524,suficiencia,no suficiencia
+126,524,curso PSU,Tercero Medio
+127,524,eje temático LGE,Álgebra y funciones
+128,524,unidad LGE,Unidad 2
+129,524,objetivo de aprendizaje,OA 4 
+130,524,indicador LGE,"Resuelven algebraicamente las ecuaciones cuadráticas mediante varios métodos, como factorizar, completar al cuadrado y aplicar la fórmula."
+131,524,habilidad cognitiva LGE,Resolver problemas
+132,524,objetivo de aprendizaje,OA A 
+133,524,dificultad,Media
+134,524,curso,Segundo Medio
+135,524,nivel 1 prueba de transición,Álgebra y funciones
+136,524,nivel 2 prueba de transición,Ecuaciones de segundo grado
+137,524,nivel 3 prueba de transición,Resolución de ecuaciones de segundo grado.
+138,524,habilidad prueba de transición,Aplicar
+139,524,dificultad,Fácil
+140,524,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+141,524,Temas_mx,Multiplicación y división
+142,524,Bloque_mx,"Número, álgebra y variación"
+143,524,Curso MX,Segundo de secundaria
+144,524,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+145,524,Temas_mx,Multiplicación y división
+146,524,Bloque_mx,"Número, álgebra y variación"
+147,524,Curso MX,Segundo de secundaria
+148,524,Evidencias de aprendizaje_CO,Establece conjeturas apoyándose en las propiedades y relaciones de los números reales al resolver una situación problema.
+149,524,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+150,524,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+151,524,eje tematico colombia,Números y operaciones   
+152,524,Evidencias de aprendizaje_CO,"Reconoce en expresiones algebraicas las variables, opera con ellas y sobre ellas"
+153,524,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+154,524,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+155,524,eje tematico colombia,Patrones y Álgebra   
+156,524,Evidencias de aprendizaje_CO,Propone conjeturas sobre configuraciones geométricas o numéricas y las expresa verbal o simbólicamente.
+157,524,Derechos básicos de aprendizaje_CO,"Problemas numéricos, geométricos y métricos"
+158,540,componente,Componente numérico-variacional (9)
+159,540,nivel colombia,Noveno
+160,540,suficiencia,no suficiencia
+161,540,dificultad,Difícil
+162,540,nivel 1 prueba de transición,Álgebra y funciones
+163,540,nivel 2 prueba de transición,Ecuaciones e inecuaciones de primer grado
+164,540,nivel 3 prueba de transición,Resolución de ecuaciones lineales.
+165,540,habilidad prueba de transición,Aplicar
+166,540,dificultad,Media
+167,543,dificultad,Difícil
+168,543,suficiencia,no suficiencia
+169,543,componente,Componente numérico-variacional (7)
+170,543,nivel colombia,Séptimo
+171,543,nivel 2 prueba de transición,Ecuaciones e inecuaciones de primer grado
+172,543,nivel 1 prueba de transición,Álgebra y funciones
+173,543,nivel 3 prueba de transición,Problemas que involucren ecuaciones lineales en diversos contextos.
+174,543,habilidad prueba de transición,Aplicar
+175,543,dificultad,Media
+176,543,habilidad prueba de transición,Resolver problemas
+177,543,curso,Octavo Básico
+178,543,eje temático LGE,Álgebra y funciones
+179,543,unidad LGE,Unidad 2
+180,543,indicador LGE,"<p>Resuelven problemas cotidianos, utilizando ecuaciones e inecuaciones.</p>"
+181,543,objetivo de aprendizaje,OA 8 
+182,543,habilidad cognitiva LGE,Resolver problemas
+183,543,objetivo de aprendizaje,OA A 
+184,543,Evidencias de aprendizaje_CO,"Plantea modelos algebraicos, gráficos o numéricos en los que identifica las variables y sus rangos de variación"
+185,543,Derechos básicos de aprendizaje_CO,Ecuaciones
+186,543,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+187,543,eje tematico colombia,Patrones y Álgebra   
+188,543,Evidencias de aprendizaje_CO,"Propone, ejecuta y argumenta la validez o no de procedimientos utilizados para resolver una ecuación lineal y sistemas de ecuaciones lineales"
+189,543,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+190,543,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+191,543,eje tematico colombia,Números y operaciones   
+192,543,Evidencias de aprendizaje_CO,Opera con formas simbólicas que representan cantidades.
+193,543,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+194,543,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+195,543,eje tematico colombia,Patrones y Álgebra   
+196,543,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+197,560,suficiencia,no suficiencia
+198,560,nivel 2 prueba de transición,Medidas de tendencia central y rango
+199,560,nivel 3 prueba de transición,Problemas que involucren medidas de tendencia central y rango en diversos contextos.
+200,560,nivel 1 prueba de transición,Probabilidad y estadística
+201,560,Temas_mx,Estadística
+202,560,Temas_mx,Estadística
+203,560,Bloque_mx,Análisis de datos
+204,560,Bloque_mx,Análisis de datos
+205,560,dificultad,Media
+206,560,habilidad prueba de transición,Comprender
+207,959,eje temático,Geometría
+208,959,habilidad cognitiva,Aplicación
+209,959,suficiencia,no suficiencia
+210,959,curso PSU,Tercero Medio
+211,959,eje temático LGE,Álgebra y funciones
+212,959,unidad LGE,Unidad 2
+213,959,objetivo de aprendizaje,OA 10
+214,959,indicador LGE,"<p>Elaboran, basados en los gráficos, la ecuación de la función afín $f(x) = a ? x + b$.</p>"
+215,959,habilidad cognitiva LGE,Resolver problemas
+216,959,objetivo de aprendizaje,OA A 
+217,959,dificultad,Media
+218,959,curso,Octavo Básico
+219,959,nivel 1 prueba de transición,Geometría
+220,959,nivel 2 prueba de transición,Geometría analítica en 2D
+221,959,nivel 3 prueba de transición,Ecuación de una recta.
+222,959,habilidad prueba de transición,Aplicar
+223,959,Evidencias de aprendizaje_CO,"Toma decisiones informadas a partir de exploraciones numéricas, algebraicas o gráficas de los modelos matemáticos usados"
+224,959,Derechos básicos de aprendizaje_CO,Ecuaciones
+225,959,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+226,959,eje tematico colombia,Patrones y Álgebra   
+227,959,Evidencias de aprendizaje_CO,Identifica la diferencia entre exactitud y aproximación en las diferentes representaciones de los números reales.
+228,959,Derechos básicos de aprendizaje_CO,Números reales
+229,959,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+230,959,eje tematico colombia,Números y operaciones   
+231,959,Evidencias de aprendizaje_CO,Interpreta expresiones numéricas y toma decisiones con base en su interpretación.
+232,959,Derechos básicos de aprendizaje_CO,"Problemas numéricos, geométricos y métricos"
+233,959,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+234,959,eje tematico colombia,Patrones y Álgebra   
+235,1074,suficiencia,no suficiencia
+236,1074,dificultad,Media
+237,1074,nivel 2 prueba de transición,Medidas de tendencia central y rango
+238,1074,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+239,1074,nivel 1 prueba de transición,Probabilidad y estadística
+240,1074,Evidencias de aprendizaje_CO,"Calcula las medidas requeridas de acuerdo a los datos recolectados y usa, cuando sea posible, calculadoras o software adecuado."
+241,1074,Derechos básicos de aprendizaje_CO,Información estadística
+242,1074,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+243,1074,eje tematico colombia,Datos y probabilidad
+244,1074,Evidencias de aprendizaje_CO,"Describe el comportamiento de las características de dos o más poblaciones o de dos o más grupos de una población, a partir de las respectivas medidas de tendencia central y el rango."
+245,1074,Derechos básicos de aprendizaje_CO,Tendencia central y rango
+246,1074,Evidencias de aprendizaje_CO,"Encuentra e interpreta las medidas de tendencia central y el rango en datos agrupados, empleando herramientas tecnológicas cuando sea posible."
+247,1074,Derechos básicos de aprendizaje_CO,"Histogramas, polígonos de frecuencia y gráficos para identificar variaciones, relaciones o tendencias"
+248,1074,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+249,1074,eje tematico colombia,Datos y probabilidad
+250,1074,Evidencias de aprendizaje_CO,"Analiza la información presentada identificando variaciones, relaciones o tendencias y elabora conclusiones que permiten responder la pregunta planteada"
+251,1074,Evidencias de aprendizaje_CO,"""Usa estrategias gráficas o numéricas para encontrar las medidas de tendencia central de un conjunto de datos agrupados"""
+252,1074,Derechos básicos de aprendizaje_CO,Intervalos y medida de tendencia central
+253,1074,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+254,1074,eje tematico colombia,Datos y probabilidad
+255,1074,Evidencias de aprendizaje_CO,Describe el comportamiento de los datos agrupados empleando las medidas de tendencia central y el rango.
+256,1074,Evidencias de aprendizaje_CO,Reconoce cómo varían las medidas de tendencia central y el rango cuando varían los datos.
+257,1074,nivel 3 prueba de transición,Problemas que involucren medidas de tendencia central y rango en diversos contextos.
+258,1077,eje temático,Datos y azar
+259,1077,habilidad cognitiva,Comprensión
+260,1077,suficiencia,no suficiencia
+261,1077,eje temático LGE,Probabilidad y estadística
+262,1077,unidad LGE,Unidad 4
+263,1077,objetivo de aprendizaje,OA 14 
+264,1077,indicador LGE,Resuelven problemas de la vida diaria que involucran las reglas aditiva y multiplicativa.
+265,1077,habilidad cognitiva LGE,Resolver problemas
+266,1077,dificultad,Media
+267,1077,curso,Primero Medio
+268,1077,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+269,1077,habilidad prueba de transición,Aplicar
+270,1077,nivel 1 prueba de transición,Probabilidad y estadística
+271,1077,Evidencias de aprendizaje_CO,"Encuentra el número de posibles resultados de un experimento aleatorio usando métodos adecuados (diagramas de árbol, combinaciones, permutaciones, regla de la multiplicación, entre otros)."
+272,1077,Derechos básicos de aprendizaje_CO,Experimentos aleatorios con y sin remplazo
+273,1077,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+274,1077,eje tematico colombia,Datos y probabilidad
+275,1077,objetivo de aprendizaje,OA A 
+276,1077,nivel 3 prueba de transición,Problemas que involucren la regla aditiva y multiplicativa de probabilidades en diversos contextos.
+277,1309,suficiencia,no suficiencia
+278,1309,eje temático LGE,Números
+279,1309,unidad LGE,Unidad 1
+280,1309,objetivo de aprendizaje,OA 1 
+281,1309,indicador LGE,"Identifican el tipo de número, racional, entero y natural, y las operaciones involucradas."
+282,1309,habilidad cognitiva LGE,Resolver problemas
+283,1309,objetivo de aprendizaje,OA A 
+284,1309,curso,Primero Medio
+285,1309,nivel 1 prueba de transición,Números
+286,1309,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+287,1309,nivel 3 prueba de transición,"Operaciones y orden en el conjunto de los números enteros, racionales y reales."
+288,1309,habilidad prueba de transición,Aplicar
+289,1309,Subtemas_mx,"Determina y usa la jerarquía de operaciones y los paréntesis en operaciones con números naturales, enteros y decimales (para multiplicación y división, solo números positivos)."
+290,1309,Temas_mx,Multiplicación y división
+291,1309,Bloque_mx,"Número, álgebra y variación"
+292,1309,Curso MX,Primero de secundaria
+293,1309,Subtemas_mx,"Resuelve problemas de suma y resta con números enteros, fracciones y decimales positivos y negativos."
+294,1309,Temas_mx,Adición y sustracción
+295,1309,dificultad,Media
+296,1309,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+297,1309,Derechos básicos de aprendizaje_CO,Números reales
+298,1309,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+299,1309,eje tematico colombia,Números y operaciones   
+300,1471,eje temático,Números
+301,1471,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+302,1471,suficiencia,no suficiencia
+303,1471,curso PSU,Primero Medio
+304,1471,eje temático LGE,Números
+305,1471,unidad LGE,Unidad 1
+306,1471,objetivo de aprendizaje,OA 1 
+307,1471,indicador LGE,"Realizan operaciones mixtas con números racionales, respetando la jerarquía de las operaciones y los paréntesis."
+308,1471,habilidad cognitiva LGE,Resolver problemas
+309,1471,objetivo de aprendizaje,OA A 
+310,1471,dificultad,Fácil
+311,1471,curso,Primero Medio
+312,1471,nivel 1 prueba de transición,Números
+313,1471,nivel 2 prueba de transición,Porcentaje
+314,1471,nivel 3 prueba de transición,Problemas que involucren porcentaje en diversos contextos.
+315,1471,Subtemas_mx,"Determina y usa la jerarquía de operaciones y los paréntesis en operaciones con números naturales, enteros y decimales (para multiplicación y división, solo números positivos)."
+316,1471,Temas_mx,Multiplicación y división
+317,1471,Bloque_mx,"Número, álgebra y variación"
+318,1471,Curso MX,Primero de secundaria
+319,1471,Subtemas_mx,"Resuelve problemas de suma y resta con números enteros, fracciones y decimales positivos y negativos."
+320,1471,Temas_mx,Adición y sustracción
+321,1471,habilidad prueba de transición,Argumentar
+322,1471,Evidencias de aprendizaje_CO,Considera el error que genera la aproximación de un número real a partir de números racionales.
+323,1471,Derechos básicos de aprendizaje_CO,Números reales
+324,1471,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+325,1471,eje tematico colombia,Números y operaciones   
+326,1471,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+327,1661,aprendizaje esperado,AE 04
+328,1661,unidad LOCE,Álgebra
+329,1661,eje temático,Álgebra
+330,1661,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+331,1661,suficiencia,no suficiencia
+332,1661,curso PSU,Primero Medio
+333,1661,eje temático LGE,Álgebra y funciones
+334,1661,unidad LGE,Unidad 2
+335,1661,objetivo de aprendizaje,OA 4 
+336,1661,indicador LGE,Transforman ecuaciones de la forma ax + by = c a la forma y = – a b ? x + c b reconociendo la función afín.
+337,1661,habilidad cognitiva LGE,Representar
+338,1661,objetivo de aprendizaje,OA L 
+339,1661,dificultad,Media
+340,1661,curso,Primero Medio
+341,1661,nivel 1 prueba de transición,Álgebra y funciones
+342,1661,nivel 2 prueba de transición,Función lineal y afín
+343,1661,nivel 3 prueba de transición,Problemas que involucren función lineal y función afín en diversos contextos.
+344,1661,habilidad prueba de transición,Modelar
+345,1661,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+346,1661,Temas_mx,Proporcionalidad
+347,1661,Bloque_mx,"Número, álgebra y variación"
+348,1661,Curso MX,Primero de secundaria
+349,1661,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+350,1661,Temas_mx,Proporcionalidad
+351,1661,Bloque_mx,"Número, álgebra y variación"
+352,1661,Curso MX,Primero de secundaria
+353,1661,Evidencias de aprendizaje_CO,"Propone, ejecuta y argumenta la validez o no de procedimientos utilizados para resolver una ecuación lineal y sistemas de ecuaciones lineales"
+354,1661,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+355,1661,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+356,1661,eje tematico colombia,Números y operaciones   
+357,1661,Evidencias de aprendizaje_CO,Opera con formas simbólicas que representan cantidades.
+358,1661,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+359,1661,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+360,1661,eje tematico colombia,Patrones y Álgebra   
+361,1661,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+362,1661,Evidencias de aprendizaje_CO,"""Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."""
+363,1661,Derechos básicos de aprendizaje_CO,Funciones
+364,1661,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+365,1661,eje tematico colombia,Patrones y Álgebra   
+366,1662,aprendizaje esperado,AE 04
+367,1662,unidad LOCE,Álgebra
+368,1662,eje temático,Geometría
+369,1662,habilidad cognitiva,Comprensión
+370,1662,suficiencia,no suficiencia
+371,1662,curso PSU,Tercero Medio
+372,1662,eje temático LGE,Álgebra y funciones
+373,1662,unidad LGE,Unidad 2
+374,1662,objetivo de aprendizaje,OA 4 
+375,1662,indicador LGE,Transforman ecuaciones de la forma ax + by = c a la forma y = – a b ? x + c b reconociendo la función afín.
+376,1662,habilidad cognitiva LGE,Representar
+377,1662,objetivo de aprendizaje,OA L 
+378,1662,dificultad,Media
+379,1662,curso,Primero Medio
+380,1662,nivel 1 prueba de transición,Álgebra y funciones
+381,1662,nivel 2 prueba de transición,Función lineal y afín
+382,1662,nivel 3 prueba de transición,Problemas que involucren función lineal y función afín en diversos contextos.
+383,1662,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+384,1662,Temas_mx,Proporcionalidad
+385,1662,Bloque_mx,"Número, álgebra y variación"
+386,1662,Curso MX,Primero de secundaria
+387,1662,habilidad prueba de transición,Resolver problemas
+388,1662,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+389,1662,Temas_mx,Proporcionalidad
+390,1662,Bloque_mx,"Número, álgebra y variación"
+391,1662,Curso MX,Primero de secundaria
+392,1662,Evidencias de aprendizaje_CO,"Propone, ejecuta y argumenta la validez o no de procedimientos utilizados para resolver una ecuación lineal y sistemas de ecuaciones lineales"
+393,1662,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+394,1662,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+395,1662,eje tematico colombia,Números y operaciones   
+396,1662,Evidencias de aprendizaje_CO,Opera con formas simbólicas que representan cantidades.
+397,1662,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+398,1662,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+399,1662,eje tematico colombia,Patrones y Álgebra   
+400,1662,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+401,1662,Evidencias de aprendizaje_CO,"""Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."""
+402,1662,Derechos básicos de aprendizaje_CO,Funciones
+403,1662,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+404,1662,eje tematico colombia,Patrones y Álgebra   
+405,1674,eje temático,Geometría
+406,1674,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+407,1674,suficiencia,no suficiencia
+408,1674,curso PSU,Segundo Medio
+409,1674,eje temático LGE,Geometría
+410,1674,unidad LGE,Unidad 3
+411,1674,objetivo de aprendizaje,OA 9 
+412,1674,indicador LGE,"Resuelven problemas geométricos, de la vida diaria y de otras asignaturas, que involucran los teoremas de Tales n° 1 y n° 2."
+413,1674,habilidad cognitiva LGE,Representar
+414,1674,objetivo de aprendizaje,OA L 
+415,1674,dificultad,Media
+416,1674,curso,Primero Medio
+417,1674,nivel 1 prueba de transición,Geometría
+418,1674,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+419,1674,nivel 3 prueba de transición,Problemas que involucren el Teorema de Thales en diversos contextos.
+420,1674,habilidad prueba de transición,Aplicar
+421,1674,dificultad,Fácil
+422,1674,Subtemas_mx,Formula expresiones algebraicas de primer grado a partir de sucesiones y las utiliza para analizar propiedades de la sucesión que representan.
+423,1674,Temas_mx,"Patrones, figuras geométricas y expresiones equivalentes"
+424,1674,Bloque_mx,"Número, álgebra y variación"
+425,1674,Curso MX,Primero de secundaria
+426,1674,Evidencias de aprendizaje_CO,Resuelve problemas utilizando teoremas básicos.
+427,1674,Derechos básicos de aprendizaje_CO,Teoremas de figuras geométricas
+428,1674,Categoría organizadora_CO,Espacial y sistemas geométricos     
+429,1674,eje tematico colombia,Geometría
+430,1674,Evidencias de aprendizaje_CO,Explica criterios de semejanza y congruencia a partir del Teorema de Thales.
+431,1674,Derechos básicos de aprendizaje_CO,Regularidades de las figuras bidimensionales
+432,1674,Categoría organizadora_CO,Espacial y sistemas geométricos     
+433,1674,eje tematico colombia,Geometría
+434,1800,suficiencia,suficiencia
+435,1800,nivel 1 prueba de transición,Geometría
+436,1800,nivel 2 prueba de transición,Transformaciones isométricas
+437,1800,nivel 3 prueba de transición,"Rotación, traslación y reflexión de figuras geométricas."
+438,1800,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+439,1800,dificultad,Media
+440,1800,Evidencias de aprendizaje_CO,"""Reconoce e interpreta la representación grafica de un objeto desde diferentes puntos de vista."""
+441,1800,Derechos básicos de aprendizaje_CO,"Rotaciones, traslaciones y reflexiones de figuras tridimensionales"
+442,1800,Categoría organizadora_CO,Espacial y sistemas geométricos     
+443,1800,eje tematico colombia,Geometría
+444,1800,Evidencias de aprendizaje_CO,Describe verbal y simbólicamente procesos de desplazamiento y trayectorias
+445,1800,Derechos básicos de aprendizaje_CO,Posición y trayectoria
+446,1800,Categoría organizadora_CO,Espacial y sistemas geométricos     
+447,1800,eje tematico colombia,Geometría
+448,1851,suficiencia,no suficiencia
+449,1851,nivel 2 prueba de transición,Medidas de tendencia central y rango
+450,1851,nivel 3 prueba de transición,Problemas que involucren medidas de tendencia central y rango en diversos contextos.
+451,1851,habilidad prueba de transición,Comprender
+452,1851,dificultad,Difícil
+453,1851,nivel 1 prueba de transición,Probabilidad y estadística
+454,1851,Evidencias de aprendizaje_CO,"Calcula las medidas requeridas de acuerdo a los datos recolectados y usa, cuando sea posible, calculadoras o software adecuado."
+455,1851,Derechos básicos de aprendizaje_CO,Información estadística
+456,1851,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+457,1851,eje tematico colombia,Datos y probabilidad
+458,1851,Evidencias de aprendizaje_CO,Comprende la diferencia entre la muestra y la población.
+459,1851,Derechos básicos de aprendizaje_CO,Tendencia central y rango
+460,1851,Evidencias de aprendizaje_CO,"Describe el comportamiento de las características de dos o más poblaciones o de dos o más grupos de una población, a partir de las respectivas medidas de tendencia central y el rango."
+461,1851,Evidencias de aprendizaje_CO,"Encuentra e interpreta las medidas de tendencia central y el rango en datos agrupados, empleando herramientas tecnológicas cuando sea posible."
+462,1851,Derechos básicos de aprendizaje_CO,"Histogramas, polígonos de frecuencia y gráficos para identificar variaciones, relaciones o tendencias"
+463,1851,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+464,1851,eje tematico colombia,Datos y probabilidad
+465,1851,Evidencias de aprendizaje_CO,"Analiza la información presentada identificando variaciones, relaciones o tendencias y elabora conclusiones que permiten responder la pregunta planteada"
+466,1851,Evidencias de aprendizaje_CO,"""Usa estrategias gráficas o numéricas para encontrar las medidas de tendencia central de un conjunto de datos agrupados"""
+467,1851,Derechos básicos de aprendizaje_CO,Intervalos y medida de tendencia central
+468,1851,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+469,1851,eje tematico colombia,Datos y probabilidad
+470,1851,Evidencias de aprendizaje_CO,Describe el comportamiento de los datos agrupados empleando las medidas de tendencia central y el rango.
+471,1851,Evidencias de aprendizaje_CO,Reconoce cómo varían las medidas de tendencia central y el rango cuando varían los datos.
+472,5934,suficiencia,no suficiencia
+473,5934,nivel 2 prueba de transición,Transformaciones isométricas
+474,5934,nivel 1 prueba de transición,Geometría
+475,5934,nivel 3 prueba de transición,Puntos y vectores en el plano cartesiano.
+476,5934,habilidad prueba de transición,Aplicar
+477,5934,dificultad,Fácil
+478,6061,eje temático,Geometría
+479,6061,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+480,6061,suficiencia,no suficiencia
+481,6061,curso PSU,Cuarto Medio
+482,6061,eje temático LGE,Geometría
+483,6061,unidad LGE,Unidad 3
+484,6061,objetivo de aprendizaje,OA 14 
+485,6061,indicador LGE,"<p>Reconocen transformaciones isométricas dadas en el plano, identificando puntos importantes, como vector de traslación, centro de rotación, ángulo de rotación, eje o punto de reflexión.</p>"
+486,6061,habilidad cognitiva LGE,Resolver problemas
+487,6061,objetivo de aprendizaje,OA B 
+488,6061,dificultad,Media
+489,6061,curso,Octavo Básico
+490,6061,nivel 1 prueba de transición,Geometría
+491,6061,nivel 2 prueba de transición,Transformaciones isométricas
+492,6061,nivel 3 prueba de transición,"Rotación, traslación y reflexión de figuras geométricas."
+493,6061,dificultad,Fácil
+494,6061,habilidad prueba de transición,Representar
+495,6061,Evidencias de aprendizaje_CO,"""Reconoce e interpreta la representación grafica de un objeto desde diferentes puntos de vista."""
+496,6061,Derechos básicos de aprendizaje_CO,"Rotaciones, traslaciones y reflexiones de figuras tridimensionales"
+497,6061,Categoría organizadora_CO,Espacial y sistemas geométricos     
+498,6061,eje tematico colombia,Geometría
+499,6061,Evidencias de aprendizaje_CO,Describe verbal y simbólicamente procesos de desplazamiento y trayectorias
+500,6061,Derechos básicos de aprendizaje_CO,Posición y trayectoria
+501,6061,Categoría organizadora_CO,Espacial y sistemas geométricos     
+502,6061,eje tematico colombia,Geometría
+503,10925,suficiencia,no suficiencia
+504,10925,eje temático LGE,Álgebra y funciones
+505,10925,unidad LGE,Unidad 1
+506,10925,objetivo de aprendizaje,OA 3 
+507,10925,indicador LGE,Aplican los productos notables en el desarrollo de expresiones algebraicas.
+508,10925,habilidad cognitiva LGE,Argumentar y comunicar
+509,10925,objetivo de aprendizaje,OA F 
+510,10925,dificultad,Fácil
+511,10925,curso,Primero Medio
+512,10925,nivel 1 prueba de transición,Álgebra y funciones
+513,10925,nivel 2 prueba de transición,Expresiones algebraicas
+514,10925,habilidad prueba de transición,Aplicar
+515,10925,dificultad,Difícil
+516,10925,Subtemas_mx,Resuelve problemas de multiplicación con fracciones y decimales y de división con decimales.
+517,10925,Temas_mx,Multiplicación y división
+518,10925,Bloque_mx,"Número, álgebra y variación"
+519,10925,Curso MX,Primero de secundaria
+520,10925,nivel 3 prueba de transición,Productos notables.
+521,10925,habilidad prueba de transición,Argumentar
+522,10925,Evidencias de aprendizaje_CO,Reconoce el uso del signo igual como relación de equivalencia de expresiones algebraicas en los números reales.
+523,10925,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+524,10925,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+525,10925,eje tematico colombia,Números y operaciones   
+526,10925,Evidencias de aprendizaje_CO,Establece conjeturas apoyándose en las propiedades y relaciones de los números reales al resolver una situación problema.
+527,10925,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+528,10925,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+529,10925,eje tematico colombia,Números y operaciones   
+530,10925,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+531,10925,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+532,10925,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+533,10925,eje tematico colombia,Patrones y Álgebra   
+534,11053,eje temático,Números
+535,11053,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+536,11053,suficiencia,no suficiencia
+537,11053,curso PSU,Primero Medio
+538,11053,eje temático LGE,Números
+539,11053,unidad LGE,Unidad 1
+540,11053,objetivo de aprendizaje,OA 1 
+541,11053,indicador LGE,"Identifican el tipo de número, racional, entero y natural, y las operaciones involucradas."
+542,11053,habilidad cognitiva LGE,Argumentar y comunicar
+543,11053,objetivo de aprendizaje,OA D 
+544,11053,dificultad,Media
+545,11053,curso,Primero Medio
+546,11053,nivel 1 prueba de transición,Números
+547,11053,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+548,11053,nivel 3 prueba de transición,"Operaciones y orden en el conjunto de los números enteros, racionales y reales."
+549,11053,habilidad prueba de transición,Comprender
+550,11053,dificultad,Fácil
+551,11053,Subtemas_mx,"Determina y usa la jerarquía de operaciones y los paréntesis en operaciones con números naturales, enteros y decimales (para multiplicación y división, solo números positivos)."
+552,11053,Temas_mx,Multiplicación y división
+553,11053,Bloque_mx,"Número, álgebra y variación"
+554,11053,Curso MX,Primero de secundaria
+555,11053,Subtemas_mx,"Resuelve problemas de suma y resta con números enteros, fracciones y decimales positivos y negativos."
+556,11053,Temas_mx,Adición y sustracción
+557,11053,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+558,11053,Derechos básicos de aprendizaje_CO,Números reales
+559,11053,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+560,11053,eje tematico colombia,Números y operaciones   
+561,15549,curso,Primero Medio
+562,15549,eje temático LGE,Números
+563,15549,unidad LGE,Unidad 1
+564,15549,habilidad cognitiva LGE,Resolver problemas
+565,15549,objetivo de aprendizaje,OA 1 
+566,15549,indicador LGE,Transforman expresiones del lenguaje natural a expresiones matemáticas y viceversa.
+567,15549,dificultad,Difícil
+568,15549,nivel 1 prueba de transición,Números
+569,15549,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+570,15549,nivel 3 prueba de transición,"Problemas que involucren el conjunto de los números enteros, racionales y reales en diversos contextos."
+571,15549,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+572,15549,suficiencia,no suficiencia
+573,15549,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+574,15549,Derechos básicos de aprendizaje_CO,Números reales
+575,15549,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+576,15549,eje tematico colombia,Números y operaciones   
+577,16693,componente,Componente geométrico-métrico (9)
+578,16693,nivel colombia,Noveno
+579,16693,eje temático,Geometría
+580,16693,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+581,16693,suficiencia,no suficiencia
+582,16693,curso PSU,Tercero Medio
+583,16693,eje temático LGE,Geometría
+584,16693,unidad LGE,Unidad 3
+585,16693,objetivo de aprendizaje,OA 8 
+586,16693,indicador LGE,"Reconocen las propiedades de la homotecia, como paralelismo, conservación del ángulo y conservación de razones."
+587,16693,habilidad cognitiva LGE,Argumentar y comunicar
+588,16693,objetivo de aprendizaje,OA D 
+589,16693,dificultad,Media
+590,16693,curso,Primero Medio
+591,16693,curso gradúate,Primer Ciclo
+592,16693,eje temático gradúate,Números y operaciones aritméticas
+593,16693,nivel 1 prueba de transición,Geometría
+594,16693,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+595,16693,nivel 3 prueba de transición,Conceptos y criterios de semejanza.
+596,16693,habilidad prueba de transición,Comprender
+597,16693,dificultad,Fácil
+598,16693,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+599,16693,Temas_mx,Proporcionalidad
+600,16693,Bloque_mx,"Número, álgebra y variación"
+601,16693,Curso MX,Primero de secundaria
+602,16693,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+603,16693,Temas_mx,Proporcionalidad
+604,16693,Bloque_mx,"Número, álgebra y variación"
+605,16693,Curso MX,Primero de secundaria
+606,16768,suficiencia,no suficiencia
+607,16768,nivel 1 prueba de transición,Números
+608,16768,nivel 2 prueba de transición,Porcentaje
+609,16768,nivel 3 prueba de transición,Problemas que involucren porcentaje en diversos contextos.
+610,16768,dificultad,Difícil
+611,16768,Subtemas_mx,"Determina y usa la jerarquía de operaciones y los paréntesis en operaciones con números naturales, enteros y decimales (para multiplicación y división, solo números positivos)."
+612,16768,Temas_mx,Multiplicación y división
+613,16768,Bloque_mx,"Número, álgebra y variación"
+614,16768,Curso MX,Primero de secundaria
+615,16768,Subtemas_mx,"Resuelve problemas de suma y resta con números enteros, fracciones y decimales positivos y negativos."
+616,16768,Temas_mx,Adición y sustracción
+617,16768,habilidad prueba de transición,Aplicar
+618,17018,eje temático,Álgebra
+619,17018,habilidad cognitiva,Aplicación
+620,17018,suficiencia,no suficiencia
+621,17018,curso PSU,Segundo Medio
+622,17018,eje temático LGE,Álgebra y funciones
+623,17018,unidad LGE,Unidad 2
+624,17018,objetivo de aprendizaje,OA 4 
+625,17018,indicador LGE,Transforman ecuaciones de la forma ax + by = c a la forma y = – a b ? x + c b reconociendo la función afín.
+626,17018,habilidad cognitiva LGE,Resolver problemas
+627,17018,objetivo de aprendizaje,OA A 
+628,17018,dificultad,Media
+629,17018,curso,Primero Medio
+630,17018,nivel 1 prueba de transición,Geometría
+631,17018,nivel 2 prueba de transición,Geometría analítica en 2D
+632,17018,nivel 3 prueba de transición,Pendiente de una recta e intercepto de esta con el eje de la ordenada.
+633,17018,habilidad prueba de transición,Aplicar
+634,17018,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+635,17018,Temas_mx,Proporcionalidad
+636,17018,Bloque_mx,"Número, álgebra y variación"
+637,17018,Curso MX,Primero de secundaria
+638,17018,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+639,17018,Temas_mx,Proporcionalidad
+640,17018,Bloque_mx,"Número, álgebra y variación"
+641,17018,Curso MX,Primero de secundaria
+642,17018,Evidencias de aprendizaje_CO,"Propone, ejecuta y argumenta la validez o no de procedimientos utilizados para resolver una ecuación lineal y sistemas de ecuaciones lineales"
+643,17018,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+644,17018,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+645,17018,eje tematico colombia,Números y operaciones   
+646,17018,Evidencias de aprendizaje_CO,Opera con formas simbólicas que representan cantidades.
+647,17018,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+648,17018,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+649,17018,eje tematico colombia,Patrones y Álgebra   
+650,17018,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+651,17018,Evidencias de aprendizaje_CO,"""Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."""
+652,17018,Derechos básicos de aprendizaje_CO,Funciones
+653,17018,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+654,17018,eje tematico colombia,Patrones y Álgebra   
+655,17297,eje temático,Álgebra
+656,17297,habilidad cognitiva,Comprensión
+657,17297,suficiencia,no suficiencia
+658,17297,curso PSU,Primero Medio
+659,17297,eje temático LGE,Álgebra y funciones
+660,17297,unidad LGE,Unidad 1
+661,17297,objetivo de aprendizaje,OA 3 
+662,17297,indicador LGE,Aplican los productos notables en la factorización y la reducción de expresiones algebraicas a situaciones concretas.
+663,17297,habilidad cognitiva LGE,Resolver problemas
+664,17297,objetivo de aprendizaje,OA A 
+665,17297,dificultad,Fácil
+666,17297,curso,Primero Medio
+667,17297,nivel 1 prueba de transición,Álgebra y funciones
+668,17297,nivel 2 prueba de transición,Expresiones algebraicas
+669,17297,nivel 3 prueba de transición,Problemas que involucren expresiones algebraicas en diversos contextos.
+670,17297,habilidad prueba de transición,Comprender
+671,17297,dificultad,Media
+672,17297,habilidad prueba de transición,Resolver problemas
+673,17297,Subtemas_mx,Resuelve problemas de multiplicación con fracciones y decimales y de división con decimales.
+674,17297,Temas_mx,Multiplicación y división
+675,17297,Bloque_mx,"Número, álgebra y variación"
+676,17297,Curso MX,Primero de secundaria
+677,17297,Evidencias de aprendizaje_CO,Reconoce el uso del signo igual como relación de equivalencia de expresiones algebraicas en los números reales.
+678,17297,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+679,17297,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+680,17297,eje tematico colombia,Números y operaciones   
+681,17297,Evidencias de aprendizaje_CO,Establece conjeturas apoyándose en las propiedades y relaciones de los números reales al resolver una situación problema.
+682,17297,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+683,17297,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+684,17297,eje tematico colombia,Números y operaciones   
+685,17297,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+686,17297,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+687,17297,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+688,17297,eje tematico colombia,Patrones y Álgebra   
+689,17354,dificultad,Media
+690,17354,suficiencia,no suficiencia
+691,17354,mención,Común
+692,17354,curso,Primero Medio
+693,17354,habilidad cognitiva,Reconocimiento
+694,17354,aprendizaje esperado,AE 01
+695,17354,sub eje tematico,Medidas de tendencia central
+696,17354,eje temático,Datos y azar
+697,17354,unidad LOCE,Datos y azar
+698,17354,curso PSU,Primero Medio
+699,17354,nivel 2 prueba de transición,Medidas de tendencia central y rango
+700,17354,nivel 3 prueba de transición,Medidas de tendencia central y rango de uno o más grupos de datos.
+701,17354,habilidad prueba de transición,Comprender
+702,17354,dificultad,Fácil
+703,17354,nivel 1 prueba de transición,Probabilidad y estadística
+704,17354,Temas_mx,Estadística
+705,17354,Temas_mx,Estadística
+706,17354,Bloque_mx,Análisis de datos
+707,17354,Bloque_mx,Análisis de datos
+708,17354,contenidocentral_mx,Tratamiento de las medidas de tendencia central. Tratamiento y significado de medidas de Dispersión.
+709,17354,componente_mx,"Riesgo, inferencia y aleatoriedad: Elementos de la Estadística y la Probabilidad."
+710,17781,eje temático,Álgebra
+711,17781,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+712,17781,suficiencia,no suficiencia
+713,17781,curso PSU,Primero Medio
+714,17781,eje temático LGE,Álgebra y funciones
+715,17781,unidad LGE,Unidad 1
+716,17781,objetivo de aprendizaje,OA 3 
+717,17781,indicador LGE,Aplican los productos notables en la factorización y la reducción de expresiones algebraicas a situaciones concretas.
+718,17781,habilidad cognitiva LGE,Resolver problemas
+719,17781,objetivo de aprendizaje,OA A 
+720,17781,dificultad,Fácil
+721,17781,curso,Primero Medio
+722,17781,nivel 1 prueba de transición,Álgebra y funciones
+723,17781,nivel 2 prueba de transición,Expresiones algebraicas
+724,17781,nivel 3 prueba de transición,Productos notables.
+725,17781,habilidad prueba de transición,Aplicar
+726,17781,Subtemas_mx,Resuelve problemas de multiplicación con fracciones y decimales y de división con decimales.
+727,17781,Temas_mx,Multiplicación y división
+728,17781,Bloque_mx,"Número, álgebra y variación"
+729,17781,Curso MX,Primero de secundaria
+730,17781,Evidencias de aprendizaje_CO,Reconoce el uso del signo igual como relación de equivalencia de expresiones algebraicas en los números reales.
+731,17781,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+732,17781,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+733,17781,eje tematico colombia,Números y operaciones   
+734,17781,Evidencias de aprendizaje_CO,Establece conjeturas apoyándose en las propiedades y relaciones de los números reales al resolver una situación problema.
+735,17781,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+736,17781,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+737,17781,eje tematico colombia,Números y operaciones   
+738,17781,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+739,17781,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+740,17781,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+741,17781,eje tematico colombia,Patrones y Álgebra   
+742,17918,eje temático,Álgebra
+743,17918,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+744,17918,suficiencia,no suficiencia
+745,17918,objetivo de aprendizaje,OA D 
+746,17918,nivel 1 prueba de transición,Álgebra y funciones
+747,17918,nivel 2 prueba de transición,Función lineal y afín
+748,17918,nivel 3 prueba de transición,Problemas que involucren función lineal y función afín en diversos contextos.
+749,17918,habilidad prueba de transición,Modelar
+750,17918,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+751,17918,Temas_mx,Proporcionalidad
+752,17918,Bloque_mx,"Número, álgebra y variación"
+753,17918,Curso MX,Primero de secundaria
+754,17918,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+755,17918,curso,Octavo Básico
+756,17918,unidad LGE,Unidad 2
+757,17918,objetivo de aprendizaje,OA 10
+758,17918,eje temático LGE,Álgebra y funciones
+759,17918,dificultad,Difícil
+760,17918,habilidad cognitiva LGE,Argumentar y comunicar
+761,17918,indicador LGE,<p>Modelan situaciones de la vida diaria o de ciencias con funciones afines.</p>
+762,17918,curso,Primero Medio
+763,17918,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+764,17918,Evidencias de aprendizaje_CO,"Plantea modelos algebraicos, gráficos o numéricos en los que identifica las variables y sus rangos de variación"
+765,17918,Derechos básicos de aprendizaje_CO,Ecuaciones
+766,17918,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+767,17918,eje tematico colombia,Patrones y Álgebra   
+768,17918,Evidencias de aprendizaje_CO,"Toma decisiones informadas a partir de exploraciones numéricas, algebraicas o gráficas de los modelos matemáticos usados"
+769,17918,Evidencias de aprendizaje_CO,Identifica la diferencia entre exactitud y aproximación en las diferentes representaciones de los números reales.
+770,17918,Derechos básicos de aprendizaje_CO,Números reales
+771,17918,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+772,17918,eje tematico colombia,Números y operaciones   
+773,17918,Evidencias de aprendizaje_CO,Interpreta expresiones numéricas y toma decisiones con base en su interpretación.
+774,17918,Derechos básicos de aprendizaje_CO,"Problemas numéricos, geométricos y métricos"
+775,17918,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+776,17918,eje tematico colombia,Patrones y Álgebra   
+777,17931,eje temático,Geometría
+778,17931,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+779,17931,suficiencia,no suficiencia
+780,17931,curso PSU,Segundo Medio
+781,17931,eje temático LGE,Geometría
+782,17931,unidad LGE,Unidad 3
+783,17931,objetivo de aprendizaje,OA 10 
+784,17931,habilidad cognitiva LGE,Argumentar y comunicar
+785,17931,objetivo de aprendizaje,OA D 
+786,17931,curso,Primero Medio
+787,17931,nivel 1 prueba de transición,Geometría
+788,17931,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+789,17931,nivel 3 prueba de transición,Conceptos y criterios de semejanza.
+790,17931,habilidad prueba de transición,Comprender
+791,17931,dificultad,Media
+792,17931,indicador LGE,Comparan modelos de objetos reales con el original y mencionan las relaciones que existen entre ellos.
+793,17931,Evidencias de aprendizaje_CO,Compara figuras geométricas y conjetura sobre posibles regularidades entre ellas
+794,17931,Derechos básicos de aprendizaje_CO,Regularidades de las figuras bidimensionales
+795,17931,Categoría organizadora_CO,Espacial y sistemas geométricos     
+796,17931,eje tematico colombia,Geometría
+797,17931,Evidencias de aprendizaje_CO,"""Redacta y argumenta procesos utilizados al resolver situaciones de semejanza y congruencia de figuras."""
+798,18000,dificultad,Difícil
+799,18000,suficiencia,suficiencia
+800,18000,mención,Común
+801,18000,curso,Tercero Medio
+802,18000,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+803,18000,sub eje tematico,Ecuaciones de segundo grado
+804,18000,eje temático,Álgebra
+805,18000,curso PSU,Tercero Medio
+806,18000,nivel 2 prueba de transición,Ecuaciones de segundo grado
+807,18000,nivel 1 prueba de transición,Álgebra y funciones
+808,18000,nivel 1 prueba de transición,Números
+809,18000,nivel 3 prueba de transición,"Problemas que involucren el conjunto de los números enteros, racionales y reales en diversos contextos."
+810,18000,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+811,18004,dificultad,Difícil
+812,18004,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+813,18004,nivel 3 prueba de transición,Problemas que involucren probabilidad de un evento en diversos contextos.
+814,18004,habilidad prueba de transición,Comprender
+815,18004,eje temático LGE,Probabilidad y estadística
+816,18004,unidad LGE,Unidad 4
+817,18004,objetivo de aprendizaje,OA 14 
+818,18004,indicador LGE,Calculan las probabilidades de eventos simples y compuestos.
+819,18004,habilidad cognitiva LGE,Argumentar y comunicar
+820,18004,objetivo de aprendizaje,OA D 
+821,18004,nivel 1 prueba de transición,Probabilidad y estadística
+822,18004,Temas_mx,Probabilidad
+823,18004,Bloque_mx,Análisis de datos
+824,18004,suficiencia,no suficiencia
+825,18004,curso,Primero Medio
+826,18004,Evidencias de aprendizaje_CO,Reconoce cuando dos eventos son o no mutuamente excluyentes y les asigna la probabilidad usando la regla de la adición.
+827,18004,Derechos básicos de aprendizaje_CO,Probabilidad de un evento compuesto
+828,18004,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+829,18004,eje tematico colombia,Datos y probabilidad
+830,18004,Evidencias de aprendizaje_CO,"Encuentra el número de posibles resultados de un experimento aleatorio usando métodos adecuados (diagramas de árbol, combinaciones, permutaciones, regla de la multiplicación, entre otros)."
+831,18004,Derechos básicos de aprendizaje_CO,Experimentos aleatorios con y sin remplazo
+832,18004,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+833,18004,eje tematico colombia,Datos y probabilidad
+834,18004,contenidocentral_mx,Concepto de riesgo en situaciones contextuales. Contextualización de los elementos de probabilidad condicional e interpretación intuitiva del teorema de Bayes (probabilidad subjetiva).
+835,18004,Curso MX,6º Semestre Bachillerato
+836,18004,componente_mx,"Riesgo, inferencia y aleatoriedad: Elementos de la Estadística y la Probabilidad."
+837,18827,eje temático,Datos y azar
+838,18827,habilidad cognitiva,Aplicación
+839,18827,suficiencia,no suficiencia
+840,18827,curso PSU,Primero Medio
+841,18827,eje temático LGE,Probabilidad y estadística
+842,18827,unidad LGE,Unidad 4
+843,18827,objetivo de aprendizaje,OA 11 
+844,18827,indicador LGE,"Resuelven problemas de juegos de azar y de la vida cotidiana, aplicando combinatoria y permutaciones."
+845,18827,habilidad cognitiva LGE,Resolver problemas
+846,18827,objetivo de aprendizaje,OA A 
+847,18827,dificultad,Difícil
+848,18827,curso,Segundo Medio
+849,18827,nivel 2 prueba de transición,Permutación y combinatoria
+850,18827,nivel 3 prueba de transición,Problemas que involucren permutación y combinatoria en diversos contextos.
+851,18827,dificultad,Media
+852,18827,nivel 1 prueba de transición,Probabilidad y estadística
+853,18827,Subtemas_mx,Calcula el volumen de prismas y cilindros rectos.
+854,18827,Temas_mx,Magnitudes y medidas
+855,18827,Bloque_mx,"Forma, espacio y medida"
+856,18827,Curso MX,Segundo de secundaria
+857,18827,habilidad prueba de transición,Modelar
+858,18827,Subtemas_mx,Calcula el volumen de prismas y cilindros rectos.
+859,18827,Temas_mx,Magnitudes y medidas
+860,18827,Bloque_mx,"Forma, espacio y medida"
+861,18827,Curso MX,Segundo de secundaria
+862,18827,Evidencias de aprendizaje_CO,"Encuentra el número de posibles resultados de un experimento aleatorio usando métodos adecuados (diagramas de árbol, combinaciones, permutaciones, regla de la multiplicación, entre otros)."
+863,18827,Derechos básicos de aprendizaje_CO,Experimentos aleatorios con y sin remplazo
+864,18827,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+865,18827,eje tematico colombia,Datos y probabilidad
+866,18885,dificultad,Media
+867,18885,suficiencia,suficiencia
+868,18885,mención,Común
+869,18885,curso,Primero Medio
+870,18885,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+871,18885,sub eje tematico,Función lineal y afín
+872,18885,eje temático,Álgebra
+873,18885,unidad LGE,Unidad 2
+874,18885,objetivo de aprendizaje,OA 5 
+875,18885,eje temático LGE,Álgebra y funciones
+876,18885,curso PSU,Primero Medio
+877,18885,nivel 2 prueba de transición,Función lineal y afín
+878,18885,nivel 1 prueba de transición,Álgebra y funciones
+879,18885,nivel 3 prueba de transición,Problemas que involucren sistemas de ecuaciones lineales en diversos contextos.
+880,18885,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+881,18885,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+882,18885,Temas_mx,Proporcionalidad
+883,18885,Bloque_mx,"Número, álgebra y variación"
+884,18885,Curso MX,Primero de secundaria
+885,18885,nivel 2 prueba de transición,Ecuaciones e inecuaciones de primer grado
+886,18885,nivel 3 prueba de transición,Resolución de ecuaciones lineales.
+887,18885,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+888,18885,Temas_mx,Proporcionalidad
+889,18885,Bloque_mx,"Número, álgebra y variación"
+890,18885,Curso MX,Primero de secundaria
+891,18950,eje temático,Números
+892,18950,habilidad cognitiva,Comprensión
+893,18950,suficiencia,no suficiencia
+894,18950,curso PSU,Segundo Medio
+895,18950,eje temático LGE,Números
+896,18950,unidad LGE,Unidad 1
+897,18950,objetivo de aprendizaje,OA 2 
+898,18950,indicador LGE,"Convierten desde un tipo de registro a otro; es decir, desde potencias a raíces y viceversa, y desde potencias a logaritmos y viceversa."
+899,18950,habilidad cognitiva LGE,Representar
+900,18950,objetivo de aprendizaje,OA L 
+901,18950,dificultad,Media
+902,18950,curso,Segundo Medio
+903,18950,nivel 1 prueba de transición,Números
+904,18950,nivel 2 prueba de transición,"Potencias, raíces enésimas y logaritmos"
+905,18950,nivel 3 prueba de transición,Concepto y propiedades de los logaritmos.
+906,18950,habilidad prueba de transición,Comprender
+907,18950,dificultad,Difícil
+908,18950,Subtemas_mx,Resuelve problemas de multiplicación y división con fracciones y decimales positivos.
+909,18950,Temas_mx,Multiplicación y división
+910,18950,Bloque_mx,"Número, álgebra y variación"
+911,18950,Curso MX,Segundo de secundaria
+912,18950,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+913,18950,Derechos básicos de aprendizaje_CO,Números reales
+914,18950,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+915,18950,eje tematico colombia,Números y operaciones   
+916,20122,suficiencia,no suficiencia
+917,20122,mención,Común
+918,20122,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+919,20122,sub eje tematico,Transformaciones isométricas
+920,20122,eje temático,Geometría
+921,20122,nivel 2 prueba de transición,Transformaciones isométricas
+922,20122,nivel 1 prueba de transición,Geometría
+923,20122,nivel 3 prueba de transición,"Rotación, traslación y reflexión de figuras geométricas."
+924,20122,habilidad prueba de transición,Aplicar
+925,20122,dificultad,Difícil
+926,20410,dificultad,Difícil
+927,20410,suficiencia,no suficiencia
+928,20410,nivel 1 prueba de transición,Álgebra y funciones
+929,20410,nivel 2 prueba de transición,Función cuadrática
+930,20410,nivel 3 prueba de transición,Problemas que involucren la función cuadrática en diversos contextos.
+931,20410,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+932,20410,dificultad,Media
+933,20410,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+934,20410,Temas_mx,Multiplicación y división
+935,20410,Bloque_mx,"Número, álgebra y variación"
+936,20410,Curso MX,Segundo de secundaria
+937,20417,suficiencia,no suficiencia
+938,20417,mención,Común
+939,20417,curso,Primero Medio
+940,20417,habilidad cognitiva,Reconocimiento
+941,20417,aprendizaje esperado,AE 06
+942,20417,indicador LOCE,<p>Identifican ecuaciones literales de primer grado en diversos contextos.</p>
+943,20417,sub eje tematico,Ecuaciones de primer grado
+944,20417,eje temático,Álgebra
+945,20417,unidad LOCE,Álgebra
+946,20417,curso PSU,Primero Medio
+947,20417,nivel 2 prueba de transición,Ecuaciones e inecuaciones de primer grado
+948,20417,nivel 1 prueba de transición,Álgebra y funciones
+949,20417,nivel 3 prueba de transición,Problemas que involucren ecuaciones lineales en diversos contextos.
+950,20417,habilidad prueba de transición,Comprender
+951,20417,dificultad,Fácil
+952,20417,eje temático LGE,Álgebra y funciones
+953,20417,unidad LGE,Unidad 2
+954,20417,habilidad cognitiva LGE,Resolver problemas
+955,20417,objetivo de aprendizaje,OA 3 
+956,20417,objetivo de aprendizaje,OA A 
+957,20417,indicador LGE,Aplican los productos notables en la factorización y la reducción de expresiones algebraicas a situaciones concretas.
+958,20417,Evidencias de aprendizaje_CO,Reconoce el uso del signo igual como relación de equivalencia de expresiones algebraicas en los números reales.
+959,20417,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+960,20417,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+961,20417,eje tematico colombia,Números y operaciones   
+962,20417,Evidencias de aprendizaje_CO,Establece conjeturas apoyándose en las propiedades y relaciones de los números reales al resolver una situación problema.
+963,20417,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+964,20417,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+965,20417,eje tematico colombia,Números y operaciones   
+966,20417,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+967,20417,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+968,20417,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+969,20417,eje tematico colombia,Patrones y Álgebra   
+970,22440,dificultad,Difícil
+971,22440,suficiencia,no suficiencia
+972,22440,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+973,22440,nivel 3 prueba de transición,Problemas que involucren probabilidad condicional y sus propiedades en diversos contextos.
+974,22440,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+975,22440,nivel 1 prueba de transición,Probabilidad y estadística
+976,22440,Temas_mx,Probabilidad
+977,22440,Bloque_mx,Análisis de datos
+978,22984,suficiencia,no suficiencia
+979,22984,nivel 2 prueba de transición,Geometría analítica en 2D
+980,22984,nivel 1 prueba de transición,Geometría
+981,22984,nivel 3 prueba de transición,Pendiente de una recta e intercepto de esta con el eje de la ordenada.
+982,22984,habilidad prueba de transición,Comprender
+983,22984,dificultad,Fácil
+984,22984,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+985,22984,Temas_mx,Proporcionalidad
+986,22984,Bloque_mx,"Número, álgebra y variación"
+987,22984,Curso MX,Primero de secundaria
+988,23292,componente,Álgebra y Cálculo Genérico
+989,23292,nivel colombia,Once
+990,23292,competencia,Argumentación
+991,23292,suficiencia,no suficiencia
+992,23292,eje temático LGE,Álgebra y funciones
+993,23292,unidad LGE,Unidad 2
+994,23292,objetivo de aprendizaje,OA 5 
+995,23292,indicador LGE,Reconocen el cociente – a / b como pendiente de la recta con la ecuación ax + by = c
+996,23292,habilidad cognitiva LGE,Argumentar y comunicar
+997,23292,objetivo de aprendizaje,OA D 
+998,23292,dificultad,Media
+999,23292,curso,Primero Medio
+1000,23292,nivel 1 prueba de transición,Geometría
+1001,23292,nivel 2 prueba de transición,Geometría analítica en 2D
+1002,23292,nivel 3 prueba de transición,Posiciones relativas de dos rectas en el plano cartesiano.
+1003,23292,habilidad prueba de transición,Aplicar
+1004,23292,dificultad,Fácil
+1005,23292,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+1006,23292,Temas_mx,Proporcionalidad
+1007,23292,Bloque_mx,"Número, álgebra y variación"
+1008,23292,Curso MX,Primero de secundaria
+1009,23292,habilidad prueba de transición,Argumentar
+1010,23292,Evidencias de aprendizaje_CO,"Propone, ejecuta y argumenta la validez o no de procedimientos utilizados para resolver una ecuación lineal y sistemas de ecuaciones lineales"
+1011,23292,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+1012,23292,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1013,23292,eje tematico colombia,Números y operaciones   
+1014,23292,Evidencias de aprendizaje_CO,Determina y describe relaciones al comparar características de gráficas y expresiones algebraicas o funciones.
+1015,23292,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+1016,23292,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1017,23292,eje tematico colombia,Números y operaciones   
+1018,23292,Evidencias de aprendizaje_CO,"Reconoce en expresiones algebraicas las variables, opera con ellas y sobre ellas"
+1019,23292,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+1020,23292,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1021,23292,eje tematico colombia,Patrones y Álgebra   
+1022,23292,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+1023,23292,Evidencias de aprendizaje_CO,Utiliza representaciones gráficas o numéricas para tomar decisiones en problemas prácticos.
+1024,23292,Derechos básicos de aprendizaje_CO,Funciones
+1025,23292,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1026,23292,eje tematico colombia,Patrones y Álgebra   
+1027,23292,Evidencias de aprendizaje_CO,"Usa la pendiente de la recta tangente como razón de cambio, la reconoce y verbaliza en representaciones gráficas, numéricas y algebraicas."
+1028,23297,suficiencia,no suficiencia
+1029,23297,nivel 1 prueba de transición,Probabilidad y estadística
+1030,23297,nivel 2 prueba de transición,Medidas de tendencia central y rango
+1031,23297,nivel 3 prueba de transición,Problemas que involucren medidas de tendencia central y rango en diversos contextos.
+1032,23297,dificultad,Media
+1033,23297,habilidad prueba de transición,Aplicar
+1034,23324,eje temático,Datos y azar
+1035,23324,habilidad cognitiva,Aplicación
+1036,23324,suficiencia,no suficiencia
+1037,23324,curso PSU,Segundo Medio
+1038,23324,eje temático LGE,Probabilidad y estadística
+1039,23324,unidad LGE,Unidad 4
+1040,23324,objetivo de aprendizaje,OA 15 
+1041,23324,indicador LGE,"<p>Calculan, describen e interpretan las medidas de posición (cuartiles y percentiles).</p>"
+1042,23324,habilidad cognitiva LGE,Argumentar y comunicar
+1043,23324,objetivo de aprendizaje,OA D 
+1044,23324,dificultad,Media
+1045,23324,curso,Octavo Básico
+1046,23324,nivel 2 prueba de transición,Medidas de posición
+1047,23324,nivel 3 prueba de transición,Cuartiles y percentiles de uno o más grupos de datos.
+1048,23324,habilidad prueba de transición,Aplicar
+1049,23324,nivel 1 prueba de transición,Probabilidad y estadística
+1050,23324,habilidad prueba de transición,Resolver problemas
+1051,23324,Evidencias de aprendizaje_CO,Construye diagramas de caja para describir y comparar la distribución de un conjunto de datos.
+1052,23324,Derechos básicos de aprendizaje_CO,Diseño estadistico
+1053,23324,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+1054,23324,eje tematico colombia,Datos y probabilidad
+1055,23324,contenidocentral_mx,Conceptos básicos de Estadística y Probabilidad. Recolección de datos y su clasificación en clases. Uso del conteo y la probabilidad para eventos.
+1056,23324,Curso MX,6º Semestre Bachillerato
+1057,23324,componente_mx,"Riesgo, inferencia y aleatoriedad: Elementos de la Estadística y la Probabilidad."
+1058,23333,suficiencia,no suficiencia
+1059,23333,nivel 2 prueba de transición,Representación de datos a través de tablas y gráficos
+1060,23333,nivel 3 prueba de transición,Tipos de gráficos que permitan representar datos.
+1061,23333,nivel 1 prueba de transición,Probabilidad y estadística
+1062,23333,habilidad prueba de transición,Comprender
+1063,24665,dificultad,Media
+1064,24665,suficiencia,no suficiencia
+1065,24665,habilidad cognitiva,Aplicación
+1066,24665,sub eje tematico,Funciones
+1067,24665,eje temático,Álgebra
+1068,24665,curso,Segundo Medio
+1069,24665,eje temático LGE,Álgebra y funciones
+1070,24665,objetivo de aprendizaje,OA 6 
+1071,24665,curso PSU,Segundo Medio
+1072,24665,nivel 2 prueba de transición,Función lineal y afín
+1073,24665,nivel 1 prueba de transición,Álgebra y funciones
+1074,24665,nivel 2 prueba de transición,Función inversa
+1075,24665,nivel 3 prueba de transición,Determinación de la función inversa de una función lineal y de una función cuadrática.
+1076,24665,habilidad prueba de transición,Aplicar
+1077,24665,Subtemas_mx,"Formula expresiones de primer grado para representar propiedades (perímetros y áreas) de figuras geométricas y verifica equivalencia de expresiones, tanto algebraica como geométricamente (análisis de las figuras)."
+1078,24665,Temas_mx,"Patrones, figuras geométricas y expresiones equivalentes"
+1079,24665,Bloque_mx,"Número, álgebra y variación"
+1080,24665,Curso MX,Segundo de secundaria
+1081,24665,Subtemas_mx,Calcula el perímetro y área de polígonos regulares y del círculo a partir de diferentes datos.
+1082,24665,Temas_mx,Magnitudes y medidas
+1083,24665,Bloque_mx,"Forma, espacio y medida"
+1084,25021,eje temático,Geometría
+1085,25021,habilidad cognitiva,"Análisis, Síntesis y Evaluación"
+1086,25021,suficiencia,no suficiencia
+1087,25021,curso PSU,Tercero Medio
+1088,25021,eje temático LGE,Geometría
+1089,25021,unidad LGE,Unidad 3
+1090,25021,objetivo de aprendizaje,OA 8 
+1091,25021,indicador LGE,Conjeturan sobre el factor de la homotecia.
+1092,25021,habilidad cognitiva LGE,Modelar
+1093,25021,objetivo de aprendizaje,OA H 
+1094,25021,dificultad,Fácil
+1095,25021,curso,Primero Medio
+1096,25021,curso gradúate,Primer Ciclo
+1097,25021,eje temático gradúate,Números y operaciones aritméticas
+1098,25021,nivel 1 prueba de transición,Geometría
+1099,25021,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1100,25021,nivel 3 prueba de transición,Concepto y propiedades de homotecia.
+1101,25021,habilidad prueba de transición,Comprender
+1102,25021,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+1103,25021,Temas_mx,Proporcionalidad
+1104,25021,Bloque_mx,"Número, álgebra y variación"
+1105,25021,Curso MX,Primero de secundaria
+1106,25021,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+1107,25021,Temas_mx,Proporcionalidad
+1108,25021,Bloque_mx,"Número, álgebra y variación"
+1109,25021,Curso MX,Primero de secundaria
+1110,25021,Evidencias de aprendizaje_CO,Propone conjeturas sobre configuraciones geométricas o numéricas y las expresa verbal o simbólicamente.
+1111,25021,Derechos básicos de aprendizaje_CO,"Problemas numéricos, geométricos y métricos"
+1112,25021,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1113,25021,eje tematico colombia,Patrones y Álgebra   
+1114,25021,Evidencias de aprendizaje_CO,Valida las conjeturas sobre configuraciones geométricas o numéricas y explica sus conclusiones
+1115,25369,suficiencia,no suficiencia
+1116,25369,eje temático LGE,Álgebra y funciones
+1117,25369,unidad LGE,Unidad 2
+1118,25369,objetivo de aprendizaje,OA 4 
+1119,25369,indicador LGE,"Resuelven sistemas de ecuaciones lineales utilizando métodos algebraicos de resolución, como eliminación por igualación, sustitución y adición."
+1120,25369,habilidad cognitiva LGE,Argumentar y comunicar
+1121,25369,objetivo de aprendizaje,OA E 
+1122,25369,dificultad,Fácil
+1123,25369,curso,Primero Medio
+1124,25369,nivel 1 prueba de transición,Álgebra y funciones
+1125,25369,nivel 2 prueba de transición,Sistemas de ecuaciones lineales (2x2)
+1126,25369,nivel 3 prueba de transición,"Casos en los cuales un sistema tiene una única solución, infinitas soluciones o no tiene solución."
+1127,25369,habilidad prueba de transición,Aplicar
+1128,25369,Subtemas_mx,"Calcula valores faltantes en problemas de proporcionalidad directa, con constante natural, fracción o decimal (incluyendo tablas de variación)."
+1129,25369,Temas_mx,Proporcionalidad
+1130,25369,Bloque_mx,"Número, álgebra y variación"
+1131,25369,Curso MX,Primero de secundaria
+1132,25369,habilidad prueba de transición,Argumentar
+1133,25369,Evidencias de aprendizaje_CO,"Propone, ejecuta y argumenta la validez o no de procedimientos utilizados para resolver una ecuación lineal y sistemas de ecuaciones lineales"
+1134,25369,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+1135,25369,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1136,25369,eje tematico colombia,Números y operaciones   
+1137,25369,Evidencias de aprendizaje_CO,Opera con formas simbólicas que representan cantidades.
+1138,25369,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+1139,25369,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1140,25369,eje tematico colombia,Patrones y Álgebra   
+1141,25369,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+1142,25369,Evidencias de aprendizaje_CO,"""Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."""
+1143,25369,Derechos básicos de aprendizaje_CO,Funciones
+1144,25369,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1145,25369,eje tematico colombia,Patrones y Álgebra   
+1146,28977,componente,Componente numérico-variacional (9)
+1147,28977,nivel colombia,Noveno
+1148,28977,suficiencia,no suficiencia
+1149,28977,eje temático LGE,Álgebra y funciones
+1150,28977,unidad LGE,Unidad 2
+1151,28977,objetivo de aprendizaje,OA 10
+1152,28977,dificultad,Fácil
+1153,28977,curso,Octavo Básico
+1154,28977,nivel 1 prueba de transición,Álgebra y funciones
+1155,28977,nivel 2 prueba de transición,Función lineal y afín
+1156,28977,nivel 3 prueba de transición,Tablas y gráficos de función lineal y función afín.
+1157,28977,habilidad cognitiva LGE,Modelar
+1158,28977,objetivo de aprendizaje,OA I 
+1159,28977,indicador LGE,<p>Elaboran gráficos de funciones afines a y b dadas o con dos puntos dados y verifican que las coordenadas de puntos pertenecientes al gráfico son soluciones de la ecuación $f(x) = a ? x + b$.</p>
+1160,28977,habilidad prueba de transición,Aplicar
+1161,28977,Evidencias de aprendizaje_CO,"Toma decisiones informadas a partir de exploraciones numéricas, algebraicas o gráficas de los modelos matemáticos usados"
+1162,28977,Derechos básicos de aprendizaje_CO,Ecuaciones
+1163,28977,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1164,28977,eje tematico colombia,Patrones y Álgebra   
+1165,28977,Evidencias de aprendizaje_CO,Identifica la diferencia entre exactitud y aproximación en las diferentes representaciones de los números reales.
+1166,28977,Derechos básicos de aprendizaje_CO,Números reales
+1167,28977,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1168,28977,eje tematico colombia,Números y operaciones   
+1169,28977,Evidencias de aprendizaje_CO,Interpreta expresiones numéricas y toma decisiones con base en su interpretación.
+1170,28977,Derechos básicos de aprendizaje_CO,"Problemas numéricos, geométricos y métricos"
+1171,28977,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1172,28977,eje tematico colombia,Patrones y Álgebra   
+1173,29115,curso,Segundo Medio
+1174,29115,eje temático LGE,Números
+1175,29115,unidad LGE,Unidad 1
+1176,29115,habilidad cognitiva LGE,Representar
+1177,29115,objetivo de aprendizaje,OA 2 
+1178,29115,objetivo de aprendizaje,OA L 
+1179,29115,indicador LGE,Relacionan y caracterizan las raíces por medio de potencias de exponente racional.
+1180,29115,dificultad,Media
+1181,29115,nivel 1 prueba de transición,Números
+1182,29115,nivel 2 prueba de transición,"Potencias, raíces enésimas y logaritmos"
+1183,29115,nivel 3 prueba de transición,Propiedades de las potencias de base racional y exponente racional.
+1184,29115,habilidad prueba de transición,Modelar
+1185,29115,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+1186,29115,Derechos básicos de aprendizaje_CO,Números reales
+1187,29115,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1188,29115,eje tematico colombia,Números y operaciones   
+1189,29155,aprendizaje esperado,AE 05
+1190,29155,unidad LOCE,Álgebra
+1191,29155,eje temático,Álgebra
+1192,29155,habilidad cognitiva,Aplicación
+1193,29155,suficiencia,no suficiencia
+1194,29155,curso PSU,Segundo Medio
+1195,29155,eje temático LGE,Álgebra y funciones
+1196,29155,unidad LGE,Unidad 1
+1197,29155,objetivo de aprendizaje,OA 3 
+1198,29155,indicador LGE,Aplican los productos notables en el desarrollo de expresiones algebraicas.
+1199,29155,habilidad cognitiva LGE,Resolver problemas
+1200,29155,objetivo de aprendizaje,OA A 
+1201,29155,dificultad,Fácil
+1202,29155,curso,Primero Medio
+1203,29155,nivel 1 prueba de transición,Álgebra y funciones
+1204,29155,nivel 2 prueba de transición,Expresiones algebraicas
+1205,29155,nivel 3 prueba de transición,Factorizaciones de expresiones algebraicas.
+1206,29155,habilidad prueba de transición,Aplicar
+1207,29155,Subtemas_mx,Resuelve problemas de multiplicación con fracciones y decimales y de división con decimales.
+1208,29155,Temas_mx,Multiplicación y división
+1209,29155,Bloque_mx,"Número, álgebra y variación"
+1210,29155,Curso MX,Primero de secundaria
+1211,29155,Subtemas_mx,Resuelve problemas de multiplicación con fracciones y decimales y de división con decimales.
+1212,29155,Temas_mx,Multiplicación y división
+1213,29155,Bloque_mx,"Número, álgebra y variación"
+1214,29155,Curso MX,Primero de secundaria
+1215,29155,Evidencias de aprendizaje_CO,Reconoce el uso del signo igual como relación de equivalencia de expresiones algebraicas en los números reales.
+1216,29155,Derechos básicos de aprendizaje_CO,Equivalencia e igualdad
+1217,29155,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1218,29155,eje tematico colombia,Números y operaciones   
+1219,29155,Evidencias de aprendizaje_CO,Establece conjeturas apoyándose en las propiedades y relaciones de los números reales al resolver una situación problema.
+1220,29155,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+1221,29155,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1222,29155,eje tematico colombia,Números y operaciones   
+1223,29155,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+1224,29155,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+1225,29155,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1226,29155,eje tematico colombia,Patrones y Álgebra   
+1227,29213,dificultad,Muy Fácil
+1228,29213,suficiencia,no suficiencia
+1229,29213,curso,Segundo Medio
+1230,29213,habilidad cognitiva,Aplicación
+1231,29213,aprendizaje esperado,AE 02
+1232,29213,unidad LOCE,Datos y azar
+1233,29213,nivel 2 prueba de transición,Medidas de posición
+1234,29213,nivel 3 prueba de transición,Cuartiles y percentiles de uno o más grupos de datos.
+1235,29213,habilidad prueba de transición,Aplicar
+1236,29213,dificultad,Media
+1237,29213,nivel 1 prueba de transición,Probabilidad y estadística
+1238,29213,habilidad prueba de transición,Resolver problemas
+1239,29213,Subtemas_mx,"Resuelve problemas de multiplicación y división con números enteros, fracciones y decimales positivos y negativos."
+1240,29213,Temas_mx,Multiplicación y división
+1241,29213,Bloque_mx,"Número, álgebra y variación"
+1242,29213,Curso MX,Segundo de secundaria
+1243,29213,Subtemas_mx,Resuelve problemas de multiplicación y división con fracciones y decimales positivos.
+1244,29213,Temas_mx,Estadística
+1245,29213,Bloque_mx,Análisis de datos
+1246,34285,dificultad,Media
+1247,34285,suficiencia,no suficiencia
+1248,34285,mención,Común
+1249,34285,curso,Segundo Medio
+1250,34285,habilidad cognitiva,Aplicación
+1251,34285,sub eje tematico,Función cuadrática
+1252,34285,eje temático,Álgebra
+1253,34285,eje temático LGE,Álgebra y funciones
+1254,34285,objetivo de aprendizaje,OA 4 
+1255,34285,curso PSU,Segundo Medio
+1256,34285,nivel 2 prueba de transición,Función cuadrática
+1257,34285,nivel 1 prueba de transición,Álgebra y funciones
+1258,34285,nivel 3 prueba de transición,Puntos especiales de la gráfica de la función cuadrática: vértice e intersección con los ejes.
+1259,34285,habilidad prueba de transición,Comprender
+1260,34285,dificultad,Fácil
+1261,34285,unidad LGE,Unidad 2
+1262,34285,objetivo de aprendizaje,OA 3 
+1263,34285,indicador LGE,"Grafican y derivan la función para distintos valores de sus parámetros, obteniendo la forma canónica y = a(x – d)2 + e."
+1264,34285,habilidad cognitiva LGE,Resolver problemas
+1265,34285,objetivo de aprendizaje,OA C 
+1266,34285,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+1267,34285,Temas_mx,Multiplicación y división
+1268,34285,Bloque_mx,"Número, álgebra y variación"
+1269,34285,Curso MX,Segundo de secundaria
+1270,34285,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+1271,34285,Temas_mx,Multiplicación y división
+1272,34285,Bloque_mx,"Número, álgebra y variación"
+1273,34285,Curso MX,Segundo de secundaria
+1274,34285,Evidencias de aprendizaje_CO,"Reconoce en expresiones algebraicas las variables, opera con ellas y sobre ellas"
+1275,34285,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+1276,34285,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1277,34285,eje tematico colombia,Patrones y Álgebra   
+1278,34285,Evidencias de aprendizaje_CO,"Interpreta expresiones numéricas, algebraicas o gráficas y toma decisiones con base en su interpretación."
+1279,34285,Evidencias de aprendizaje_CO,"""Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."""
+1280,34285,Derechos básicos de aprendizaje_CO,Funciones
+1281,34285,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1282,34285,eje tematico colombia,Patrones y Álgebra   
+1283,34285,Evidencias de aprendizaje_CO,Reconoce magnitudes definidas como razones de cambio entre otras magnitudes.
+1284,34285,Derechos básicos de aprendizaje_CO,Noción de derivada
+1285,34285,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1286,34285,eje tematico colombia,Números y operaciones   
+1287,34285,Evidencias de aprendizaje_CO,Calcula derivadas de funciones.
+1288,34285,Derechos básicos de aprendizaje_CO,Derivadas de funciones
+1289,34285,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1290,34285,eje tematico colombia,Patrones y Álgebra   
+1291,1040564,nivel 2 prueba de transición,Sistemas de ecuaciones lineales (2x2)
+1292,1040564,nivel 1 prueba de transición,Álgebra y funciones
+1293,1040564,nivel 3 prueba de transición,Resolución de sistemas de ecuaciones lineales.
+1294,1040564,habilidad prueba de transición,Aplicar
+1295,1040564,dificultad,Media
+1296,1040564,suficiencia,no suficiencia
+1297,1040564,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+1298,1040564,Temas_mx,Multiplicación y división
+1299,1040564,Bloque_mx,"Número, álgebra y variación"
+1300,1040564,Curso MX,Segundo de secundaria
+1301,1044796,curso,Primero Medio
+1302,1044796,eje temático LGE,Números
+1303,1044796,unidad LGE,Unidad 1
+1304,1044796,habilidad cognitiva LGE,Resolver problemas
+1305,1044796,objetivo de aprendizaje,OA 1 
+1306,1044796,objetivo de aprendizaje,OA A 
+1307,1044796,indicador LGE,"Identifican el tipo de número, racional, entero y natural, y las operaciones involucradas."
+1308,1044796,dificultad,Media
+1309,1044796,nivel 1 prueba de transición,Números
+1310,1044796,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+1311,1044796,nivel 3 prueba de transición,"Operaciones y orden en el conjunto de los números enteros, racionales y reales."
+1312,1044796,habilidad prueba de transición,Aplicar
+1313,1044796,suficiencia,no suficiencia
+1314,1044796,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+1315,1044796,Derechos básicos de aprendizaje_CO,Números reales
+1316,1044796,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1317,1044796,eje tematico colombia,Números y operaciones   
+1318,1044817,eje temático,Geometría
+1319,1044817,habilidad cognitiva,Aplicación
+1320,1044817,suficiencia,no suficiencia
+1321,1044817,curso PSU,Primero Medio
+1322,1044817,eje temático LGE,Geometría
+1323,1044817,unidad LGE,Unidad 3
+1324,1044817,objetivo de aprendizaje,OA 9 
+1325,1044817,indicador LGE,"Resuelven problemas geométricos, de la vida diaria y de otras asignaturas, que involucran los teoremas de Tales n° 1 y n° 2."
+1326,1044817,habilidad cognitiva LGE,Resolver problemas
+1327,1044817,objetivo de aprendizaje,OA A 
+1328,1044817,curso,Primero Medio
+1329,1044817,nivel 1 prueba de transición,Geometría
+1330,1044817,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1331,1044817,nivel 3 prueba de transición,Problemas que involucren semejanza en diversos contextos.
+1332,1044817,habilidad prueba de transición,Resolver problemas
+1333,1044817,Subtemas_mx,Formula expresiones algebraicas de primer grado a partir de sucesiones y las utiliza para analizar propiedades de la sucesión que representan.
+1334,1044817,Temas_mx,"Patrones, figuras geométricas y expresiones equivalentes"
+1335,1044817,Bloque_mx,"Número, álgebra y variación"
+1336,1044817,Curso MX,Primero de secundaria
+1337,1044817,Evidencias de aprendizaje_CO,Resuelve problemas utilizando teoremas básicos.
+1338,1044817,Derechos básicos de aprendizaje_CO,Teoremas de figuras geométricas
+1339,1044817,Categoría organizadora_CO,Espacial y sistemas geométricos     
+1340,1044817,eje tematico colombia,Geometría
+1341,1044817,Evidencias de aprendizaje_CO,Explica criterios de semejanza y congruencia a partir del Teorema de Thales.
+1342,1044817,Derechos básicos de aprendizaje_CO,Regularidades de las figuras bidimensionales
+1343,1044817,Categoría organizadora_CO,Espacial y sistemas geométricos     
+1344,1044817,eje tematico colombia,Geometría
+1345,1044817,dificultad,Media
+1346,1044817,habilidad prueba de transición,Aplicar
+1347,1044819,suficiencia,no suficiencia
+1348,1044819,eje temático LGE,Álgebra y funciones
+1349,1044819,unidad LGE,Unidad 2
+1350,1044819,objetivo de aprendizaje,OA 3 
+1351,1044819,indicador LGE,"Grafican funciones cuadráticas a partir de una tabla de valores en la cual están dados los diferentes parámetros a, b, c."
+1352,1044819,habilidad cognitiva LGE,Argumentar y comunicar
+1353,1044819,objetivo de aprendizaje,OA D 
+1354,1044819,dificultad,Media
+1355,1044819,curso,Segundo Medio
+1356,1044819,nivel 1 prueba de transición,Álgebra y funciones
+1357,1044819,nivel 2 prueba de transición,Función cuadrática
+1358,1044819,nivel 3 prueba de transición,Problemas que involucren la función cuadrática en diversos contextos.
+1359,1044819,Subtemas_mx,Resuelve problemas de potencias con exponente entero y aproxima raíces cuadradas.
+1360,1044819,Temas_mx,Multiplicación y división
+1361,1044819,Bloque_mx,"Número, álgebra y variación"
+1362,1044819,Curso MX,Segundo de secundaria
+1363,1044819,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1364,1044819,Evidencias de aprendizaje_CO,Determina y describe relaciones al comparar características de gráficas y expresiones algebraicas o funciones.
+1365,1044819,Derechos básicos de aprendizaje_CO,Expresiones algebraicas con números reales
+1366,1044819,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1367,1044819,eje tematico colombia,Números y operaciones   
+1368,1044819,Evidencias de aprendizaje_CO,"Reconoce en expresiones algebraicas las variables, opera con ellas y sobre ellas"
+1369,1044819,Derechos básicos de aprendizaje_CO,"Expresiones numéricas, algebraicas o gráficas"
+1370,1044819,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1371,1044819,eje tematico colombia,Patrones y Álgebra   
+1372,1044819,Evidencias de aprendizaje_CO,"""Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."""
+1373,1044819,Derechos básicos de aprendizaje_CO,Funciones
+1374,1044819,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1375,1044819,eje tematico colombia,Patrones y Álgebra   
+1376,1044819,Evidencias de aprendizaje_CO,Reconoce magnitudes definidas como razones de cambio entre otras magnitudes.
+1377,1044819,Derechos básicos de aprendizaje_CO,Noción de derivada
+1378,1044819,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1379,1044819,eje tematico colombia,Números y operaciones   
+1380,1044964,eje temático,Números
+1381,1044964,suficiencia,no suficiencia
+1382,1044964,curso PSU,Segundo Medio
+1383,1044964,eje temático LGE,Números
+1384,1044964,unidad LGE,Unidad 1
+1385,1044964,objetivo de aprendizaje,OA 2 
+1386,1044964,indicador LGE,"Establecen relaciones entre potencias, raíces y logaritmos."
+1387,1044964,habilidad cognitiva LGE,Modelar
+1388,1044964,objetivo de aprendizaje,OA F 
+1389,1044964,dificultad,Fácil
+1390,1044964,curso,Segundo Medio
+1391,1044964,nivel 1 prueba de transición,Números
+1392,1044964,nivel 2 prueba de transición,"Potencias, raíces enésimas y logaritmos"
+1393,1044964,nivel 3 prueba de transición,"Relación entre potencias, raíces y logaritmos."
+1394,1044964,habilidad prueba de transición,Comprender
+1395,1044964,Subtemas_mx,Resuelve problemas de multiplicación y división con fracciones y decimales positivos.
+1396,1044964,Temas_mx,Multiplicación y división
+1397,1044964,Bloque_mx,"Número, álgebra y variación"
+1398,1044964,Curso MX,Segundo de secundaria
+1399,1044964,Evidencias de aprendizaje_CO,"Construye representaciones geométricas y numéricas de los números reales (con decimales, raíces, razones, entre otros) y realiza conversiones entre ellas."
+1400,1044964,Derechos básicos de aprendizaje_CO,Números reales
+1401,1044964,Categoría organizadora_CO,Pensamiento Numérico y sistemas numéricos
+1402,1044964,eje tematico colombia,Números y operaciones   
+1403,1045144,eje temático,Geometría
+1404,1045144,habilidad cognitiva,Aplicación
+1405,1045144,suficiencia,no suficiencia
+1406,1045144,curso PSU,Primero Medio
+1407,1045144,eje temático LGE,Geometría
+1408,1045144,unidad LGE,Unidad 3
+1409,1045144,objetivo de aprendizaje,OA 9 
+1410,1045144,indicador LGE,"Resuelven problemas geométricos, de la vida diaria y de otras asignaturas, que involucran los teoremas de Tales n° 1 y n° 2."
+1411,1045144,habilidad cognitiva LGE,Resolver problemas
+1412,1045144,objetivo de aprendizaje,OA A 
+1413,1045144,dificultad,Media
+1414,1045144,curso,Primero Medio
+1415,1045144,nivel 1 prueba de transición,Geometría
+1416,1045144,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1417,1045144,nivel 3 prueba de transición,Problemas que involucren el Teorema de Thales en diversos contextos.
+1418,1045144,habilidad prueba de transición,Aplicar
+1419,1045144,dificultad,Fácil
+1420,1045144,Subtemas_mx,Formula expresiones algebraicas de primer grado a partir de sucesiones y las utiliza para analizar propiedades de la sucesión que representan.
+1421,1045144,Temas_mx,"Patrones, figuras geométricas y expresiones equivalentes"
+1422,1045144,Bloque_mx,"Número, álgebra y variación"
+1423,1045144,Curso MX,Primero de secundaria
+1424,1045144,Evidencias de aprendizaje_CO,Resuelve problemas utilizando teoremas básicos.
+1425,1045144,Derechos básicos de aprendizaje_CO,Teoremas de figuras geométricas
+1426,1045144,Categoría organizadora_CO,Espacial y sistemas geométricos     
+1427,1045144,eje tematico colombia,Geometría
+1428,1045144,Evidencias de aprendizaje_CO,Explica criterios de semejanza y congruencia a partir del Teorema de Thales.
+1429,1045144,Derechos básicos de aprendizaje_CO,Regularidades de las figuras bidimensionales
+1430,1045144,Categoría organizadora_CO,Espacial y sistemas geométricos     
+1431,1045144,eje tematico colombia,Geometría
+1432,1045152,eje temático,Geometría
+1433,1045152,habilidad cognitiva,Aplicación
+1434,1045152,suficiencia,no suficiencia
+1435,1045152,curso PSU,Primero Medio
+1436,1045152,eje temático LGE,Geometría
+1437,1045152,unidad LGE,Unidad 3
+1438,1045152,objetivo de aprendizaje,OA 9 
+1439,1045152,indicador LGE,"Explican el teorema de Tales n° 1 y el teorema de Tales n° 2, mediante las propiedades de la homotecia."
+1440,1045152,habilidad cognitiva LGE,Argumentar y comunicar
+1441,1045152,objetivo de aprendizaje,OA D 
+1442,1045152,dificultad,Media
+1443,1045152,curso,Primero Medio
+1444,1045152,curso gradúate,Primer Ciclo
+1445,1045152,eje temático gradúate,Números y operaciones aritméticas
+1446,1045152,nivel 1 prueba de transición,Geometría
+1447,1045152,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1448,1045152,nivel 3 prueba de transición,Conceptos y criterios de semejanza.
+1449,1045152,dificultad,Fácil
+1450,1045152,Subtemas_mx,Formula expresiones algebraicas de primer grado a partir de sucesiones y las utiliza para analizar propiedades de la sucesión que representan.
+1451,1045152,Temas_mx,"Patrones, figuras geométricas y expresiones equivalentes"
+1452,1045152,Bloque_mx,"Número, álgebra y variación"
+1453,1045152,Curso MX,Primero de secundaria
+1454,1045152,habilidad prueba de transición,Argumentar
+1455,1045152,Evidencias de aprendizaje_CO,Resuelve problemas utilizando teoremas básicos.
+1456,1045152,Derechos básicos de aprendizaje_CO,Teoremas de figuras geométricas
+1457,1045152,Categoría organizadora_CO,Espacial y sistemas geométricos     
+1458,1045152,eje tematico colombia,Geometría
+1459,1045152,Evidencias de aprendizaje_CO,Explica criterios de semejanza y congruencia a partir del Teorema de Thales.
+1460,1045152,Derechos básicos de aprendizaje_CO,Regularidades de las figuras bidimensionales
+1461,1045152,Categoría organizadora_CO,Espacial y sistemas geométricos     
+1462,1045152,eje tematico colombia,Geometría
+1463,1048686,eje temático LGE,Geometría
+1464,1048686,objetivo de aprendizaje,OA 8 
+1465,1048686,indicador LGE,Conjeturan sobre el factor de la homotecia.
+1466,1048686,dificultad,Media
+1467,1048686,curso,Primero Medio
+1468,1048686,eje temático gradúate,Números y operaciones aritméticas
+1469,1048686,nivel 1 prueba de transición,Geometría
+1470,1048686,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1471,1048686,nivel 3 prueba de transición,Problemas que involucren homotecia en diversos contextos.
+1472,1048686,habilidad prueba de transición,Aplicar
+1473,1048686,Subtemas_mx,"Resuelve problemas de cálculo de porcentajes, de tanto por ciento y de la cantidad base."
+1474,1048686,Temas_mx,Proporcionalidad
+1475,1048686,Bloque_mx,"Número, álgebra y variación"
+1476,1048686,Curso MX,Primero de secundaria
+1477,1048686,habilidad cognitiva LGE,Resolver problemas
+1478,1048686,objetivo de aprendizaje,OA A 
+1479,1048686,unidad LGE,Unidad 3
+1480,1048686,suficiencia,no suficiencia
+1481,1048686,Evidencias de aprendizaje_CO,Propone conjeturas sobre configuraciones geométricas o numéricas y las expresa verbal o simbólicamente.
+1482,1048686,Derechos básicos de aprendizaje_CO,"Problemas numéricos, geométricos y métricos"
+1483,1048686,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1484,1048686,eje tematico colombia,Patrones y Álgebra   
+1485,1048686,Evidencias de aprendizaje_CO,Valida las conjeturas sobre configuraciones geométricas o numéricas y explica sus conclusiones
+1486,1048713,suficiencia,no suficiencia
+1487,1048713,eje temático LGE,Álgebra y funciones
+1488,1048713,unidad LGE,Unidad 2
+1489,1048713,objetivo de aprendizaje,OA 5 
+1490,1048713,indicador LGE,"Elaboran tablas de valores de una función y de su inversa, reconociendo el intercambio de los valores en los pares (x,y)."
+1491,1048713,habilidad cognitiva LGE,Representar
+1492,1048713,objetivo de aprendizaje,OA L 
+1493,1048713,dificultad,Fácil
+1494,1048713,curso,Segundo Medio
+1495,1048713,nivel 1 prueba de transición,Álgebra y funciones
+1496,1048713,nivel 2 prueba de transición,Función inversa
+1497,1048713,nivel 3 prueba de transición,Tablas y gráficos de la función inversa de una función lineal y de una función cuadrática.
+1498,1048713,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1499,1048713,Subtemas_mx,Resuelve problemas de proporcionalidad directa e inversa y de reparto proporcional.
+1500,1048713,Temas_mx,Proporcionalidad
+1501,1048713,Bloque_mx,"Número, álgebra y variación"
+1502,1048713,Curso MX,Segundo de secundaria
+1503,1048713,Evidencias de aprendizaje_CO,"""Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."""
+1504,1048713,Derechos básicos de aprendizaje_CO,Funciones
+1505,1048713,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1506,1048713,eje tematico colombia,Patrones y Álgebra   
+1507,1048713,Evidencias de aprendizaje_CO,"Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."
+1508,1048713,Derechos básicos de aprendizaje_CO,Derivadas de funciones
+1509,1048713,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1510,1048713,eje tematico colombia,Patrones y Álgebra   
+1511,1048713,curso,Segundo Básico
+1512,1048721,suficiencia,no suficiencia
+1513,1048721,eje temático LGE,Álgebra y funciones
+1514,1048721,unidad LGE,Unidad 2
+1515,1048721,objetivo de aprendizaje,OA 5 
+1516,1048721,indicador LGE,"Reconocen la función inversa de una función dada, en representaciones pictóricas y simbólicas."
+1517,1048721,habilidad cognitiva LGE,Representar
+1518,1048721,objetivo de aprendizaje,OA L 
+1519,1048721,dificultad,Media
+1520,1048721,curso,Segundo Medio
+1521,1048721,nivel 1 prueba de transición,Álgebra y funciones
+1522,1048721,nivel 2 prueba de transición,Función inversa
+1523,1048721,nivel 3 prueba de transición,Determinación de la función inversa de una función lineal y de una función cuadrática.
+1524,1048721,habilidad prueba de transición,Aplicar
+1525,1048721,dificultad,Fácil
+1526,1048721,Subtemas_mx,Resuelve problemas de proporcionalidad directa e inversa y de reparto proporcional.
+1527,1048721,Temas_mx,Proporcionalidad
+1528,1048721,Bloque_mx,"Número, álgebra y variación"
+1529,1048721,Curso MX,Segundo de secundaria
+1530,1048721,habilidad prueba de transición,Representar
+1531,1048721,Evidencias de aprendizaje_CO,"""Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."""
+1532,1048721,Derechos básicos de aprendizaje_CO,Funciones
+1533,1048721,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1534,1048721,eje tematico colombia,Patrones y Álgebra   
+1535,1048721,Evidencias de aprendizaje_CO,"Relaciona características algebraicas de las funciones, sus gráficas y procesos de aproximación sucesiva."
+1536,1048721,Derechos básicos de aprendizaje_CO,Derivadas de funciones
+1537,1048721,Categoría organizadora_CO,Pensamiento Variacional y sistemas algorítmicos
+1538,1048721,eje tematico colombia,Patrones y Álgebra   
+1539,1048721,contenidocentral_mx,Antiderivada de las funciones elementales (algebraicas y trascendentes).
+1540,1048721,Curso MX,5º Semestre Bachillerato
+1541,1048721,componente_mx,Cambio y acumulación: Elementos del Cálculo integral.
+1542,1048737,suficiencia,no suficiencia
+1543,1048737,eje temático LGE,Probabilidad y estadística
+1544,1048737,unidad LGE,Unidad 4
+1545,1048737,objetivo de aprendizaje,OA 12 
+1546,1048737,indicador LGE,Describen nubes de puntos presentadas en el sistema de coordenadas.
+1547,1048737,habilidad cognitiva LGE,Representar
+1548,1048737,objetivo de aprendizaje,OA N 
+1549,1048737,dificultad,Fácil
+1550,1048737,curso,Primero Medio
+1551,1048737,nivel 2 prueba de transición,Representación de datos a través de tablas y gráficos
+1552,1048737,nivel 3 prueba de transición,Tipos de gráficos que permitan representar datos.
+1553,1048737,nivel 1 prueba de transición,Probabilidad y estadística
+1554,1048737,Subtemas_mx,"Analiza la existencia y unicidad en la construcción de triángulos y cuadriláteros, y determina y usa criterios de congruencia de triángulos."
+1555,1048737,Temas_mx,Figuras y cuerpos geométricos
+1556,1048737,Bloque_mx,"Forma, espacio y medida"
+1557,1048737,Curso MX,Primero de secundaria
+1558,1048737,habilidad prueba de transición,Representar
+1559,1048737,habilidad prueba de transición,Comprender
+1560,1048737,Evidencias de aprendizaje_CO,"Define el método para recolectar los datos (encuestas, observación o experimento simple) e identifica la población y el tamaño de la muestra del estudio."
+1561,1048737,Derechos básicos de aprendizaje_CO,Diseño estadistico
+1562,1048737,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+1563,1048737,eje tematico colombia,Datos y probabilidad
+1564,1048737,Evidencias de aprendizaje_CO,Define la población de la cual va a extraer las muestras.
+1565,1048737,Derechos básicos de aprendizaje_CO,Estadisticos con poblaciones grandes
+1566,1048737,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+1567,1048737,eje tematico colombia,Datos y probabilidad
+1568,1048737,Evidencias de aprendizaje_CO,"Formula conclusiones sobre la distribución de un conjunto de datos, empleando más de una medida."
+1569,1048737,Derechos básicos de aprendizaje_CO,Tendencia central y dispersión
+1570,1048744,eje temático,Datos y azar
+1571,1048744,habilidad cognitiva,Comprensión
+1572,1048744,suficiencia,no suficiencia
+1573,1048744,curso PSU,Primero Medio
+1574,1048744,eje temático LGE,Probabilidad y estadística
+1575,1048744,unidad LGE,Unidad 4
+1576,1048744,objetivo de aprendizaje,OA 14 
+1577,1048744,indicador LGE,Calculan las probabilidades de eventos simples y compuestos.
+1578,1048744,habilidad cognitiva LGE,Resolver problemas
+1579,1048744,objetivo de aprendizaje,OA A 
+1580,1048744,dificultad,Media
+1581,1048744,curso,Primero Medio
+1582,1048744,curso gradúate,Primer Ciclo
+1583,1048744,eje temático gradúate,Números y operaciones aritméticas
+1584,1048744,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+1585,1048744,nivel 3 prueba de transición,Problemas que involucren probabilidad de un evento en diversos contextos.
+1586,1048744,nivel 1 prueba de transición,Probabilidad y estadística
+1587,1048744,Evidencias de aprendizaje_CO,Reconoce cuando dos eventos son o no mutuamente excluyentes y les asigna la probabilidad usando la regla de la adición.
+1588,1048744,Derechos básicos de aprendizaje_CO,Probabilidad de un evento compuesto
+1589,1048744,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+1590,1048744,eje tematico colombia,Datos y probabilidad
+1591,1048744,Evidencias de aprendizaje_CO,"Encuentra el número de posibles resultados de un experimento aleatorio usando métodos adecuados (diagramas de árbol, combinaciones, permutaciones, regla de la multiplicación, entre otros)."
+1592,1048744,Derechos básicos de aprendizaje_CO,Experimentos aleatorios con y sin remplazo
+1593,1048744,Categoría organizadora_CO,Pensamiento Aleatorio y sistema de datos       
+1594,1048744,eje tematico colombia,Datos y probabilidad
+1595,1048744,habilidad prueba de transición,Aplicar
+1596,1048744,contenidocentral_mx,Concepto de riesgo en situaciones contextuales. Contextualización de los elementos de probabilidad condicional e interpretación intuitiva del teorema de Bayes (probabilidad subjetiva).
+1597,1048744,Curso MX,6º Semestre Bachillerato
+1598,1048744,componente_mx,"Riesgo, inferencia y aleatoriedad: Elementos de la Estadística y la Probabilidad."
+1599,1106883,nivel 1 prueba de transición,Números
+1600,1106883,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+1601,1106883,nivel 3 prueba de transición,"Operaciones y orden en el conjunto de los números enteros, racionales y reales."
+1602,1106883,dificultad,Fácil
+1603,1106883,habilidad prueba de transición,Aplicar
+1604,1106883,suficiencia,no suficiencia
+1605,1106947,nivel 1 prueba de transición,Números
+1606,1106947,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+1607,1106947,nivel 3 prueba de transición,"Problemas que involucren el conjunto de los números enteros, racionales y reales en diversos contextos."
+1608,1106947,dificultad,Fácil
+1609,1106947,habilidad prueba de transición,Aplicar
+1610,1106947,suficiencia,no suficiencia
+1611,1106952,nivel 1 prueba de transición,Números
+1612,1106952,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+1613,1106952,nivel 3 prueba de transición,"Problemas que involucren el conjunto de los números enteros, racionales y reales en diversos contextos."
+1614,1106952,dificultad,Media
+1615,1106952,habilidad prueba de transición,Aplicar
+1616,1106952,suficiencia,no suficiencia
+1617,1106979,nivel 1 prueba de transición,Números
+1618,1106979,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+1619,1106979,nivel 3 prueba de transición,"Operaciones y orden en el conjunto de los números enteros, racionales y reales."
+1620,1106979,dificultad,Media
+1621,1106979,suficiencia,no suficiencia
+1622,1106979,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1623,1106979,curso,Segundo Medio
+1624,1106979,eje temático LGE,Números
+1625,1106979,unidad LGE,Unidad 1
+1626,1106979,habilidad cognitiva LGE,Argumentar y comunicar
+1627,1106979,objetivo de aprendizaje,OA 2 
+1628,1106979,objetivo de aprendizaje,OA D 
+1629,1106979,indicador LGE,Relacionan y caracterizan las raíces por medio de potencias de exponente racional.
+1630,1106979,habilidad prueba de transición,Argumentar
+1631,1106992,nivel 1 prueba de transición,Números
+1632,1106992,nivel 2 prueba de transición,Porcentaje
+1633,1106992,nivel 3 prueba de transición,Concepto y cálculo de porcentaje.
+1634,1106992,dificultad,Fácil
+1635,1106992,habilidad prueba de transición,Comprender
+1636,1106992,suficiencia,no suficiencia
+1637,1106994,nivel 1 prueba de transición,Números
+1638,1106994,nivel 2 prueba de transición,Porcentaje
+1639,1106994,nivel 3 prueba de transición,Problemas que involucren porcentaje en diversos contextos.
+1640,1106994,dificultad,Fácil
+1641,1106994,habilidad prueba de transición,Aplicar
+1642,1106994,suficiencia,no suficiencia
+1643,1106997,nivel 1 prueba de transición,Números
+1644,1106997,nivel 2 prueba de transición,"Potencias, raíces enésimas y logaritmos"
+1645,1106997,nivel 3 prueba de transición,Concepto y propiedades de los logaritmos.
+1646,1106997,dificultad,Media
+1647,1106997,habilidad prueba de transición,Comprender
+1648,1106997,suficiencia,no suficiencia
+1649,1106999,nivel 1 prueba de transición,Números
+1650,1106999,nivel 2 prueba de transición,"Potencias, raíces enésimas y logaritmos"
+1651,1106999,nivel 3 prueba de transición,Propiedades de las potencias de base racional y exponente racional.
+1652,1106999,dificultad,Media
+1653,1106999,habilidad prueba de transición,Aplicar
+1654,1106999,suficiencia,no suficiencia
+1655,1107003,nivel 1 prueba de transición,Números
+1656,1107003,nivel 2 prueba de transición,"Potencias, raíces enésimas y logaritmos"
+1657,1107003,nivel 3 prueba de transición,Descomposición y propiedades de las raíces enésimas.
+1658,1107003,dificultad,Difícil
+1659,1107003,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1660,1107003,suficiencia,no suficiencia
+1661,1107008,nivel 1 prueba de transición,Números
+1662,1107008,nivel 2 prueba de transición,"Potencias, raíces enésimas y logaritmos"
+1663,1107008,nivel 3 prueba de transición,Concepto y propiedades de los logaritmos.
+1664,1107008,dificultad,Difícil
+1665,1107008,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1666,1107008,suficiencia,no suficiencia
+1667,1107010,suficiencia,suficiencia
+1668,1107010,nivel 1 prueba de transición,Números
+1669,1107010,nivel 2 prueba de transición,"Conjunto de los números enteros, racionales y reales"
+1670,1107010,nivel 3 prueba de transición,"Problemas que involucren el conjunto de los números enteros, racionales y reales en diversos contextos."
+1671,1107010,dificultad,Difícil
+1672,1107010,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1673,1107012,nivel 1 prueba de transición,Álgebra y funciones
+1674,1107012,nivel 2 prueba de transición,Expresiones algebraicas
+1675,1107012,nivel 3 prueba de transición,Problemas que involucren expresiones algebraicas en diversos contextos.
+1676,1107012,dificultad,Media
+1677,1107012,habilidad prueba de transición,Aplicar
+1678,1107012,suficiencia,no suficiencia
+1679,1107013,nivel 1 prueba de transición,Álgebra y funciones
+1680,1107013,nivel 2 prueba de transición,Expresiones algebraicas
+1681,1107013,nivel 3 prueba de transición,Operatoria con expresiones algebraicas.
+1682,1107013,dificultad,Media
+1683,1107013,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1684,1107013,suficiencia,no suficiencia
+1685,1107014,nivel 1 prueba de transición,Álgebra y funciones
+1686,1107014,nivel 2 prueba de transición,Expresiones algebraicas
+1687,1107014,nivel 3 prueba de transición,Problemas que involucren expresiones algebraicas en diversos contextos.
+1688,1107014,dificultad,Difícil
+1689,1107014,habilidad prueba de transición,Aplicar
+1690,1107014,suficiencia,no suficiencia
+1691,1107016,nivel 1 prueba de transición,Álgebra y funciones
+1692,1107016,nivel 2 prueba de transición,Expresiones algebraicas
+1693,1107016,nivel 3 prueba de transición,Problemas que involucren expresiones algebraicas en diversos contextos.
+1694,1107016,dificultad,Difícil
+1695,1107016,habilidad prueba de transición,Aplicar
+1696,1107016,suficiencia,no suficiencia
+1697,1107020,nivel 1 prueba de transición,Álgebra y funciones
+1698,1107020,nivel 2 prueba de transición,Sistemas de ecuaciones lineales (2x2)
+1699,1107020,nivel 3 prueba de transición,Problemas que involucren sistemas de ecuaciones lineales en diversos contextos.
+1700,1107020,dificultad,Media
+1701,1107020,habilidad prueba de transición,Aplicar
+1702,1107020,suficiencia,no suficiencia
+1703,1107025,nivel 1 prueba de transición,Álgebra y funciones
+1704,1107025,nivel 2 prueba de transición,Ecuaciones e inecuaciones de primer grado
+1705,1107025,nivel 3 prueba de transición,Problemas que involucren ecuaciones lineales en diversos contextos.
+1706,1107025,dificultad,Difícil
+1707,1107025,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1708,1107025,suficiencia,no suficiencia
+1709,1107029,nivel 1 prueba de transición,Álgebra y funciones
+1710,1107029,nivel 2 prueba de transición,Ecuaciones e inecuaciones de primer grado
+1711,1107029,nivel 3 prueba de transición,Problemas que involucren inecuaciones lineales en diversos contextos.
+1712,1107029,dificultad,Media
+1713,1107029,habilidad prueba de transición,Aplicar
+1714,1107029,suficiencia,no suficiencia
+1715,1107030,nivel 1 prueba de transición,Álgebra y funciones
+1716,1107030,nivel 2 prueba de transición,Ecuaciones e inecuaciones de primer grado
+1717,1107030,nivel 3 prueba de transición,Problemas que involucren inecuaciones lineales en diversos contextos.
+1718,1107030,dificultad,Media
+1719,1107030,habilidad prueba de transición,Aplicar
+1720,1107030,suficiencia,no suficiencia
+1721,1107035,nivel 1 prueba de transición,Álgebra y funciones
+1722,1107035,nivel 2 prueba de transición,Sistemas de ecuaciones lineales (2x2)
+1723,1107035,nivel 3 prueba de transición,Resolución de sistemas de ecuaciones lineales.
+1724,1107035,dificultad,Fácil
+1725,1107035,habilidad prueba de transición,Aplicar
+1726,1107035,suficiencia,no suficiencia
+1727,1107036,nivel 1 prueba de transición,Álgebra y funciones
+1728,1107036,nivel 2 prueba de transición,Sistemas de ecuaciones lineales (2x2)
+1729,1107036,nivel 3 prueba de transición,Problemas que involucren sistemas de ecuaciones lineales en diversos contextos.
+1730,1107036,dificultad,Media
+1731,1107036,habilidad prueba de transición,Aplicar
+1732,1107036,suficiencia,no suficiencia
+1733,1107038,nivel 1 prueba de transición,Álgebra y funciones
+1734,1107038,nivel 2 prueba de transición,Sistemas de ecuaciones lineales (2x2)
+1735,1107038,nivel 3 prueba de transición,"Casos en los cuales un sistema tiene una única solución, infinitas soluciones o no tiene solución."
+1736,1107038,dificultad,Difícil
+1737,1107038,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1738,1107038,suficiencia,no suficiencia
+1739,1107041,nivel 1 prueba de transición,Álgebra y funciones
+1740,1107041,nivel 2 prueba de transición,Sistemas de ecuaciones lineales (2x2)
+1741,1107041,nivel 3 prueba de transición,Problemas que involucren sistemas de ecuaciones lineales en diversos contextos.
+1742,1107041,dificultad,Difícil
+1743,1107041,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1744,1107041,suficiencia,no suficiencia
+1745,1107058,nivel 1 prueba de transición,Álgebra y funciones
+1746,1107058,nivel 2 prueba de transición,Ecuaciones de segundo grado
+1747,1107058,nivel 3 prueba de transición,Problemas que involucren ecuaciones cuadráticas en diversos contextos.
+1748,1107058,dificultad,Media
+1749,1107058,habilidad prueba de transición,Aplicar
+1750,1107058,suficiencia,no suficiencia
+1751,1107065,nivel 1 prueba de transición,Álgebra y funciones
+1752,1107065,nivel 2 prueba de transición,Ecuaciones de segundo grado
+1753,1107065,nivel 3 prueba de transición,"Casos en los cuales la ecuación cuadrática tiene dos, una o no tiene solución real."
+1754,1107065,dificultad,Fácil
+1755,1107065,habilidad prueba de transición,Aplicar
+1756,1107065,suficiencia,no suficiencia
+1757,1107065,habilidad cognitiva LGE,Resolver problemas
+1758,1107065,curso,Quinto Básico
+1759,1107066,nivel 1 prueba de transición,Álgebra y funciones
+1760,1107066,nivel 2 prueba de transición,Ecuaciones de segundo grado
+1761,1107066,nivel 3 prueba de transición,"Casos en los cuales la ecuación cuadrática tiene dos, una o no tiene solución real."
+1762,1107066,dificultad,Fácil
+1763,1107066,habilidad prueba de transición,Comprender
+1764,1107066,suficiencia,no suficiencia
+1765,1107088,nivel 1 prueba de transición,Álgebra y funciones
+1766,1107088,nivel 2 prueba de transición,Función lineal y afín
+1767,1107088,nivel 3 prueba de transición,Problemas que involucren función lineal y función afín en diversos contextos.
+1768,1107088,dificultad,Media
+1769,1107088,habilidad prueba de transición,Aplicar
+1770,1107088,suficiencia,no suficiencia
+1771,1107089,nivel 1 prueba de transición,Álgebra y funciones
+1772,1107089,nivel 2 prueba de transición,Función lineal y afín
+1773,1107089,nivel 3 prueba de transición,Problemas que involucren función lineal y función afín en diversos contextos.
+1774,1107089,habilidad prueba de transición,Aplicar
+1775,1107089,suficiencia,no suficiencia
+1776,1107089,dificultad,Difícil
+1777,1107090,nivel 1 prueba de transición,Álgebra y funciones
+1778,1107090,nivel 2 prueba de transición,Función inversa
+1779,1107090,nivel 3 prueba de transición,Tablas y gráficos de la función inversa de una función lineal y de una función cuadrática.
+1780,1107090,dificultad,Media
+1781,1107090,habilidad prueba de transición,Comprender
+1782,1107090,suficiencia,no suficiencia
+1783,1107091,nivel 1 prueba de transición,Álgebra y funciones
+1784,1107091,nivel 2 prueba de transición,Función cuadrática
+1785,1107091,nivel 3 prueba de transición,"Tablas y gráficos de la función cuadrática, considerando la variación de sus parámetros."
+1786,1107091,dificultad,Media
+1787,1107091,habilidad prueba de transición,Comprender
+1788,1107091,suficiencia,no suficiencia
+1789,1107093,nivel 1 prueba de transición,Álgebra y funciones
+1790,1107093,nivel 2 prueba de transición,Función cuadrática
+1791,1107093,nivel 3 prueba de transición,Problemas que involucren la función cuadrática en diversos contextos.
+1792,1107093,habilidad prueba de transición,Aplicar
+1793,1107093,suficiencia,no suficiencia
+1794,1107093,dificultad,Media
+1795,1107096,nivel 1 prueba de transición,Álgebra y funciones
+1796,1107096,nivel 2 prueba de transición,Función cuadrática
+1797,1107096,nivel 3 prueba de transición,Puntos especiales de la gráfica de la función cuadrática: vértice e intersección con los ejes.
+1798,1107096,dificultad,Media
+1799,1107096,habilidad prueba de transición,Aplicar
+1800,1107096,suficiencia,no suficiencia
+1801,1107099,nivel 1 prueba de transición,Álgebra y funciones
+1802,1107099,nivel 2 prueba de transición,Función cuadrática
+1803,1107099,nivel 3 prueba de transición,Problemas que involucren la función cuadrática en diversos contextos.
+1804,1107099,dificultad,Media
+1805,1107099,habilidad prueba de transición,Aplicar
+1806,1107099,suficiencia,no suficiencia
+1807,1107102,nivel 1 prueba de transición,Álgebra y funciones
+1808,1107102,nivel 2 prueba de transición,Función potencia
+1809,1107102,nivel 3 prueba de transición,"Análisis de la función potencia f(x) = axn, con a y x en el conjunto de los números reales y n un número entero."
+1810,1107102,dificultad,Fácil
+1811,1107102,habilidad prueba de transición,Comprender
+1812,1107102,suficiencia,no suficiencia
+1813,1107103,suficiencia,suficiencia
+1814,1107103,nivel 1 prueba de transición,Álgebra y funciones
+1815,1107103,nivel 2 prueba de transición,Función lineal y afín
+1816,1107103,nivel 3 prueba de transición,Tablas y gráficos de función lineal y función afín.
+1817,1107103,dificultad,Fácil
+1818,1107103,habilidad prueba de transición,Comprender
+1819,1107103,curso,Segundo Medio
+1820,1107103,eje temático LGE,Números
+1821,1107103,habilidad cognitiva LGE,Resolver problemas
+1822,1107103,objetivo de aprendizaje,OA 1 
+1823,1107103,unidad LGE,Unidad 1
+1824,1107104,nivel 1 prueba de transición,Geometría
+1825,1107104,nivel 2 prueba de transición,Transformaciones isométricas
+1826,1107104,nivel 3 prueba de transición,Puntos y vectores en el plano cartesiano.
+1827,1107104,dificultad,Fácil
+1828,1107104,habilidad prueba de transición,Aplicar
+1829,1107104,suficiencia,no suficiencia
+1830,1107106,nivel 1 prueba de transición,Geometría
+1831,1107106,nivel 2 prueba de transición,Transformaciones isométricas
+1832,1107106,nivel 3 prueba de transición,"Rotación, traslación y reflexión de figuras geométricas."
+1833,1107106,dificultad,Media
+1834,1107106,habilidad prueba de transición,Aplicar
+1835,1107106,suficiencia,no suficiencia
+1836,1107115,nivel 1 prueba de transición,Geometría
+1837,1107115,nivel 2 prueba de transición,Transformaciones isométricas
+1838,1107115,nivel 3 prueba de transición,"Problemas que involucren rotación, traslación y reflexión en diversos contextos."
+1839,1107115,dificultad,Media
+1840,1107115,habilidad prueba de transición,Aplicar
+1841,1107115,suficiencia,no suficiencia
+1842,1107117,nivel 1 prueba de transición,Geometría
+1843,1107117,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1844,1107117,nivel 3 prueba de transición,Conceptos y criterios de semejanza.
+1845,1107117,dificultad,Fácil
+1846,1107117,habilidad prueba de transición,Aplicar
+1847,1107117,suficiencia,no suficiencia
+1848,1107148,nivel 1 prueba de transición,Geometría
+1849,1107148,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1850,1107148,nivel 3 prueba de transición,Conceptos y criterios de semejanza.
+1851,1107148,dificultad,Fácil
+1852,1107148,habilidad prueba de transición,Comprender
+1853,1107148,suficiencia,no suficiencia
+1854,1107167,nivel 1 prueba de transición,Geometría
+1855,1107167,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1856,1107167,nivel 3 prueba de transición,Problemas que involucren el Teorema de Thales en diversos contextos.
+1857,1107167,dificultad,Fácil
+1858,1107167,habilidad prueba de transición,Aplicar
+1859,1107167,suficiencia,no suficiencia
+1860,1107184,nivel 1 prueba de transición,Geometría
+1861,1107184,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1862,1107184,nivel 3 prueba de transición,Modelos a escala.
+1863,1107184,dificultad,Media
+1864,1107184,habilidad prueba de transición,Aplicar
+1865,1107184,suficiencia,no suficiencia
+1866,1107201,nivel 1 prueba de transición,Geometría
+1867,1107201,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1868,1107201,nivel 3 prueba de transición,Modelos a escala.
+1869,1107201,dificultad,Fácil
+1870,1107201,habilidad prueba de transición,Aplicar
+1871,1107201,suficiencia,no suficiencia
+1872,1107202,nivel 1 prueba de transición,Geometría
+1873,1107202,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1874,1107202,nivel 3 prueba de transición,Problemas que involucren homotecia en diversos contextos.
+1875,1107202,dificultad,Fácil
+1876,1107202,habilidad prueba de transición,Aplicar
+1877,1107202,suficiencia,no suficiencia
+1878,1107204,nivel 1 prueba de transición,Geometría
+1879,1107204,nivel 2 prueba de transición,"Semejanza, proporcionalidad y homotecia de figuras planas"
+1880,1107204,nivel 3 prueba de transición,Problemas que involucren homotecia en diversos contextos.
+1881,1107204,dificultad,Difícil
+1882,1107204,habilidad prueba de transición,Aplicar
+1883,1107204,suficiencia,no suficiencia
+1884,1107205,nivel 1 prueba de transición,Geometría
+1885,1107205,nivel 2 prueba de transición,Geometría analítica en 2D
+1886,1107205,nivel 3 prueba de transición,Distancia entre dos puntos.
+1887,1107205,dificultad,Media
+1888,1107205,habilidad prueba de transición,Aplicar
+1889,1107205,suficiencia,no suficiencia
+1890,1107206,nivel 1 prueba de transición,Geometría
+1891,1107206,nivel 2 prueba de transición,Geometría analítica en 2D
+1892,1107206,nivel 3 prueba de transición,Ecuación de una recta.
+1893,1107206,dificultad,Fácil
+1894,1107206,habilidad prueba de transición,Aplicar
+1895,1107206,suficiencia,no suficiencia
+1896,1107207,nivel 1 prueba de transición,Geometría
+1897,1107207,nivel 2 prueba de transición,Geometría analítica en 2D
+1898,1107207,nivel 3 prueba de transición,Pendiente de una recta e intercepto de esta con el eje de la ordenada.
+1899,1107207,dificultad,Fácil
+1900,1107207,habilidad prueba de transición,Comprender
+1901,1107207,suficiencia,no suficiencia
+1902,1107208,suficiencia,no suficiencia
+1903,1107208,nivel 1 prueba de transición,Geometría
+1904,1107208,nivel 2 prueba de transición,Geometría analítica en 2D
+1905,1107208,nivel 3 prueba de transición,Posiciones relativas de dos rectas en el plano cartesiano.
+1906,1107208,dificultad,Media
+1907,1107208,habilidad prueba de transición,Comprender
+1908,1107210,nivel 1 prueba de transición,Geometría
+1909,1107210,nivel 2 prueba de transición,Geometría analítica en 2D
+1910,1107210,nivel 3 prueba de transición,Problemas que involucren rectas en el plano cartesiano en diversos contextos.
+1911,1107210,dificultad,Media
+1912,1107210,habilidad prueba de transición,Comprender
+1913,1107210,suficiencia,no suficiencia
+1914,1107212,nivel 1 prueba de transición,Geometría
+1915,1107212,nivel 2 prueba de transición,Transformaciones isométricas
+1916,1107212,nivel 3 prueba de transición,Puntos y vectores en el plano cartesiano.
+1917,1107212,dificultad,Fácil
+1918,1107212,habilidad prueba de transición,Aplicar
+1919,1107212,suficiencia,suficiencia
+1920,1107217,nivel 1 prueba de transición,Probabilidad y estadística
+1921,1107217,nivel 2 prueba de transición,Representación de datos a través de tablas y gráficos
+1922,1107217,nivel 3 prueba de transición,Problemas que involucren tablas y gráficos en diversos contextos.
+1923,1107217,dificultad,Media
+1924,1107217,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1925,1107217,suficiencia,no suficiencia
+1926,1107221,nivel 1 prueba de transición,Probabilidad y estadística
+1927,1107221,nivel 2 prueba de transición,Representación de datos a través de tablas y gráficos
+1928,1107221,nivel 3 prueba de transición,Tablas de frecuencia absoluta y relativa.
+1929,1107221,dificultad,Media
+1930,1107221,suficiencia,no suficiencia
+1931,1107221,habilidad prueba de transición,Aplicar
+1932,1107223,nivel 1 prueba de transición,Probabilidad y estadística
+1933,1107223,nivel 2 prueba de transición,Representación de datos a través de tablas y gráficos
+1934,1107223,nivel 3 prueba de transición,Problemas que involucren tablas y gráficos en diversos contextos.
+1935,1107223,dificultad,Media
+1936,1107223,habilidad prueba de transición,Aplicar
+1937,1107223,suficiencia,no suficiencia
+1938,1107225,nivel 1 prueba de transición,Probabilidad y estadística
+1939,1107225,nivel 2 prueba de transición,Medidas de tendencia central y rango
+1940,1107225,nivel 3 prueba de transición,Problemas que involucren medidas de tendencia central y rango en diversos contextos.
+1941,1107225,dificultad,Fácil
+1942,1107225,habilidad prueba de transición,Comprender
+1943,1107225,suficiencia,no suficiencia
+1944,1107231,nivel 1 prueba de transición,Probabilidad y estadística
+1945,1107231,nivel 2 prueba de transición,Medidas de tendencia central y rango
+1946,1107231,nivel 3 prueba de transición,Problemas que involucren medidas de tendencia central y rango en diversos contextos.
+1947,1107231,dificultad,Media
+1948,1107231,habilidad prueba de transición,Aplicar
+1949,1107231,suficiencia,no suficiencia
+1950,1107235,nivel 1 prueba de transición,Probabilidad y estadística
+1951,1107235,nivel 2 prueba de transición,Medidas de posición
+1952,1107235,nivel 3 prueba de transición,Problemas que involucren medidas de posición en diversos contextos.
+1953,1107235,dificultad,Media
+1954,1107235,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1955,1107235,suficiencia,no suficiencia
+1956,1107235,habilidad cognitiva LGE,Resolver problemas
+1957,1107235,curso,Segundo Básico
+1958,1107238,nivel 1 prueba de transición,Probabilidad y estadística
+1959,1107238,nivel 2 prueba de transición,Medidas de posición
+1960,1107238,nivel 3 prueba de transición,Diagrama de cajón para representar una distribución de datos.
+1961,1107238,dificultad,Media
+1962,1107238,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1963,1107238,suficiencia,no suficiencia
+1964,1107241,nivel 1 prueba de transición,Probabilidad y estadística
+1965,1107241,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+1966,1107241,nivel 3 prueba de transición,Problemas que involucren probabilidad de un evento en diversos contextos.
+1967,1107241,dificultad,Difícil
+1968,1107241,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+1969,1107241,suficiencia,no suficiencia
+1970,1107245,nivel 1 prueba de transición,Probabilidad y estadística
+1971,1107245,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+1972,1107245,nivel 3 prueba de transición,Problemas que involucren la regla aditiva y multiplicativa de probabilidades en diversos contextos.
+1973,1107245,dificultad,Media
+1974,1107245,habilidad prueba de transición,Aplicar
+1975,1107245,suficiencia,no suficiencia
+1976,1107247,nivel 1 prueba de transición,Probabilidad y estadística
+1977,1107247,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+1978,1107247,nivel 3 prueba de transición,Problemas que involucren la regla aditiva y multiplicativa de probabilidades en diversos contextos.
+1979,1107247,dificultad,Fácil
+1980,1107247,habilidad prueba de transición,Comprender
+1981,1107247,suficiencia,no suficiencia
+1982,1107249,nivel 1 prueba de transición,Probabilidad y estadística
+1983,1107249,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+1984,1107249,nivel 3 prueba de transición,Problemas que involucren probabilidad condicional y sus propiedades en diversos contextos.
+1985,1107249,dificultad,Fácil
+1986,1107249,habilidad prueba de transición,Aplicar
+1987,1107249,suficiencia,no suficiencia
+1988,1107251,nivel 1 prueba de transición,Probabilidad y estadística
+1989,1107251,nivel 2 prueba de transición,Permutación y combinatoria
+1990,1107251,nivel 3 prueba de transición,Principio multiplicativo.
+1991,1107251,dificultad,Fácil
+1992,1107251,habilidad prueba de transición,Aplicar
+1993,1107251,suficiencia,no suficiencia
+1994,1107253,nivel 1 prueba de transición,Probabilidad y estadística
+1995,1107253,nivel 2 prueba de transición,Permutación y combinatoria
+1996,1107253,nivel 3 prueba de transición,Problemas que involucren permutación y combinatoria en diversos contextos.
+1997,1107253,dificultad,Media
+1998,1107253,habilidad prueba de transición,Aplicar
+1999,1107253,suficiencia,no suficiencia
+2000,1107256,nivel 1 prueba de transición,Probabilidad y estadística
+2001,1107256,nivel 2 prueba de transición,Reglas de las probabilidades y probabilidad condicional
+2002,1107256,nivel 3 prueba de transición,Problemas que involucren probabilidad de un evento en diversos contextos.
+2003,1107256,dificultad,Media
+2004,1107256,habilidad prueba de transición,"Analizar, sintetizar y evaluar"
+2005,1107256,suficiencia,suficiencia
