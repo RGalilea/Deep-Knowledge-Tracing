@@ -7,9 +7,10 @@ def run(args):
     #dataset, length, nb_features, label_key = data_util.load_dataset(fn=args.f,
     #                                                      batch_size=args.batch_size,
     #                                                      shuffle=True)
-    dataset, length, nb_features = data_util.load_dataset_criolla(fn=args.f,
-                                                          batch_size=args.batch_size,
-                                                          shuffle=True)
+    dataset, length, nb_features,_ = data_util.load_dataset_criolla_by_levels(fn=args.f,
+                                                                              batch_size=args.batch_size,
+                                                                              level=args.l,
+                                                                              shuffle=True)
     print("[----- DIVIDING DATASET  ------]")
     train_set, test_set, val_set = data_util.split_dataset(dataset=dataset,
                                                            total_size=length,
@@ -56,6 +57,16 @@ def run(args):
 
 def parse_args():
     parser = argparse.ArgumentParser(prog="DeepKT Example")
+
+    parser.add_argument("-criolla",
+                        type=bool,
+                        default=False,
+                        help="Is this the database from Puntaje?")
+
+    parser.add_argument("-l",
+                        type=str,
+                        default='nivel 1 prueba de transición',
+                        help="nivel 1, 2 ó 3 prueba de transición ")
 
     parser.add_argument("-f",
                         type=str,
