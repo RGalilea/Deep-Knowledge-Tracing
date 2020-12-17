@@ -53,14 +53,20 @@ def load_dataset_criolla(fn, batch_size=32, shuffle=True, labels=False):
                                                tf.tensordot(a=tf.expand_dims(label, 1), b=tf.ones((1, skill_depth)),
                                                             axes=1))],
                       axis=-1),
-            tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),
-                                                                                     tf.tensordot(
-                                                                                         a=tf.expand_dims(label, 1),
-                                                                                         b=tf.ones((1, skill_depth)),
-                                                                                         axes=1))),
-                                                       lower_triangle_gen(tf.shape(label)[0]), axes=1)), 0, 1)
+                    tf.expand_dims(label, 1)
         )
     )
+
+
+
+    '''tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),
+                                                                             tf.tensordot(
+                                                                                 a=tf.expand_dims(label, 1),
+                                                                                 b=tf.ones((1, skill_depth)),
+                                                                                 axes=1))),
+                                               lower_triangle_gen(tf.shape(label)[0]), axes=1)), 0, 1)'''
+
+
     # Step 7 - Pad sequences per batch
     dataset = dataset.padded_batch(
         batch_size=batch_size,
@@ -144,8 +150,8 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
         output_types=(tf.int32, tf.float32)  # tf.int32,
     )
 
-    # for value in dataset.take(3):
-    # print('debug 0:')
+    for value in dataset.take(3):
+        print('debug 0:')
 
     if shuffle:
         dataset = dataset.shuffle(buffer_size=nb_users)
@@ -160,14 +166,23 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
                                                tf.tensordot(a=tf.expand_dims(label, 1), b=tf.ones((1, skill_depth)),
                                                             axes=1))],
                       axis=-1),
-            tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),
+            tf.math.multiply(tf.one_hot(skill, skill_depth),
+                             tf.tensordot(a=tf.expand_dims(label, 1), b=tf.ones((1, skill_depth)),
+                                          axes=1))
+        )
+    )
+    #the not-naive or cummulative targets
+    '''tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),
                                                                                      tf.tensordot(
                                                                                          a=tf.expand_dims(label, 1),
                                                                                          b=tf.ones((1, skill_depth)),
                                                                                          axes=1))),
-                                                       lower_triangle_gen(tf.shape(label)[0]), axes=1)), 0, 1)
-        )
-    )
+                                                       lower_triangle_gen(tf.shape(label)[0]), axes=1)), 0, 1)'''
+
+
+    for value in dataset.take(2):
+        print('debug 0:')
+
     # Step 7 - Pad sequences per batch
     dataset = dataset.padded_batch(
         batch_size=batch_size,
