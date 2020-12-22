@@ -6,7 +6,7 @@ import time
 def run(args):
     start = time.time()
     print("[----- LOADING DATASET  ------]")
-    dataset, length, nb_features,_ = data_util.load_dataset_criolla_by_levels(fn=args.f,
+    dataset, length, nb_features,_,_ = data_util.load_dataset_criolla_by_levels(fn=args.f,
                                                                               batch_size=args.batch_size,
                                                                               level=args.l,
                                                                               shuffle=True)
