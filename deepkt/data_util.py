@@ -5,6 +5,9 @@ import numpy as np
 
 MASK_VALUE = -1.  # The masking value cannot be zero.
 
+'''
+#Older implementation to load the Database [demo_dkt], consider it deprecated
+#it doesn't use the levels, just the questions by themselves. From them question 44( after the factorization step ) is the most influential
 def load_dataset_criolla(fn, batch_size=32, shuffle=True, labels=False):
     df = pd.read_csv(fn)
     if "pregunta_id" not in df.columns:
@@ -37,9 +40,6 @@ def load_dataset_criolla(fn, batch_size=32, shuffle=True, labels=False):
         output_types=(tf.int32, tf.float32)  # tf.int32,
     )
 
-    # for value in dataset.take(3):
-    # print('debug 0:')
-
     if shuffle:
         dataset = dataset.shuffle(buffer_size=nb_users)
 
@@ -57,14 +57,14 @@ def load_dataset_criolla(fn, batch_size=32, shuffle=True, labels=False):
         )
     )
 
-
-
-    '''tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),
+    tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),
                                                                              tf.tensordot(
                                                                                  a=tf.expand_dims(label, 1),
                                                                                  b=tf.ones((1, skill_depth)),
                                                                                  axes=1))),
-                                               lower_triangle_gen(tf.shape(label)[0]), axes=1)), 0, 1)'''
+                                               lower_triangle_gen(tf.shape(label)[0]), axes=1)), 0, 1)
+    
+
 
 
     # Step 7 - Pad sequences per batch
@@ -91,12 +91,13 @@ def load_dataset_criolla(fn, batch_size=32, shuffle=True, labels=False):
             key=pd.concat([key,aux_row], ignore_index=True)
 
     return dataset, length, skill_depth, key
-
+'''
 
 def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel 1 prueba de transición'):
-    df = pd.read_csv(fn)
-    df2 = pd.read_csv(fn[:-14]+'Clasificaciones.csv')
+    df = pd.read_csv(fn) #should load [demo_dkt] Respuestas.csv
+    df2 = pd.read_csv(fn[:-14]+'Clasificaciones.csv')#should load [demo_dkt] Clasificaciones.csv
 
+    #Just checking that all the needed things are there
     if "pregunta_id" not in df.columns:
         raise KeyError(f"The column 'pregunta_id' was not found on {fn}")
     if "correcta" not in df.columns:
@@ -110,14 +111,14 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
     if "pregunta_id" not in df2.columns:
         raise KeyError(f"The column 'clasificacion' was not found on {fn[:-14]+'Clasificaciones.csv'}")
 
+    # Right or wrong must be coded as 1s or 0s respectively
     if not (df['correcta'].isin([0, 1])).all():
         raise KeyError(f"The values of the column 'correcta' must be 0 or 1.")
 
-
+    #build dictionaries with the labels from the 3 cathegories
     n1_dict = {}
     n2_dict = {}
     n3_dict = {}
-
     for i in range( len( df2['pregunta_id'] )  ):
         if df2['clasificacion_tipo'][i]=='nivel 1 prueba de transición' :
             n1_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
@@ -126,6 +127,7 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
         elif df2['clasificacion_tipo'][i]=='nivel 3 prueba de transición' :
             n3_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
 
+    #Apply the dictionaties to have a straightforward way to a question's cathegory
     df['nivel 1 prueba de transición']=df['pregunta_id'].map(n1_dict)
     df['nivel 2 prueba de transición'] = df['pregunta_id'].map(n2_dict)
     df['nivel 3 prueba de transición'] = df['pregunta_id'].map(n3_dict)
@@ -135,7 +137,9 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
 
     # Step 2 - Enumerate skill id
     df['pregunta'], label_key = pd.factorize(df[level], sort=True)
-    # key = df.groupby('pregunta').apply(lambda r: r['skill_name'].values[0:1]) # there are no labels in this dataset
+    # Lets clasify the nivel 1's to color the nodes according to this
+    df['colors'],color_label = pd.factorize(df['nivel 1 prueba de transición'], sort=True)
+    hierarchy_key = df.groupby('pregunta').apply( lambda r: r['colors'].values[0] ) # this finaly relates the current clasification to the flavors from Nivel 1
 
     # Step 4 - Convert to a sequence per user id and shift features 1 timestep
     seq = df.groupby('usuario_id').apply(
@@ -150,16 +154,17 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
         output_types=(tf.int32, tf.float32)  # tf.int32,
     )
 
-    for value in dataset.take(3):
-        print('debug 0:')
-
+    #if u want to shuffle, let's shuffle
     if shuffle:
         dataset = dataset.shuffle(buffer_size=nb_users)
 
+    #prepares things to build inputs and outputs
     skill_depth = df['pregunta'].max() + 1
-    lower_triangle_gen = lambda size: tf.linalg.LinearOperatorLowerTriangular((tf.ones(shape=(size, size)))).to_dense()
 
-    dataset = dataset.map(  # (  #feat, #tf.one_hot(feat, depth=features_depth),
+
+    #Building inputs and targets (Input_[n by 2*skill_depth] , output_[n by skill_depth] )
+    #the first half of the input is a one_hot encoding of the question, the second half is a one_hot encoding if that question was answered right or not.
+    dataset = dataset.map(
         lambda skill, label: (
             tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
                               tf.math.multiply(tf.one_hot(skill, skill_depth),
@@ -172,6 +177,7 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
         )
     )
     #the not-naive or cummulative targets
+    #lower_triangle_gen = lambda size: tf.linalg.LinearOperatorLowerTriangular((tf.ones(shape=(size, size)))).to_dense()# this needs to be build before making the targets/outputs
     '''tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),
                                                                                      tf.tensordot(
                                                                                          a=tf.expand_dims(label, 1),
@@ -179,9 +185,6 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
                                                                                          axes=1))),
                                                        lower_triangle_gen(tf.shape(label)[0]), axes=1)), 0, 1)'''
 
-
-    for value in dataset.take(2):
-        print('debug 0:')
 
     # Step 7 - Pad sequences per batch
     dataset = dataset.padded_batch(
@@ -193,7 +196,7 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
 
     length = nb_users // batch_size
 
-    return dataset, length, skill_depth, label_key
+    return dataset, length, skill_depth, label_key, hierarchy_key
 
 def load_dataset(fn, batch_size=32, shuffle=True):
     df = pd.read_csv(fn)
@@ -213,17 +216,10 @@ def load_dataset(fn, batch_size=32, shuffle=True):
 
     # Step 1.2 - Remove users with a single answer
     df = df.groupby('user_id').filter(lambda q: len(q) > 1).copy()
-    #print(df)
+
     # Step 2 - Enumerate skill id
     df['skill'], _ = pd.factorize(df['skill_id'], sort=True)
     key=df.groupby('skill').apply(lambda r: r['skill_name'].values[0:1] )
-    #key=df_clone[:]
-    #df['problem'], key = pd.factorize(df['problem_id'], sort=True)
-    #print('The key that relates the Ids is size:',key.size)
-    #print(df)
-    # Step 3 - Cross skill id with answer to form a synthetic feature
-    #df['skill_with_answer'] = df['skill'] * 2 + df['correct'] #I've found this kinda weird
-    #df['correct_answer'] = df['skill_id']/df['skill_id'] * df['correct']
 
     # Step 4 - Convert to a sequence per user id and shift features 1 timestep
     seq = df.groupby('user_id').apply(
@@ -240,9 +236,6 @@ def load_dataset(fn, batch_size=32, shuffle=True):
         output_types=( tf.int32, tf.float32)#tf.int32,
     )
 
-    #for value in dataset.take(3):
-    #print('debug 0:')
-
     if shuffle:
         dataset = dataset.shuffle(buffer_size=nb_users)
 
@@ -251,10 +244,8 @@ def load_dataset(fn, batch_size=32, shuffle=True):
     #features_depth = df['skill_with_answer'].max() + 1
     skill_depth = df['skill'].max() + 1
     lower_triangle_gen = lambda size: tf.linalg.LinearOperatorLowerTriangular((tf.ones(shape=(size, size)))).to_dense()#[[float(int(j >= i)) for j in range(size)] for i in range(size)]
-    #problem_depth = df['problem'].max() + 1
-    #for value in dataset.take(3):
-    #    print('debug 0:')
-    dataset = dataset.map( #(  #feat, #tf.one_hot(feat, depth=features_depth),
+
+    dataset = dataset.map(
         lambda skill, label: (
             tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
                               tf.math.multiply(tf.one_hot(skill, skill_depth),tf.tensordot(a=tf.expand_dims(label,1),b=tf.ones((1,skill_depth)), axes=1))],
@@ -262,24 +253,21 @@ def load_dataset(fn, batch_size=32, shuffle=True):
             tf.clip_by_value(tf.transpose(tf.tensordot(tf.transpose(tf.math.multiply(tf.one_hot(skill, skill_depth),tf.tensordot(a=tf.expand_dims(label,1),b=tf.ones((1,skill_depth)), axes=1))),lower_triangle_gen(tf.shape(label)[0]),axes=1)),0,1)
         )
     )
-    #for value in dataset.take(1):
-    #   print('debug 1:',value)
+
     # Step 7 - Pad sequences per batch
     dataset = dataset.padded_batch(
         batch_size=batch_size,
         padding_values=(MASK_VALUE, MASK_VALUE),
         padded_shapes=([None, None],[None, None]),
         drop_remainder=True
-    ) #I probably have to change this
-    #print('debug 2')
-    #for value3 in dataset.take(3):
-    #    print('debug 3:',value3)
+    )
 
     length = nb_users // batch_size
     return dataset, length, skill_depth, key
 
 
 def split_dataset(dataset, total_size, test_fraction, val_fraction=None):
+    #basically, just splits the dataset in train, validation and test according to the input fractions
     def split(dataset, split_size):
         split_set = dataset.take(split_size)
         dataset = dataset.skip(split_size)
@@ -310,6 +298,8 @@ def split_dataset(dataset, total_size, test_fraction, val_fraction=None):
 
 def get_target(y_true, y_pred):
     # Get skills and labels from y_true
+    # I got rid of this function after i changed the inputs and target
+    # maybe it wasn't the best idea, but that needs to be tested
     '''
     mask = 1. - tf.cast(tf.equal(y_true, MASK_VALUE), y_true.dtype)
     y_true = y_true * mask
