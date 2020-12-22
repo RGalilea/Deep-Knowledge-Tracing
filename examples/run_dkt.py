@@ -1,12 +1,11 @@
 import argparse
 import tensorflow as tf
 from deepkt import deepkt, data_util, metrics
+import time
 
 def run(args):
+    start = time.time()
     print("[----- LOADING DATASET  ------]")
-    #dataset, length, nb_features, label_key = data_util.load_dataset(fn=args.f,
-    #                                                      batch_size=args.batch_size,
-    #                                                      shuffle=True)
     dataset, length, nb_features,_ = data_util.load_dataset_criolla_by_levels(fn=args.f,
                                                                               batch_size=args.batch_size,
                                                                               level=args.l,
@@ -21,14 +20,11 @@ def run(args):
     model = deepkt.DKTModel(nb_features=nb_features,
                             hidden_units=args.hidden_units,
                             dropout_rate=args.dropout_rate)
-    model.compile(
-        optimizer='adam',
-        metrics=[
-            metrics.BinaryAccuracy(),
-            metrics.AUC(),
-            metrics.Precision(),
-            metrics.Recall()
-        ])
+    model.compile(optimizer='adam', metrics=[metrics.BinaryAccuracy(),
+                                             metrics.AUC(),
+                                             metrics.Precision(),
+                                             metrics.Recall()
+                                            ])
 
     print(model.summary())
     print("\n[-- COMPILING DONE  --]")
@@ -52,17 +48,20 @@ def run(args):
     model.load_weights(args.w)
     model.evaluate(dataset=test_set, verbose=args.v)
     print("\n[--- TESTING DONE  ---]")
-    #model.save('trained_model')
+    end = time.time()
+    print("\nElapsed Time: ",end - start)
+
 
 
 def parse_args():
     parser = argparse.ArgumentParser(prog="DeepKT Example")
 
+    #This argument will be used to decide which methos to use, so i can keep the same code working with it's original Database and the [demo_dkt] one
     parser.add_argument("-criolla",
                         type=bool,
                         default=False,
                         help="Is this the database from Puntaje?")
-
+    #just relevan for the [demo_dkt], nivel 2 and 3 are more insightful, nivel 1 has too few classes (4)
     parser.add_argument("-l",
                         type=str,
                         default='nivel 1 prueba de transición',
