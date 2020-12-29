@@ -95,7 +95,7 @@ def load_dataset_criolla(fn, batch_size=32, shuffle=True, labels=False):
 
 def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel 1 prueba de transición'):
     df = pd.read_csv(fn) #should load [demo_dkt] Respuestas.csv
-    df2 = pd.read_csv(fn[:-14]+'Clasificaciones.csv')#should load [demo_dkt] Clasificaciones.csv
+    df2 = pd.read_csv(fn[:-33]+'Clasificaciones.csv')#should load [demo_dkt] Clasificaciones.csv
 
     #Just checking that all the needed things are there
     if "pregunta_id" not in df.columns:
