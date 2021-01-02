@@ -172,10 +172,10 @@ def load_dataset_criolla_by_levels(fn, fn2, batch_size=32, shuffle=True, level='
     #the first half of the input is a one_hot encoding of the question, the second half is a one_hot encoding if that question was answered right or not.
     dataset = dataset.map(
         lambda feat, skill, label: (
-            tf.one_hot(feat, depth=features_depth),
+            tf.one_hot(feat, depth=round(features_depth)),
             tf.concat(
                 values=[
-                    tf.one_hot(skill, depth=skill_depth),
+                    tf.one_hot(skill, depth=round(skill_depth)),
                     tf.expand_dims(label, -1)
                 ],
                 axis=-1
