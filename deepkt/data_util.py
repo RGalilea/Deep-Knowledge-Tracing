@@ -157,7 +157,7 @@ def load_dataset_criolla_by_levels(fn, fn2, batch_size=32, shuffle=True, level='
     # Step 5 - Get Tensorflow Dataset
     dataset = tf.data.Dataset.from_generator(
         generator=lambda: seq,
-        output_types=(tf.int32,tf.float32, tf.float32)  #
+        output_types=(tf.int32,tf.int32, tf.float32)  #
     )
 
     #if u want to shuffle, let's shuffle
@@ -165,17 +165,17 @@ def load_dataset_criolla_by_levels(fn, fn2, batch_size=32, shuffle=True, level='
         dataset = dataset.shuffle(buffer_size=nb_users)
 
     #prepares things to build inputs and outputs
-    skill_depth = int(df['pregunta'].max() + 1)
+    skill_depth = df['pregunta'].max() + 1
     features_depth = int(df['pregunta+correcta'].max() + 1)
 
     #Building inputs and targets (Input_[n by 2*skill_depth] , output_[n by skill_depth] )
     #the first half of the input is a one_hot encoding of the question, the second half is a one_hot encoding if that question was answered right or not.
     dataset = dataset.map(
         lambda feat, skill, label: (
-            tf.one_hot(feat, depth=round(features_depth)),
+            tf.one_hot(feat, depth=features_depth),
             tf.concat(
                 values=[
-                    tf.one_hot(skill, depth=round(skill_depth)),
+                    tf.one_hot(skill, depth=skill_depth),
                     tf.expand_dims(label, -1)
                 ],
                 axis=-1
