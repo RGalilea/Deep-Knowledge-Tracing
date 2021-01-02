@@ -93,9 +93,9 @@ def load_dataset_criolla(fn, batch_size=32, shuffle=True, labels=False):
     return dataset, length, skill_depth, key
 '''
 
-def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel 1 prueba de transición'):
+def load_dataset_criolla_by_levels(fn, fn2, batch_size=32, shuffle=True, level='nivel 1 prueba de transición'):
     df = pd.read_csv(fn) #should load [demo_dkt] Respuestas.csv
-    df2 = pd.read_csv(fn[:-29]+'Clasificaciones.csv')#should load [demo_dkt] Clasificaciones.csv
+    df2 = pd.read_csv(fn2)#should load [demo_dkt] Clasificaciones.csv
 
     #Just checking that all the needed things are there
     if "pregunta_id" not in df.columns:
@@ -103,7 +103,7 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
     if "correcta" not in df.columns:
         raise KeyError(f"The column 'correct' was not found on {fn}")
     if "usuario_id" not in df.columns:
-        raise KeyError(f"The column 'user_id' was not found on {fn}")
+        raise KeyError(f"The column 'usuario_id' was not found on {fn}")
     if "pregunta_id" not in df2.columns:
         raise KeyError(f"The column 'pregunta_id' was not found on {fn[:-14]+'Clasificaciones.csv'}")
     if "pregunta_id" not in df2.columns:
@@ -140,18 +140,24 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
     # Lets clasify the nivel 1's to color the nodes according to this
     df['colors'],color_label = pd.factorize(df['nivel 1 prueba de transición'], sort=True)
     hierarchy_key = df.groupby('pregunta').apply( lambda r: r['colors'].values[0] ) # this finaly relates the current clasification to the flavors from Nivel 1
+    # Step 3 - Cross skill id with answer to form a synthetic feature
+    df['pregunta+correcta'] = df['pregunta'] * 2 + df['correcta']
+
 
     # Step 4 - Convert to a sequence per user id and shift features 1 timestep
     seq = df.groupby('usuario_id').apply(
-        lambda r: (r['pregunta'].values[1:],
-                   r['correcta'].values[1:])
+        lambda r: (
+            r['pregunta+correcta'].values[:-1],
+            r['pregunta'].values[1:],
+            r['correcta'].values[1:],
+        )
     )
     nb_users = len(seq)
 
     # Step 5 - Get Tensorflow Dataset
     dataset = tf.data.Dataset.from_generator(
         generator=lambda: seq,
-        output_types=(tf.int32, tf.float32)  # tf.int32,
+        output_types=(tf.int32,tf.int32, tf.float32)  #
     )
 
     #if u want to shuffle, let's shuffle
@@ -160,20 +166,20 @@ def load_dataset_criolla_by_levels(fn, batch_size=32, shuffle=True, level='nivel
 
     #prepares things to build inputs and outputs
     skill_depth = df['pregunta'].max() + 1
-
+    features_depth = df['pregunta+correcta'].max() + 1
 
     #Building inputs and targets (Input_[n by 2*skill_depth] , output_[n by skill_depth] )
     #the first half of the input is a one_hot encoding of the question, the second half is a one_hot encoding if that question was answered right or not.
     dataset = dataset.map(
-        lambda skill, label: (
-            tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
-                              tf.math.multiply(tf.one_hot(skill, skill_depth),
-                                               tf.tensordot(a=tf.expand_dims(label, 1), b=tf.ones((1, skill_depth)),
-                                                            axes=1))],
-                      axis=-1),
-            tf.math.multiply(tf.one_hot(skill, skill_depth),
-                             tf.tensordot(a=tf.expand_dims(label, 1), b=tf.ones((1, skill_depth)),
-                                          axes=1))
+        lambda feat, skill, label: (
+            tf.one_hot(feat, depth=features_depth),
+            tf.concat(
+                values=[
+                    tf.one_hot(skill, depth=skill_depth),
+                    tf.expand_dims(label, -1)
+                ],
+                axis=-1
+            )
         )
     )
     #the not-naive or cummulative targets
@@ -300,13 +306,13 @@ def get_target(y_true, y_pred):
     # Get skills and labels from y_true
     # I got rid of this function after i changed the inputs and target
     # maybe it wasn't the best idea, but that needs to be tested
-    '''
+
     mask = 1. - tf.cast(tf.equal(y_true, MASK_VALUE), y_true.dtype)
     y_true = y_true * mask
 
     skills, y_true = tf.split(y_true, num_or_size_splits=[-1, 1], axis=-1)
 
     # Get predictions for each skill
-    y_pred = tf.reduce_sum(y_pred * skills, axis=-1, keepdims=True)'''
+    y_pred = tf.reduce_sum(y_pred * skills, axis=-1, keepdims=True)
 
     return y_true, y_pred
