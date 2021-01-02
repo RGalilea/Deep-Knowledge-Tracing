@@ -157,7 +157,7 @@ def load_dataset_criolla_by_levels(fn, fn2, batch_size=32, shuffle=True, level='
     # Step 5 - Get Tensorflow Dataset
     dataset = tf.data.Dataset.from_generator(
         generator=lambda: seq,
-        output_types=(tf.int32,tf.int32, tf.float32)  #
+        output_types=(tf.int32,tf.float32, tf.float32)  #
     )
 
     #if u want to shuffle, let's shuffle
