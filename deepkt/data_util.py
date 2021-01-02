@@ -165,8 +165,8 @@ def load_dataset_criolla_by_levels(fn, fn2, batch_size=32, shuffle=True, level='
         dataset = dataset.shuffle(buffer_size=nb_users)
 
     #prepares things to build inputs and outputs
-    skill_depth = df['pregunta'].max() + 1
-    features_depth = df['pregunta+correcta'].max() + 1
+    skill_depth = int(df['pregunta'].max() + 1)
+    features_depth = int(df['pregunta+correcta'].max() + 1)
 
     #Building inputs and targets (Input_[n by 2*skill_depth] , output_[n by skill_depth] )
     #the first half of the input is a one_hot encoding of the question, the second half is a one_hot encoding if that question was answered right or not.
