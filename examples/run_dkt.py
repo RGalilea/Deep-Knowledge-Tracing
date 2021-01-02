@@ -23,8 +23,7 @@ def run(args):
     model.compile(optimizer='adam', metrics=[metrics.BinaryAccuracy(),
                                              metrics.AUC(),
                                              metrics.Precision(),
-                                             metrics.Recall()
-                                            ])
+                                             metrics.Recall()])
 
     print(model.summary())
     print("\n[-- COMPILING DONE  --]")
