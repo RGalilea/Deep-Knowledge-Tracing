@@ -6,7 +6,7 @@ import time
 def run(args):
     start = time.time()
     print("[----- LOADING DATASET  ------]")
-    dataset, length, nb_features,_,_ = data_util.load_dataset_criolla_by_levels(fn=args.f,
+    dataset, length, nb_features,_,_  = data_util.load_dataset_criolla_by_levels(fn=args.f, fn2=args.classes,
                                                                               batch_size=args.batch_size,
                                                                               level=args.l,
                                                                               shuffle=True)
@@ -70,6 +70,11 @@ def parse_args():
     parser.add_argument("-f",
                         type=str,
                         default="data/ASSISTments_skill_builder_data.csv",
+                        help="the path to the data")
+
+    parser.add_argument("-classes",
+                        type=str,
+                        default="data/[DATOS_DKT] Clasificaciones.csv",
                         help="the path to the data")
 
     parser.add_argument("-v",
