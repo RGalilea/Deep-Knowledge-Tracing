@@ -89,7 +89,7 @@ def parse_args():
 
     parser.add_argument("--log_dir",
                         type=str,
-                        default="logs/",
+                        default="logs",
                         help="log dir.")
 
     model_group = parser.add_argument_group(title="Model arguments.")
