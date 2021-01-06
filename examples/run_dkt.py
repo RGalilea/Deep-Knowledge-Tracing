@@ -24,6 +24,8 @@ def run(args):
                                              metrics.AUC(),
                                              metrics.Precision(),
                                              metrics.Recall()])
+    if args.re_train:
+        model.load_weights(args.w)
 
     print(model.summary())
     print("\n[-- COMPILING DONE  --]")
@@ -65,6 +67,11 @@ def parse_args():
                         type=str,
                         default='nivel 1 prueba de transición',
                         help="nivel 1, 2 ó 3 prueba de transición ")
+
+    parser.add_argument("-re_train",
+                        type=bool,
+                        default=False,
+                        help="load weights to continue training True/False")
 
     parser.add_argument("-f",
                         type=str,
