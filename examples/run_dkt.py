@@ -25,6 +25,7 @@ def run(args):
                                              metrics.Precision(),
                                              metrics.Recall()])
     if args.re_train:
+        print("\n[-- Loading Weights --]")
         model.load_weights(args.w)
 
     print(model.summary())
