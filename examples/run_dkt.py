@@ -135,4 +135,6 @@ def parse_args():
 
 
 if __name__ == "__main__":
+    gpu_options = tf.GPUOptions(allow_growth=True)
+    session = tf.InteractiveSession(config=tf.ConfigProto(gpu_options=gpu_options))
     run(parse_args())
