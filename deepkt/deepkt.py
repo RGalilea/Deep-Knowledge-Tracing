@@ -16,9 +16,9 @@ class DKTModel(tf.keras.Model):
             and what the model expects.
     """
 
-    def __init__(self, nb_features, hidden_units=100, dropout_rate=0.2):
+    def __init__(self, nb_features, hidden_units=100, dropout_rate=0.2,extra_inputs=0):
         #This builds the desired arquitecture according to the DKT paper
-        inputs = tf.keras.Input(shape=(None, 2*nb_features), name='inputs')
+        inputs = tf.keras.Input(shape=(None, 2*nb_features+extra_inputs), name='inputs')
 
         x = tf.keras.layers.Masking(mask_value=data_util.MASK_VALUE)(inputs)
 
