@@ -513,7 +513,7 @@ def load_dataset_criolla_w_difficulty(fn, fn2, batch_size=32, shuffle=True, leve
     df['nivel 2 prueba de transición'] = df['pregunta_id'].map(n2_dict)
     df['nivel 3 prueba de transición'] = df['pregunta_id'].map(n3_dict)
     df['dificultad'] = df['pregunta_id'].map(diff_dict)
-    df['curso'] = df['pregunta_id'].map(diff_dict)
+    df['curso'] = df['pregunta_id'].map(grade_dict)
 
     # Remove rows with mising values in the column to clasify
     df.dropna( axis=0, how="any",subset=[level], inplace=True)
