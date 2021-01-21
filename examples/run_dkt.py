@@ -6,7 +6,7 @@ import time
 def run(args):
     start = time.time()
     print("[----- LOADING DATASET  ------]")
-    dataset, length, nb_features,_,_  = data_util.load_dataset_criolla_by_levels(fn=args.f, fn2=args.classes,
+    dataset, length, nb_features,_,_  = data_util.load_dataset_criolla_w_difficulty(fn=args.f, fn2=args.classes,
                                                                               batch_size=args.batch_size,
                                                                               level=args.l,
                                                                               shuffle=True)
@@ -19,6 +19,7 @@ def run(args):
     print("[----- COMPILING  ------]")
     model = deepkt.DKTModel(nb_features=nb_features,
                             hidden_units=args.hidden_units,
+                            extra_inputs=5,
                             dropout_rate=args.dropout_rate)
     model.compile(optimizer='adam', metrics=[metrics.BinaryAccuracy(),
                                              metrics.AUC(),
@@ -135,6 +136,4 @@ def parse_args():
 
 
 if __name__ == "__main__":
-    gpu_options = tf.compat.v1.GPUOptions(allow_growth=True)
-    session = tf.compat.v1.InteractiveSession(config=tf.compat.v1.ConfigProto(gpu_options=gpu_options))
     run(parse_args())
