@@ -528,7 +528,7 @@ def load_dataset_criolla_w_difficulty(fn, fn2, batch_size=32, shuffle=True, leve
     df['pregunta'], label_key = pd.factorize(df[level], sort=True)
     #aux,key=pd.factorize(df['dificultad'], sort=True)
     df['dificultad'] = df['dificultad'].replace(to_replace=['Muy Fácil','Fácil','Media','Difícil','Muy Difícil'],value=[0,1,2,3,4])
-    df['dificultad'] = df['dificultad'].replace(to_replace=['Séptimo Básico', 'Octavo Básico', 'Primero Medio', 'Segundo Medio', 'Tercero Medio','Cuarto Medio'],value=[0, 1, 2, 3, 4, 5])
+    df['curso'] = df['curso'].replace(to_replace=['Séptimo Básico', 'Octavo Básico', 'Primero Medio', 'Segundo Medio', 'Tercero Medio','Cuarto Medio'],value=[0, 1, 2, 3, 4, 5])
     # Lets clasify the nivel 1's to color the nodes according to this
     df['colors'],color_label = pd.factorize(df['nivel 1 prueba de transición'], sort=True)
     hierarchy_key = df.groupby('pregunta').apply( lambda r: r['colors'].values[0] ) # this finaly relates the current clasification to the flavors from Nivel 1
