@@ -19,7 +19,7 @@ def run(args):
     print("[----- COMPILING  ------]")
     model = deepkt.DKTModel(nb_features=nb_features,
                             hidden_units=args.hidden_units,
-                            extra_inputs=5,
+                            extra_inputs=11,
                             dropout_rate=args.dropout_rate)
     model.compile(optimizer='adam', metrics=[metrics.BinaryAccuracy(),
                                              metrics.AUC(),
