@@ -5,7 +5,8 @@ from deepkt import data_util
 
 
 class DKTModel(tf.keras.Model):
-    """ The Deep Knowledge Tracing model.
+    """
+    The Deep Knowledge Tracing model.
     Arguments in __init__:
         nb_features: The number of features in the input.
         nb_skills: The number of skills in the dataset.
@@ -71,7 +72,8 @@ class DKTModel(tf.keras.Model):
             steps_per_epoch=None,
             validation_steps=None,
             validation_freq=1):
-        """Trains the model for a fixed number of epochs (iterations on a dataset).
+        """
+        Trains the model for a fixed number of epochs (iterations on a dataset).
         Arguments:
             dataset: A `tf.data` dataset. Should return a tuple
                 of `(inputs, (skills, targets))`.
@@ -138,7 +140,7 @@ class DKTModel(tf.keras.Model):
                                          initial_epoch=initial_epoch,
                                          steps_per_epoch=steps_per_epoch,
                                          validation_steps=validation_steps,
-                                         validation_freq=validation_freq)#
+                                         validation_freq=validation_freq)
 
     def evaluate(self,
                  dataset,
