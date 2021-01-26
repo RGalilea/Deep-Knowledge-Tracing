@@ -53,7 +53,7 @@ Tensorflow 2.0 is particularly important, because an error will pop up if you us
     - Run the python script:
 
         ``` bash
-        python run_dkt.py -f="examples/data/[demo_dkt] Respuestas.csv" -classes="examples/data/[demo_dkt] Clasificaciones.csv" -l="nivel 1 prueba de transición" --batch_size=64 --epochs=10
+        python run_dkt.py -f="examples/data/[demo_dkt] Respuestas.csv" -classes="examples/data/[demo_dkt] Clasificaciones.csv" -l="nivel 1 prueba de transición" 
         ```
 
 ## Custom Metrics
