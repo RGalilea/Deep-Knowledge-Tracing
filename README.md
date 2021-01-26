@@ -1,26 +1,25 @@
-# Deep-Knowledge-Tracing [![Build Status](https://travis-ci.com/lccasagrande/Deep-Knowledge-Tracing.svg?branch=master)](https://travis-ci.com/lccasagrande/Deep-Knowledge-Tracing) [![Coverage Status](https://coveralls.io/repos/github/lccasagrande/Deep-Knowledge-Tracing/badge.svg?branch=master&kill_cache=1)](https://coveralls.io/github/lccasagrande/Deep-Knowledge-Tracing?branch=master&kill_cache=1)
 
-This repository contains my implementation of [**Deep Knowledge Tracing**](https://github.com/chrispiech/DeepKnowledgeTracing) for the Udacity's Capstone Project.
+This repository contains my implementation of [**Deep Knowledge Tracing**](https://github.com/chrispiech/DeepKnowledgeTracing) based on the one by lccasagrande (https://github.com/lccasagrande/Deep-Knowledge-Tracing) 
+for Puntaje Nacional.cl
 
 
 ## Overview
 
-The objective is to predict the probabilities of a student correctly answering a problem not yet seen by him. To this end, we train the model using the [**ASSISTments Skill-builder data 2009-2010**](https://sites.google.com/site/assistmentsdata/home/assistment-2009-2010-data/skill-builder-data-2009-2010) public dataset.
+The objective is to predict the probabilities of a student correctly answering a problem not yet seen by him.
+The information needed is just what problems the student has answered, if they were correct and the dificulty of each one.
 
 ## Requirements
 
-You'll need Python 3.7 x64 and Tensorflow 2.0 to be able to run this project.
+You'll need Python 3.7 x64 and Tensorflow 2.0 to be able to run this project. 
+Tensorflow 2.0 is particularly important, because an error will pop up if you use later versions.
 
-If you do not have Python installed yet, it is recommended that you install the [Anaconda](https://www.anaconda.com/download/) distribution of Python, which has almost all packages required in this project. You can also install Python 3.7 x64 from [here](https://www.python.org/downloads/).
-
-Tensorflow 2.0 is installed along with the project. Check the instructions below.
 
 ## Instructions
 
 1. Clone the repository and navigate to the downloaded folder.
 
     ``` bash
-    git clone https://github.com/lccasagrande/Deep-Knowledge-Tracing.git
+    git clone https://github.com/RGalilea/Deep-Knowledge-Tracing.git
     cd Deep-Knowledge-Tracing
     ```
 
@@ -37,27 +36,25 @@ Tensorflow 2.0 is installed along with the project. Check the instructions below
         ``` bash
         pip install -e .[tf_gpu]
         ```
-
-3. Navigate to the examples folder and:
-    - Run the notebook:
-
-        ``` bash
-        jupyter notebook DKT.ipynb
+    - If you need to uninstall tensorflow:
+	``` bash
+        pip uninstall tensorflow
+	pip install tensorflow==2.0.0
         ```
+	or 
+	``` bash
+        pip uninstall tensorflow
+	pip install tensorflow-gpu==2.0.0
+        ```
+
+
+3. Navigate to the examples folder and train a network:
 
     - Run the python script:
 
         ``` bash
-        python run_dkt.py
+        python run_dkt.py -f="examples/data/[demo_dkt] Respuestas.csv" -classes="examples/data/[demo_dkt] Clasificaciones.csv" -l="nivel 1 prueba de transición" --batch_size=64 --epochs=10
         ```
-
-4. [Optional] Analyse the results with tensorboard:
-
-    ``` bash
-    tensorboard --logdir=logs
-    ```
-
-    ![alt text](docs/output_example.png "Output example")
 
 ## Custom Metrics
 
@@ -82,9 +79,17 @@ Take a look at [deepkt/metrics.py](https://github.com/lccasagrande/Deep-Knowledg
 
 To use a different dataset, you must be sure that you have the following columns:
 
-- **user_id**: The identifier of the student.
-- **skill_id**: The identifier of the skill of the question.
-- **correct**: The answer to the question [0, 1].
+- **usuario_id**: The identifier of the student.
+- **pregunta_id**: The identifier for the particular question.
+- **correcta**: The answer to the question [0, 1].
+
+and in the clasificaciones.csv there needs to be
+
+- **pregunta_id**: The identifier for the particular question.
+- **clasificacion_tipo**: different labels that might apply to a question. For example: Grade, dificulty, time, skill, ...
+- **clasificacion**: The actual labels related to the problem. For example: 10th, easy, 20, Geometry, ...
+
+
 
 ## Support
 
