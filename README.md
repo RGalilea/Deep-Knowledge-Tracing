@@ -1,6 +1,6 @@
 
 This repository contains my implementation of [**Deep Knowledge Tracing**](https://github.com/chrispiech/DeepKnowledgeTracing) based on the one by lccasagrande (https://github.com/lccasagrande/Deep-Knowledge-Tracing) 
-for Puntaje Nacional.cl
+for PuntajeNacional.cl
 
 
 ## Overview
@@ -37,6 +37,7 @@ Tensorflow 2.0 is particularly important, because an error will pop up if you us
         pip install -e .[tf_gpu]
         ```
     - If you need to uninstall tensorflow:
+    
 	``` bash
         pip uninstall tensorflow
 	pip install tensorflow==2.0.0
@@ -53,8 +54,16 @@ Tensorflow 2.0 is particularly important, because an error will pop up if you us
     - Run the python script:
 
         ``` bash
-        python run_dkt.py -f="examples/data/[demo_dkt] Respuestas.csv" -classes="examples/data/[demo_dkt] Clasificaciones.csv" -l="nivel 1 prueba de transición" 
+        python run_dkt.py -f="examples/data/[demo_dkt] Respuestas.csv" -classes="examples/data/[demo_dkt] Clasificaciones.csv" -l="nivel 1 prueba de transición"
         ```
+
+4. Draw an influence graph for a trained network
+
+        ``` bash
+        python use_trained_DKT.py -f="examples/data/[demo_dkt] Respuestas.csv" -classes="examples/data/[demo_dkt] Clasificaciones.csv" -l="nivel 1 prueba de transición"
+        ```
+The folder weights/ needs to be accesible directly from were you run the file.	
+
 
 ## Custom Metrics
 
