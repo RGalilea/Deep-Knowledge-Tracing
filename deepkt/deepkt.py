@@ -52,7 +52,7 @@ class DKTModel(tf.keras.Model):
 
         def custom_loss(y_true, y_pred):
             y_true, y_pred = data_util.get_target(y_true, y_pred)
-            return tf.keras.losses.binary_crossentropy(y_true, y_pred)
+            return tf.keras.losses.binary_crossentropy(y_pred, y_true)#(y_true, y_pred)
 
         super(DKTModel, self).compile(
             loss=custom_loss,
