@@ -6,7 +6,7 @@ import time
 def run(args):
     start = time.time()
     print("[----- LOADING DATASET  ------]")
-    dataset, length, nb_features,_,_  = data_util.load_dataset_criolla_w_difficulty(fn=args.f, fn2=args.classes,
+    dataset, length, nb_features,_,_  = data_util.load_dataset_w_difficulty(fn=args.f, fn2=args.classes,
                                                                               batch_size=args.batch_size,
                                                                               level=args.l,
                                                                               shuffle=True)
@@ -19,7 +19,7 @@ def run(args):
     print("[----- COMPILING  ------]")
     model = deepkt.DKTModel(nb_features=nb_features,
                             hidden_units=args.hidden_units,
-                            extra_inputs=11,
+                            extra_inputs=5,#for the 5 different dificulties
                             dropout_rate=args.dropout_rate)
     model.compile(optimizer='adam', metrics=[metrics.BinaryAccuracy(),
                                              metrics.AUC(),
@@ -59,17 +59,13 @@ def run(args):
 def parse_args():
     parser = argparse.ArgumentParser(prog="DeepKT Example")
 
-    #This argument will be used to decide which methos to use, so i can keep the same code working with it's original Database and the [demo_dkt] one
-    parser.add_argument("-criolla",
-                        type=bool,
-                        default=False,
-                        help="Is this the database from Puntaje?")
-    #just relevan for the [demo_dkt], nivel 2 and 3 are more insightful, nivel 1 has too few classes (4)
+    # Select the category to apply the network to, 1 es more general, while 3 is very particular
     parser.add_argument("-l",
                         type=str,
                         default='nivel 1 prueba de transición',
                         help="nivel 1, 2 ó 3 prueba de transición ")
 
+    # True will load weights and train them with the provided data, mind that the network arquitectures match
     parser.add_argument("-re_train",
                         type=bool,
                         default=False,
@@ -83,13 +79,14 @@ def parse_args():
     parser.add_argument("-classes",
                         type=str,
                         default="data/[DATOS_DKT] Clasificaciones.csv",
-                        help="the path to the data")
+                        help="the path to the data's info file")
 
     parser.add_argument("-v",
                         type=int,
                         default=1,
                         help="verbosity mode [0, 1, 2].")
 
+    # Folder to save the weights
     parser.add_argument("-w",
                         type=str,
                         default="weights/bestmodel",
@@ -103,7 +100,7 @@ def parse_args():
     model_group = parser.add_argument_group(title="Model arguments.")
     model_group.add_argument("--dropout_rate",
                              type=float,
-                             default=.3,
+                             default=.275,
                              help="fraction of the units to drop.")
 
     model_group.add_argument("--hidden_units",
@@ -119,7 +116,7 @@ def parse_args():
 
     train_group.add_argument("--epochs",
                              type=int,
-                             default=50,
+                             default=30,
                              help="number of epochs to train.")
 
     train_group.add_argument("--test_split",
@@ -137,3 +134,15 @@ def parse_args():
 
 if __name__ == "__main__":
     run(parse_args())
+
+
+#-------| GRAVEYARD |--------#
+
+
+    '''    
+    # This argument will be used to decide which methos to use, so i can keep the same code working with it's original Database and the [demo_dkt] one
+    parser.add_argument("-criolla",
+                        type=bool,
+                        default=True,
+                        help="Is this the database from Puntaje?")
+    '''
