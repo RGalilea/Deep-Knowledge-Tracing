@@ -52,7 +52,7 @@ def run(args):
 
 
     model.compile(optimizer='adam',
-                  loss_func= custom_loss(0.1,0.03,0.3),# i need to fix this value asignation
+                  loss_func= custom_loss(0.5,0.3,0.3),# i need to fix this value asignation
                   metrics=[metrics.BinaryAccuracy(),
                                              metrics.AUC(),
                                              metrics.Precision(),
