@@ -5,27 +5,7 @@ from deepkt import deepkt_experimental as deepkt
 import time
 
 
-def custom_loss(l_r,l_w1,l_w2):
-    def true_loss(y_true, y_pred):
-        #print(holder)
-        y_true2, y_pred2 = data_util.get_target(y_true[:, :-1, :], y_pred[:, 1:, :])#is this shit right??
-        y_true2 = tf.concat([tf.zeros([args.batch_size,1,1],tf.float32),y_true2],axis=-2)
-        y_pred2 = tf.concat([tf.zeros([args.batch_size,1, 1], tf.float32),y_pred2], axis=-2)
 
-        n_batch,n_inter,n_outputs = y_true.shape
-
-        waviness_norm_1 = tf.reduce_sum(tf.abs(y_pred[:, 1:, :] - y_pred[:, :-1, :]))/(n_inter*n_outputs )
-
-        waviness_norm_2 = tf.reduce_sum(tf.square(y_pred[:, 1:, :] - y_pred[:, :-1, :]))/(n_inter*n_outputs )
-
-
-        y_true, y_pred = data_util.get_target(y_true, y_pred)
-
-        def get_loss_value(a,b,c,d,e,f):
-            return tf.keras.losses.binary_crossentropy(a,b) + l_r*tf.keras.losses.binary_crossentropy(c, d) +l_w1*e +l_w2*f#(y_true, y_pred)
-        return get_loss_value(y_true, y_pred,y_true2, y_pred2,waviness_norm_1,waviness_norm_2)
-
-    return true_loss
 
 
 def run(args):
@@ -47,6 +27,28 @@ def run(args):
                             extra_inputs=5,#for the 5 different dificulties
                             dropout_rate=args.dropout_rate)
 
+    def custom_loss(l_r, l_w1, l_w2):
+        def true_loss(y_true, y_pred):
+            # print(holder)
+            y_true2, y_pred2 = data_util.get_target(y_true[:, :-1, :], y_pred[:, 1:, :])  # is this shit right??
+            y_true2 = tf.concat([tf.zeros([args.batch_size, 1, 1], tf.float32), y_true2], axis=-2)
+            y_pred2 = tf.concat([tf.zeros([args.batch_size, 1, 1], tf.float32), y_pred2], axis=-2)
+
+            n_batch, n_inter, n_outputs = y_true.shape
+
+            waviness_norm_1 = tf.reduce_sum(tf.abs(y_pred[:, 1:, :] - y_pred[:, :-1, :])) / (n_inter * n_outputs)
+
+            waviness_norm_2 = tf.reduce_sum(tf.square(y_pred[:, 1:, :] - y_pred[:, :-1, :])) / (n_inter * n_outputs)
+
+            y_true, y_pred = data_util.get_target(y_true, y_pred)
+
+            def get_loss_value(a, b, c, d, e, f):
+                return tf.keras.losses.binary_crossentropy(a, b) + l_r * tf.keras.losses.binary_crossentropy(c,
+                                                                                                             d) + l_w1 * e + l_w2 * f  # (y_true, y_pred)
+
+            return get_loss_value(y_true, y_pred, y_true2, y_pred2, waviness_norm_1, waviness_norm_2)
+
+        return true_loss
 
 
     model.compile(optimizer='adam',
