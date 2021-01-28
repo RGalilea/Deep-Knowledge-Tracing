@@ -1,6 +1,7 @@
 import argparse
 import tensorflow as tf
-from deepkt import deepkt, data_util, metrics
+from deepkt import data_util, metrics
+from deepkt import deepkt_experimental as deepkt
 import time
 
 
