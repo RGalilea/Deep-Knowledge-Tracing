@@ -9,8 +9,8 @@ def custom_loss(l_r,l_w1,l_w2):
     def true_loss(y_true, y_pred):
         #print(holder)
         y_true2, y_pred2 = data_util.get_target(y_true[:, :-1, :], y_pred[:, 1:, :])#is this shit right??
-        y_true2 = tf.concat([tf.zeros([1,1,1],tf.float32),y_true2],axis=-2)
-        y_pred2 = tf.concat([tf.zeros([1,1, 1], tf.float32),y_pred2], axis=-2)
+        y_true2 = tf.concat([tf.zeros([args.batch_size,1,1],tf.float32),y_true2],axis=-2)
+        y_pred2 = tf.concat([tf.zeros([args.batch_size,1, 1], tf.float32),y_pred2], axis=-2)
 
         n_batch,n_inter,n_outputs = y_true.shape
 
