@@ -52,7 +52,7 @@ def run(args):
 
 
     model.compile(optimizer='adam',
-                  loss_func= custom_loss(0.5,0.3,0.3),# i need to fix this value asignation
+                  loss_func= custom_loss(args.lambda1,args.lambda2,args.lambda3),# i need to fix this value asignation
                   metrics=[metrics.BinaryAccuracy(),
                                              metrics.AUC(),
                                              metrics.Precision(),
@@ -90,6 +90,19 @@ def run(args):
 
 def parse_args():
     parser = argparse.ArgumentParser(prog="DeepKT Example")
+    
+    parser.add_argument("-lambda1",
+                        type=float,
+                        default='0.1',
+                        help="current input to Loss")
+    parser.add_argument("-lambda2",
+                        type=float,
+                        default='0.1',
+                        help="waviness 1")
+    parser.add_argument("-lambda3",
+                        type=float,
+                        default='0.1',
+                        help="waviness 2")
 
     # Select the category to apply the network to, 1 es more general, while 3 is very particular
     parser.add_argument("-l",
