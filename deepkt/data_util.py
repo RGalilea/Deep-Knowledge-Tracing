@@ -203,7 +203,7 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
             valid_features = ['Economía y Sociedad', 'Formación Ciudadana', 'Historia en perspectiva: Mundo, América y Chile']
         # Checking what is compatible with the network
         data_to_keep = []
-        for i in range(df.shape[0]):
+        for i in df.index:
             data_to_keep.append(any(x in valid_features for x in [df['nivel 1 prueba de transición'][i]]))
         df['colador'] = data_to_keep
 
