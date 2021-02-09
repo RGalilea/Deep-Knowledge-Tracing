@@ -192,7 +192,7 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
     # turn the Nans into something more useful
     df['dificultad'] = df['dificultad'].fillna('Muy Fácil')
 
-        if asignatura!="Todas":
+    if asignatura!="Todas":
         if asignatura=="Matemáticas":
             print('Matemáticas')
             valid_features=['Geometría','Números','Probabilidades y estadísticas', 'Álgebra y funciones']
