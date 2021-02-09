@@ -13,7 +13,7 @@ def run(args):
 
 
 
-    dataset, length, nb_features,_,_  = data_util.load_dataset_w_difficulty_filter(fn=args.f, fn2=args.classes, asignatura="Matemáticas",
+    dataset, length, nb_features,_,_  = data_util.load_dataset_w_difficulty_filter(fn=args.f, fn2=args.classes, asignatura=args.Asignatura,
                                                                                    batch_size=args.batch_size, shuffle=True, level=args.l)
 
 
