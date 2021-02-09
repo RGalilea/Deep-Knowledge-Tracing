@@ -192,15 +192,19 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
     # turn the Nans into something more useful
     df['dificultad'] = df['dificultad'].fillna('Muy Fácil')
 
-    if asignatura!="Todas":
+        if asignatura!="Todas":
         if asignatura=="Matemáticas":
+            print('Matemáticas')
             valid_features=['Geometría','Números','Probabilidades y estadísticas', 'Álgebra y funciones']
         elif asignatura=="Ciencias":
+            print('Ciencias')
             valid_features = ['Biología', 'Física', 'Química']
         elif asignatura == "Lenguaje":
-            valid_features = ['Proveniente de los medios masivos de Comunicación', 'Literarios: Narraciones', 'Literarios: Obras Dramáticas', 'No Literarios: con finalidad expositiva y argumentativa']
+            print('Lenguaje')
+            valid_features = ['Provenientes de los medios masivos de comunicación', 'Literarios: Narraciones', 'Literarios: Obras dramáticas', 'No Literarios: Con finalidad expositiva y argumentativa']
         elif asignatura=="Historia":
-            valid_features = ['Economía y Sociedad', 'Formación Ciudadana', 'Historia en perspectiva: Mundo, América y Chile']
+            print('Historia')
+            valid_features = ['Economía y sociedad', 'Formación ciudadana', 'Historia en perspectiva: Mundo, América y Chile.']
         # Checking what is compatible with the network
         data_to_keep = []
         for i in df.index:
