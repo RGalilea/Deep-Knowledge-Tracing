@@ -143,6 +143,147 @@ def load_testset_w_difficulty(fn, fn2, valid_features, batch_size=32, shuffle=Tr
 
     return dataset, nb_users, skill_depth, hierarchy_key
 
+def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32, shuffle=True, level='nivel 1 prueba de transición'):
+    df = pd.read_csv(fn) #should load a dataset simmilar to [demo_dkt] Respuestas.csv
+    df2 = pd.read_csv(fn2)#should load [DATOS_DKT] Clasificaciones.csv
+
+    # Just checking that all the needed things are there
+    if "pregunta_id" not in df.columns:
+        raise KeyError(f"The column 'pregunta_id' was not found on {fn}")
+    if "correcta" not in df.columns:
+        raise KeyError(f"The column 'correct' was not found on {fn}")
+    if "usuario_id" not in df.columns:
+        raise KeyError(f"The column 'usuario_id' was not found on {fn}")
+    if "pregunta_id" not in df2.columns:
+        raise KeyError(f"The column 'pregunta_id' was not found on {fn2}")
+    if "pregunta_id" not in df2.columns:
+        raise KeyError(f"The column 'clasificacion_tipo' was not found on {fn2}")
+    if "pregunta_id" not in df2.columns:
+        raise KeyError(f"The column 'clasificacion' was not found on {fn2}")
+
+    # Right or wrong must be coded as 1s or 0s respectively
+    if not (df['correcta'].isin([0, 1])).all():
+        raise KeyError(f"The values of the column 'correcta' must be 0 or 1.")
+
+    # Build dictionaries with the labels from the 3 categories and the dificulty
+    n1_dict = {}
+    n2_dict = {}
+    n3_dict = {}
+    diff_dict = {}
+
+    for i in range( len( df2['pregunta_id'] )  ):
+        if df2['clasificacion_tipo'][i]=='nivel 1 prueba de transición' :
+            n1_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
+        elif df2['clasificacion_tipo'][i]=='nivel 2 prueba de transición' :
+            n2_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
+        elif df2['clasificacion_tipo'][i]=='nivel 3 prueba de transición' :
+            n3_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
+        elif df2['clasificacion_tipo'][i]=='dificultad' :
+            diff_dict.update({df2['pregunta_id'][i] : df2['clasificacion'][i]})
+
+    # Apply the dictionaties to have a straightforward way to a question's category
+    df['nivel 1 prueba de transición'] = df['pregunta_id'].map(n1_dict)
+    df['nivel 2 prueba de transición'] = df['pregunta_id'].map(n2_dict)
+    df['nivel 3 prueba de transición'] = df['pregunta_id'].map(n3_dict)
+    df['dificultad'] = df['pregunta_id'].map(diff_dict)
+
+    # Remove rows with mising values in the column to clasify
+    df.dropna( axis=0, how="any",subset=[level], inplace=True)
+    # turn the Nans into something more useful
+    df['dificultad'] = df['dificultad'].fillna('Muy Fácil')
+
+    if asignatura!="Todas":
+        if asignatura=="Matemáticas":
+            valid_features=['Geometría','Números','Probabilidades y estadísticas', 'Álgebra y funciones']
+        elif asignatura=="Ciencias":
+            valid_features = ['Biología', 'Física', 'Química']
+        elif asignatura == "Lenguaje":
+            valid_features = ['Proveniente de los medios masivos de Comunicación', 'Literarios: Narraciones', 'Literarios: Obras Dramáticas', 'No Literarios: con finalidad expositiva y argumentativa']
+        elif asignatura=="Historia":
+            valid_features = ['Economía y Sociedad', 'Formación Ciudadana', 'Historia en perspectiva: Mundo, América y Chile']
+        # Checking what is compatible with the network
+        data_to_keep = []
+        for i in range(df.shape[0]):
+            data_to_keep.append(any(x in valid_features for x in [df['nivel 1 prueba de transición'][i]]))
+        df['colador'] = data_to_keep
+
+        # Filters out what had a False in df['colador']
+        df = df.loc[df['colador']]
+
+
+
+
+    # Remove users with a single answer
+    df = df.groupby('usuario_id').filter(lambda q: len(q) > 1).copy()
+
+    # Enumerate skill id
+    df['pregunta'], label_key = pd.factorize(df[level], sort=True)
+    # Replaces the dificultad keywords with numbres, for easier handling
+    df['dificultad'] = df['dificultad'].replace(to_replace=['Muy Fácil','Fácil','Media','Difícil','Muy Difícil'],value=[0,1,2,3,4])
+
+    # Lets clasify the "nivel 1"s to color the nodes according to this
+    df['colors'],color_label = pd.factorize(df['nivel 1 prueba de transición'], sort=True)
+    hierarchy_key = df.groupby('pregunta').apply( lambda r: r['colors'].values[0] ) # this finaly relates the current clasification to the flavors from Nivel 1
+    # Cross skill id with answer to form a synthetic feature
+    df['pregunta+correcta'] = df['pregunta'] * 2 + df['correcta']
+
+
+    # Convert to a sequence per user id and shift features 1 timestep
+    seq = df.groupby('usuario_id').apply(
+        lambda r: (
+            # the inputs loose their last item
+            r['pregunta+correcta'].values[:-1],
+            r['dificultad'].values[:-1],
+            # the outputs loose the first one
+            r['pregunta'].values[1:],
+            r['correcta'].values[1:],
+        )
+    )
+    nb_users = len(seq)
+
+    # Get Tensorflow Dataset
+    dataset = tf.data.Dataset.from_generator(
+        generator=lambda: seq,
+        output_types=(tf.int32,tf.int32,tf.int32, tf.float32)
+    )
+
+    #if u want to shuffle, let's shuffle
+    if shuffle:
+        dataset = dataset.shuffle(buffer_size=nb_users)
+
+    #prepares things to build inputs and outputs
+    skill_depth = df['pregunta'].max() + 1
+    features_depth = int(df['pregunta+correcta'].max() + 1)
+
+    # Building inputs and targets (Input_[n by 2*skill_depth+dificulties] , output_[n by skill_depth] )
+    dataset = dataset.map(
+        lambda feat, diff, skill, label: (
+            # Inputs
+            tf.concat(values=[tf.one_hot(feat, depth=features_depth),
+                              tf.one_hot(diff, depth=5)
+                              ],
+                      axis=-1),
+            # Outputs and targets
+            tf.concat(values=[tf.one_hot(skill, depth=skill_depth),
+                              tf.expand_dims(label, -1)
+                             ],
+                      axis=-1)
+            )
+        )
+
+    # Pad sequences per batch
+    dataset = dataset.padded_batch(
+        batch_size=batch_size,
+        padding_values=(MASK_VALUE, MASK_VALUE),
+        padded_shapes=([None, None], [None, None]),
+        drop_remainder=True
+    )
+
+    length = nb_users // batch_size
+
+    return dataset, length, skill_depth, label_key, hierarchy_key
+
+
 def load_dataset_w_difficulty(fn, fn2, batch_size=32, shuffle=True, level='nivel 1 prueba de transición'):
     df = pd.read_csv(fn) #should load a dataset simmilar to [demo_dkt] Respuestas.csv
     df2 = pd.read_csv(fn2)#should load [DATOS_DKT] Clasificaciones.csv
