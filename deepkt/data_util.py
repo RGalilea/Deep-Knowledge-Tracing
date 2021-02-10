@@ -222,6 +222,7 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
 
     # Enumerate skill id
     df['pregunta'], label_key = pd.factorize(df[level], sort=True)
+    print(label_key)
     # Replaces the dificultad keywords with numbres, for easier handling
     df['dificultad'] = df['dificultad'].replace(to_replace=['Muy Fácil','Fácil','Media','Difícil','Muy Difícil'],value=[0,1,2,3,4])
 
