@@ -195,7 +195,7 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
     if asignatura!="Todas":
         if asignatura=="Matemáticas":
             print('Matemáticas')
-            valid_features=['Geometría','Números','Probabilidades y estadísticas', 'Álgebra y funciones']
+            valid_features=['Geometría','Números','Probabilidad y estadística', 'Álgebra y funciones']
         elif asignatura=="Ciencias":
             print('Ciencias')
             valid_features = ['Biología', 'Física', 'Química']
