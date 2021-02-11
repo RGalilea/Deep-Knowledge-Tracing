@@ -194,18 +194,19 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
     df['dificultad'] = df['dificultad'].fillna('Muy Fácil')
 
     if asignatura!="Todas":
-        if asignatura=="Matemáticas":
+        valid_features=[]
+        if "Matemáticas" in asignatura:
             print('Matemáticas')
-            valid_features=['Geometría','Números','Probabilidad y estadística', 'Álgebra y funciones']
-        elif asignatura=="Ciencias":
+            valid_features+=['Geometría','Números','Probabilidad y estadística', 'Álgebra y funciones']
+        if  "Ciencias" in asignatura:
             print('Ciencias')
-            valid_features = ['Biología', 'Física', 'Química']
-        elif asignatura == "Lenguaje":
+            valid_features += ['Biología', 'Física', 'Química']
+        if  "Lenguaje" in asignatura:
             print('Lenguaje')
-            valid_features = ['Provenientes de los medios masivos de comunicación', 'Literarios: Narraciones', 'Literarios: Obras dramáticas', 'No literarios: Con finalidad expositiva y argumentativa']
-        elif asignatura=="Historia":
+            valid_features += ['Provenientes de los medios masivos de comunicación', 'Literarios: Narraciones', 'Literarios: Obras dramáticas', 'No literarios: Con finalidad expositiva y argumentativa']
+        if  "Historia" in asignatura:
             print('Historia')
-            valid_features = ['Economía y sociedad', 'Formación ciudadana', 'Historia en perspectiva: Mundo, América y Chile.']
+            valid_features += ['Economía y sociedad', 'Formación ciudadana', 'Historia en perspectiva: Mundo, América y Chile.']
         # Checking what is compatible with the network
         data_to_keep = []
         for i in df.index:
