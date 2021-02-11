@@ -188,7 +188,8 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
     df['dificultad'] = df['pregunta_id'].map(diff_dict)
 
     # Remove rows with mising values in the column to clasify
-    df.dropna( axis=0, how="any",subset=[level], inplace=True)
+    df.dropna( axis=0, how="any",subset=['nivel 1 prueba de transición'], inplace=True)
+    df.dropna(axis=0, how="any", subset=['nivel 2 prueba de transición'], inplace=True)
     # turn the Nans into something more useful
     df['dificultad'] = df['dificultad'].fillna('Muy Fácil')
 
@@ -201,7 +202,7 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
             valid_features = ['Biología', 'Física', 'Química']
         elif asignatura == "Lenguaje":
             print('Lenguaje')
-            valid_features = ['Provenientes de los medios masivos de comunicación', 'Literarios: Narraciones', 'Literarios: Obras dramáticas', 'No Literarios: Con finalidad expositiva y argumentativa']
+            valid_features = ['Provenientes de los medios masivos de comunicación', 'Literarios: Narraciones', 'Literarios: Obras dramáticas', 'No literarios: Con finalidad expositiva y argumentativa']
         elif asignatura=="Historia":
             print('Historia')
             valid_features = ['Economía y sociedad', 'Formación ciudadana', 'Historia en perspectiva: Mundo, América y Chile.']
@@ -222,7 +223,6 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
 
     # Enumerate skill id
     df['pregunta'], label_key = pd.factorize(df[level], sort=True)
-    print(label_key)
     # Replaces the dificultad keywords with numbres, for easier handling
     df['dificultad'] = df['dificultad'].replace(to_replace=['Muy Fácil','Fácil','Media','Difícil','Muy Difícil'],value=[0,1,2,3,4])
 
