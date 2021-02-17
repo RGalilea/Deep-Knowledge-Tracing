@@ -186,6 +186,10 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
     df['nivel 2 prueba de transición'] = df['pregunta_id'].map(n2_dict)
     df['nivel 3 prueba de transición'] = df['pregunta_id'].map(n3_dict)
     df['dificultad'] = df['pregunta_id'].map(diff_dict)
+    
+    #Delete a particularly annying 2 datapoints class
+    df['nivel 2 prueba de transición'].replace('Estado nación y sociedad burguesa en Europa y América en el siglo XIX.',np.NaN)
+
 
     # Remove rows with mising values in the column to clasify
     df.dropna( axis=0, how="any",subset=['nivel 1 prueba de transición'], inplace=True)
@@ -206,6 +210,7 @@ def load_dataset_w_difficulty_filter(fn, fn2, asignatura="Todas" , batch_size=32
             valid_features += ['Provenientes de los medios masivos de comunicación', 'Literarios: Narraciones', 'Literarios: Obras dramáticas', 'No literarios: Con finalidad expositiva y argumentativa']
         if  "Historia" in asignatura:
             print('Historia')
+            
             valid_features += ['Economía y sociedad', 'Formación ciudadana', 'Historia en perspectiva: Mundo, América y Chile.']
         # Checking what is compatible with the network
         data_to_keep = []
