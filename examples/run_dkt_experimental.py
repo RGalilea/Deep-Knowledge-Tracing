@@ -11,10 +11,10 @@ import time
 def run(args):
     start = time.time()
     print("[----- LOADING DATASET  ------]")
-    dataset, length, nb_features,_,_  = data_util.load_dataset_w_difficulty(fn=args.f, fn2=args.classes,
-                                                                              batch_size=args.batch_size,
-                                                                              level=args.l,
-                                                                              shuffle=True)
+    dataset, length, nb_features, _, _ = data_util.load_dataset_w_difficulty_filter(fn=args.f, fn2=args.classes,
+                                                                                    asignatura=args.Asignatura,
+                                                                                    batch_size=args.batch_size,
+                                                                                    shuffle=True, level=args.l)
     print("[----- DIVIDING DATASET  ------]")
     train_set, test_set, val_set = data_util.split_dataset(dataset=dataset,
                                                            total_size=length,
@@ -90,7 +90,7 @@ def run(args):
 
 def parse_args():
     parser = argparse.ArgumentParser(prog="DeepKT Example")
-    
+
     parser.add_argument("-lambda1",
                         type=float,
                         default='0.1',
@@ -109,6 +109,11 @@ def parse_args():
                         type=str,
                         default='nivel 1 prueba de transición',
                         help="nivel 1, 2 ó 3 prueba de transición ")
+
+    parser.add_argument("-Asignatura",
+                        type=str,
+                        default='Todas',
+                        help="Matemáticas, Ciencias, Lenguaje, Historia o Todas")
 
     # True will load weights and train them with the provided data, mind that the network arquitectures match
     parser.add_argument("-re_train",
